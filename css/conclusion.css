@@ -1,0 +1,15 @@
+.ifSmallWidth {
+
+    display: none;
+}
+
+@media (max-width: 374px) {
+    .ifSmallWidth {
+
+        display: block;
+    }
+
+    .cons-cont {
+        display: none;
+    }
+}

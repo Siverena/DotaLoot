@@ -1,0 +1,48 @@
+.info {
+    margin: 0 0 10px;
+}
+
+.agree_list {
+    list-style: none;
+    color: #fff;
+}
+
+
+.sogl {
+    margin-top: 5px;
+    color: #4c4b4c;
+    font-size: 18px;
+    font-family: Plumb-l;
+    display: block;
+
+}
+
+.p-agree {
+    color: white;
+    font-size: 18px;
+    font-family: Plumb-l;
+    line-height: 1.3;
+}
+
+.p-agree > ul {
+    list-style: none;
+}
+
+.p-agree > ul > li > ul {
+    margin: 10px 0;
+    -webkit-padding-start: 40px;
+    list-style: disc;
+}
+
+.p-agree > ul > li > ul > li > ul {
+    -webkit-padding-start: 40px;
+    list-style: disc;
+}
+
+.p-agree > .info {
+    margin: 0 0 10px;
+}
+
+.p-agree > .info > p {
+    text-indent: 5px;
+}

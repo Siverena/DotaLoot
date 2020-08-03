@@ -1,0 +1,17 @@
+.page404 {
+    color: #f4441a;
+    font-family: Plumb-l;
+    text-align: center;
+    margin-top: calc(50% - 280px);
+}
+
+.error_nomber {
+    font-size: 180px;
+
+}
+
+.error_text {
+    font-size: 90px;
+    margin-top: 10px;
+
+}

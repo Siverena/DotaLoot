@@ -1,0 +1,106 @@
+.stat {
+    background: url(../img/1687.png);
+    text-transform: uppercase;
+    height: 80px;
+    margin-top: 50px;
+    /*	padding-top: 13px;*/
+}
+
+.stat__c {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /*	width: 624px;*/
+    height: 100%;
+    margin: 0 auto;
+}
+
+.stat__text {
+    display: block;
+    color: #ffffff;
+    font-family: Plumb-L;
+    font-size: 16px;
+    text-align: center;
+    /*	margin-bottom: 15px;*/
+}
+
+.stat__count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #f4441a;
+    font-family: Plumb-B;
+    font-size: 28px;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.stat__count::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 2px;
+    border: 2px solid #f4441a;
+    -webkit-box-shadow: 0px 0px 18px 6px rgba(255, 48, 0, 0.32);
+    box-shadow: 0px 0px 18px 6px rgba(255, 48, 0, 0.32);
+    margin: 6px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.stat__count::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 2px;
+    border: 2px solid #f4441a;
+    -webkit-box-shadow: 0px 0px 18px 6px rgba(255, 48, 0, 0.32);
+    box-shadow: 0px 0px 18px 6px rgba(255, 48, 0, 0.32);
+    margin: 6px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.stat__div {
+    width: 208px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    height: 100%;
+    flex-direction: column;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 12px;
+
+}
+
+@media (max-width: 426px) {
+
+    .stat__count::after,
+    .stat__count::before {
+        display: none;
+    }
+
+}

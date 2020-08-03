@@ -1,0 +1,240 @@
+/*top*/
+.top-avatars {
+    max-width: 560px;
+    /* height: 230px; */
+    margin: 0 auto;
+    margin-bottom: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.top-avatar-cont {
+    width: 142;
+    height: 220;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.top-avatar__img {
+    /*	width: 100%;*/
+    height: 100%;
+
+    max-width: 142px;
+    max-height: 142px;
+
+}
+
+.top-avatar-fon::before {
+    content: '';
+    display: block;
+    border: 17px solid transparent;
+    border-bottom-width: 17px;
+    border-bottom-style: solid;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    position: absolute;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin-top: 125px;
+    margin-left: 125px;
+    top: 0;
+    left: 0;
+
+}
+
+.top-avatar-fon--orange::before {
+    border-bottom-color: #ff5b00;
+}
+
+.top-avatar-fon--blue::before {
+    border-bottom-color: #00c1ff;
+}
+
+.top-avatar-fon--green::before {
+    border-bottom-color: #00ff00;
+}
+
+.top-avatar-fon {
+    width: 142px;
+    height: 142px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+
+
+/*
+
+.top-avatar {
+	width: 141px;
+	height: 141px;
+}
+*/
+.top-avatar-text {
+    height: 60px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: auto;
+}
+
+.top-avatar-text-1 {
+    font-family: Plumb-B;
+    color: #ffffff;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 142px;
+    display: block;
+    overflow: hidden;
+
+}
+
+.top-avatar-text-2 {
+    color: #ababab;
+    font-family: Plumb-L;
+    line-height: 26px;
+}
+
+.top-avatar-text-3 {
+    font-family: Plumb-B;
+
+}
+
+.top-table {
+    font-family: Plumb-l;
+    font-size: 18px;
+    color: #ffffff;
+    border-collapse: separate;
+    border-spacing: 0 11px;
+    width: calc(100% - 10px);
+    text-align: center;
+    line-height: 49px;
+    margin: 0 auto;
+}
+
+.top-table__header {
+    font-family: Plumb-L;
+    font-size: 16px;
+    color: #909090;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.top-table__row {
+    background-color: #15181b;
+    height: 49px;
+    padding-right: 14px;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.top-table__place {
+    width: 64px;
+}
+
+.top-table__user {
+    text-align: left;
+    margin-left: 47px;
+    vertical-align: middle;
+
+
+}
+
+.top-table__cases {
+    width: 97px;
+}
+
+.top-table__earned {
+    width: 225px;
+}
+
+.top-table__avatar {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 19px;
+    vertical-align: middle;
+}
+
+.top-table__user-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 49px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /*    max-width: 200px;*/
+}
+
+.top-table__user-text {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*top end*/
+@media(max-width: 426px) {
+    .top-table__cases {
+        display: none;
+    }
+
+    .top-table__earned,
+    td:first-child {
+        vertical-align: middle;
+    }
+
+    .top-table__user {
+        padding-left: 5px;
+    }
+
+    .top-table__earned {
+
+        width: 90px;
+    }
+
+    .top-table__user > span {
+        max-width: 68px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+    }
+}
+
+@media(max-width: 321px) {
+    .top-table__user-cont {
+        max-width: 170px;
+    }
+
+
+}

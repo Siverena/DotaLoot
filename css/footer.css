@@ -1,0 +1,142 @@
+/*футер меню начало*/
+
+footer .main-menu {
+    font-family: R-r;
+    font-size: 15px;
+    width: 540px;
+    margin: 0 auto;
+}
+
+footer .main-menu a {
+    float: left;
+}
+
+footer .main-menu>ul {
+    width: 100%;
+}
+
+footer .main-menu>ul>a:first-child>li>span {
+    white-space: nowrap;
+}
+
+footer .main-menu>ul>a:last-child>li>span {
+    margin-right: 0px;
+}
+
+footer .main-menu>ul>a>li>span:hover {
+    color: #0db8f4;
+}
+
+footer {
+    min-height: 240px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #15181b;
+    background-image: url("../img/foo_bg.png");
+    padding: 0 5px;
+}
+
+footer a {
+    color: inherit;
+}
+
+.footer-column-1 {
+    width: 609px;
+}
+
+.footer-column-2 {
+    margin-left: auto;
+    width: 429px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer-column-1 img {
+    /*    display: block;*/
+}
+
+.foo-text {
+    font-family: Plumb-L;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4c4b4c;
+    margin: 24px 0 17px;
+}
+
+.foo-text>a:hover {
+    color: #f4441a;
+}
+
+.col-2__block {
+    width: 300px;
+    height: 220px;
+    background-color: #1e2124;
+    border-radius: 5px;
+}
+
+.nav-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav__menu--f {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Plumb-L;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #909090;
+}
+
+.nav__item-f {
+    padding: 2px 6px;
+    list-style: none;
+}
+
+.nav--active--foo {
+    color: #f4441a;
+}
+
+
+/*footer end*/
+
+
+/*футер меню конец*/
+
+@media (max-width: 1100px) {
+    .footer-column-2 {
+        display: none;
+    }
+    .footer-column-1 {
+        width: 100%;
+    }
+}
+
+@media(max-width:541px) {
+    .nav__menu-dop--f {
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .logo__footer {
+        display: none;
+    }
+    .footer {
+        height: auto;
+    }
+}
