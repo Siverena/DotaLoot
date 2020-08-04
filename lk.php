@@ -37,72 +37,91 @@ include_once('m/auth.php');
                 </div>
                 <div class="content content-lk">
 
-                    <div class="lk-column-1">
+                    <div class="user">
+                        
                         <div class="user-avatar">
-                            <img src="img/ava.png" alt="">
+                            <img class="user__image" src="img/ava.png" alt="">
                         </div>
-                        <div class="lk-column-1-div name">
+                        <div class="user__text-block user__text-block--name">
                             <span>Paradox-ART</span>
                         </div>
-                        <div class="lk-column-1-div lk-column-1__money ">
-                            <p class="lk-column-1__balance">75 000Р</p>
+                        <div class="user__text-block user__text-block--money ">
+                            <p class="money__count">75 000Р</p>
 
-                            <button class="lk-column-1__pay" type="button" data-toggle="modal" data-target="#Modal-4">
+                            <button class="site-btn site-btn--orange user__btn--pay lk-column-1__pay" type="button" data-toggle="modal" data-target="#Modal-4">
                                 <p class="button-t button-t-b">+</p>
                             </button>
 
-
-
-
                         </div>
-                        <div class="lk-column-1-div lk-column-1__quantity"> Открыто кейсов: 1200
+                        <div class="user__text-block user__text-block--quantity"> Открыто кейсов: 1200
                         </div>
-                        <a href="partner.php">
-                            <div class="lk-column-1-div lk-column-1__partner">
-                                <p class="button-t">Партнёрка</p>
-                            </div>
+                        <a class="site-btn site-btn--orange user__btn--conclusion" href="conclusion.php">
+                            <p class="button-t">Выводы</p>
                         </a>
-                        <a href="conclusion.php">
-                            <div class="lk-column-1-div lk-column-1__partner">
-                                <p class="button-t">Выводы</p>
-                            </div>
+                        <a class="site-btn site-btn--orange user__btn--partner" href="partner.php">
+                            <p class="button-t">Партнёрка</p>
                         </a>
-
                     </div>
-                    <div class="lk-column-2">
-                        <form class="link-form" action="" method="post">
-                            <div class="strong-1">
-                                <input readonly class="lk-column-2__adres" type="text" value="https://steamcommunity.com/tradeoffer/new/?artner=293023081=pHKFxQc9">
-                                <a class="lk-column-2__link lk-column-2__link--save" href="">
-                                    <p class="button-t">Сохранить</p>
-                                </a>
-                                <a class="lk-column-2__link lk-column-2__link--change" href="">
-                                    <p class="button-t">Узнать ссылку на обмен </p>
-                                </a>
-
-
+                    <div class="information information--lk lk-column-2 lk--column-2">
+                        <div class="algorithm">
+                            <div class="algorithm__step algorithm__step--link">
+                            Введите ссылку на обмен
                             </div>
-
-
-
-                        </form>
-                        <div class=" how-work">
-                            <div class="strong-2 ">
-                                <img src="img/link.png" alt="">
-                                <img src="img/balance.png" alt="">
-                                <img src="img/scin.png" alt="">
+                            <div class="algorithm__step algorithm__step--balance">
+                            Пополните баланс
                             </div>
-                            <div class="strong-3">
-                                <p>Внимание!</p>
-                                <p>Администраторы/Модераторы/Помощники <span style="color:#f74f22;">DOTA-LOOT</span> никогда не пишут в личку<br>
-                                    и не просят у пользователей скины. <br>
-                                    Все, кто так так делают - мошенники.</p>
+                            <div class="algorithm__step algorithm__step--skin">Получайте скины
                             </div>
                         </div>
 
-                        <div class="strong-4">
-                            <h3 class="strong-4__header">Ваши предметы</h3>
-                            <div class="lk-nav">
+
+                        <div class="exchange-link">
+                            <form class="exchange-link__form" action="" method="post">
+                                <div class="exchange-link__text-wrap">
+                                <label class="exchange-link__label" for="link">Выша ссылка на обмен</label>
+                                <input readonly id="link" class="exchange-link__input" type="text" value="https://steamcommunity.com/tradeoffer/new/?artner=293023081=pHKFxQc9">
+                                </div>
+
+                                <div class="exchange-link__button-wrap">
+                                    <button class="site-btn site-btn--green exchange-link--look"><p class="button-t">Узнать</p></button>
+                                    <button class="site-btn site-btn--orange exchange-link--save"> <p class="button-t">Сохранить </p></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="stim-name">
+                            <form class="stim-name__form" action="" method="post">
+                                <div class="stim-name__text-wrap">
+                                <label class="stim-name__label" for="link">Ваш логин Steam</label>
+                                <input readonly id="link" class="stim-name__input" type="text" value="paradox53r">
+                                </div>
+
+                                <div class="stim-name__button-wrap">
+                                    <button class="site-btn site-btn--green stim-name--look"><p class="button-t">Узнать</p></button>
+                                    <button class="site-btn site-btn--orange stim-name--save"> <p class="button-t">Сохранить </p></button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="new-sitem">
+                            <p class="new-sitem__title">Новая система обмена! Без задержек Steam!</p>
+                            <button data-toggle="modal"  data-target="#exchange" class="site-btn new-sitem--look">Узнать подробнее</button>
+                        </div>
+
+
+                        
+                        <div class="worning">
+                            <div class="worning__text-wrap">
+                            <p>Сотрудники DotaLoot никогда не добавляются в друзья, не пишут в личные сообщения и не просят у пользователей предметы.</p>
+                            <p style="color:#f74f22;">Не ведитесь на уловки мошенников!</p>
+                            </div>
+
+                        </div>
+                        
+
+                        <div class="board strong-4">
+                            <h3 class="board__header strong-4__header">Ваши предметы</h3>
+                            <div class="board__nav lk-nav">
                                 <div class="lk-nav__page">
                                     <a href=""><img style="transform: scale(-1, 1) " src="img/double-r.png" alt=""></a><a style="margin-left: 7px;" href=""><img src="img/double-r.png" alt=""></a>
                                 </div>
@@ -111,7 +130,7 @@ include_once('m/auth.php');
                                 </div>
 
                             </div>
-                            <div class="strong-4__item-cont">
+                            <div class="items  strong-4__item-cont">
                                 <!--predmet-item start-->
                                 <div class="my-predmet-item lk-item--margin">
                                     <div class="my-predmet-item__img">
@@ -123,44 +142,17 @@ include_once('m/auth.php');
                                     </div>
                                     <div class="properties">
                                         <div class="my-predmet-item__price"> 159Р </div>
+
                                         <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
+                                            <button class="status-cont__link status-cont--status1" data-toggle="modal"  data-target="#sale" href="">
+                                                <span>V</span>
                                                 <div class="status-cont__link--hover">Забрать предмет</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
+                                            </button>
+                                            <button class="status-cont__link status-cont--status2" href=""><span>P</span>
                                                 <div style="" class="status-cont__link--hover">
                                                     <div>Продать предмет</div>
                                                 </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r1"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
-                                                <div class="status-cont__link--hover">Забрать предмет</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Продать предмет</div>
-                                                </div>
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
 
@@ -179,129 +171,21 @@ include_once('m/auth.php');
                                     <div class="properties">
                                         <div class="my-predmet-item__price"> 159Р </div>
                                         <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
+                                            <button class="status-cont__link status-cont--status1" data-toggle="modal"  data-target="#sale" href="">
+                                                <span>V</span>
                                                 <div class="status-cont__link--hover">Забрать предмет</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
+                                            </button>
+                                            <button class="status-cont__link status-cont--status2" href=""><span>P</span>
                                                 <div style="" class="status-cont__link--hover">
                                                     <div>Продать предмет</div>
                                                 </div>
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
 
                                 </div>
                                 <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r2"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
 
-                                                <div class="status-cont__link--hover">Забрать предмет</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Продать предмет</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r4"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
-                                                <div class="status-cont__link--hover">Забрать предмет</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Продать предмет</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r3"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
-                                                <div class="status-cont__link--hover">Забрать предмет</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Продать предмет</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r5"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
-                                                <div class="status-cont__link--hover">Забрать предмет</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Продать предмет</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
                                 <!--predmet-item start-->
                                 <div class="my-predmet-item lk-item--margin">
                                     <div class="my-predmet-item__img">
@@ -314,57 +198,155 @@ include_once('m/auth.php');
                                     <div class="properties">
                                         <div class="my-predmet-item__price"> 159Р </div>
                                         <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
+                                            <button class="status-cont__link status-cont--status1" data-toggle="modal"  data-target="#sale" href="">
+                                                <span>V</span>
                                                 <div class="status-cont__link--hover">Забрать предмет</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
+                                            </button>
+                                            <button class="status-cont__link status-cont--status2" href=""><span>P</span>
                                                 <div style="" class="status-cont__link--hover">
                                                     <div>Продать предмет</div>
                                                 </div>
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
 
                                 </div>
                                 <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r1"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
 
-                                                <div class="status-cont__link--hover">Забрать предмет</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Продать предмет</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
                             </div>
                         </div>
                     </div>
+                        
+
                 </div>
             </div>
         </section>
         <?php include_once 'stat.php';?>
     </main>
     <?php include_once 'footer.php';?>
+
+
+
+    <!-- exchange -->
+    <div class="modal fade" id="exchange" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-exchange">
+                <!-- <div class="modal-body ">-->
+
+                <div class="modal-window modal-window--1 ">
+                    <h2 class="window__header">Новая система вывода предметов</h2>
+                    <p class="window__text">Возможно выбранного предмета сейчас нет в
+                    наличии или он имеет ограничения на обмен.
+                    Не переживайте!)
+                    Мы приготовили для вас новую и
+                    более быструю систему вывода
+                    предметов</p>
+                </div>
+                <div class="modal-window modal-window--2 ">
+                    <h2 class="window__header">3 варианта вывода</h2>
+                    <p class="window__text">1 - Как вам будет удобно </p>
+                    <p class="window__text">2 - Вы можете выбрать как именно получить предмет</p>
+                    <p class="window__text">3. 1. - Вывести ваш предмет обычным трейдом, или заменить его
+                        на аналогичный по стоимости.</p>
+                        <p class="window__text"> 3. 2. - Получить стоимость этого предмета на ваш Steam-аккаунт икупить его самостоятельно на официальной торговой площадке Steam или потратить
+                        его стоимость на что-то более серьезное. <br> На ваш аккаунт придет полная стоимость предмета в течении пары секунд.
+                        <p class="window__text">3. 3.  -Продать предмет на нашем сайте с бонусом 15%</p>
+                        <p class="window__text">3. 4. - Использовать его в контрактах для получения более ценного предмета)</p>
+                </div>
+                <div class="modal-window modal-window--3 active">
+                    <h2 class="window__header">Логин STEAM</h2>
+                    <p class="window__text">1 - Только логин Steam</p>
+                    <p class="window__text">2 - Что бы получить стоимпость предмета на баланс Steam, вам нужно указать в профиле нашего сайта свой логин Steam. <br>
+                    <span style="color:#f74f22;">Ваш логин - это не ваш никнейм!</span><br>
+                    Логин — это то, что вы вводите при входе в аккаунт. Узнать его можно здесь, в правом верхнем углу - <a  class="window__link" href="">Узнать</a>.</p>
+
+                </div>
+                <div class="modal-window modal-window--4">
+                    <h2 class="window__header">Вывод баланса на STEAM</h2>
+                    <p class="window__text">1 - Пополнение баланса на Steam.</p>                    
+                    <p class="window__text">2 - Через пару секунд после нажатия «Пополнить» вы получите баланс на свой Steam аккаунт и сможете купить выигранный вами предмет на Торговой площадке, или потратить баланс на покупку другого  понравившегося вам предмета, Battle Pass и даже Dota+.</p>                    
+                    <p class="window__text">3 - Каждые 24 часа мы обновляем цены всех предметов на сайте,
+                    что бы выведенный вами предмет всегда можно было купить
+                    по его актуальной цене.</p>
+                </div>
+            <div class="exchange__buttons">
+            <button disabled class="site-btn site-btn--orange exchange--prev">
+                <p class="button-t">Назад</p>
+            </button>
+            <button class="site-btn site-btn--orange exchange--next">
+                <p class="button-t">Далее</p>
+            </button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--    exchange end-->
+
+
+
+
+
+
+    <!-- sale -->
+    <div class="modal fade" id="sale" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="gradient modal-sale">
+                <div class="modal-sale__wrapper">
+
+                
+                    <h2 class="sale__header">Выберите способ вывода *название предмета*<br>Вам предстоит выбрать самый удобный способ получения или продажи предмета!</h2>
+                    <div class="sale__item">
+                        <button class="site-btn site-btn--orange sale__btn">
+                            <p class="button-t">Продать</p>
+                        </button>
+                        <p class="sale__text">Вы всегда можете продать предмет сайту с бонусом 15% от его цены в Steam. Средства будут мгновенно зачислены на ваш баланс DotaLoot.</p>
+                    </div>
+
+
+                    <div class="sale__item">
+                        <button class="site-btn site-btn--orange sale__btn">
+                            <p class="button-t">Забрать</p>
+                        </button>
+                        <p class="sale__text">Ваш предмет «название предмета» в данный момент отсутствует в продаже на всех сторонних торговых площадках или имеет ограничения на обмен в Steam. Вы можете воспользоваться другим способом вывода, продать этот предмет сайту с 15% бонусом или использовать в контракте.</p>
+                    </div>
+
+
+                    <div class="sale__item">
+                        <button class="site-btn site-btn--orange sale__btn">
+                            <p class="button-t">Пополнить Steam</p>
+                        </button>
+
+                        <p class="sale__text">Вы можете получить полную стоимость
+                            предмета на баланс вашего аккаунта Steam.
+                            За полученные средства
+                            Вы сможете самостоятельно купить
+                            «Цена продажи» на Торговой
+                            Площадке Steam в несколько кликов.
+                            Это гораздо быстрее и
+                            надежнее, чем обычные трейды. 
+                        </p>
+                    </div>
+                
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--    sale end-->
+
+
+
+
+    <script src="js/modal.js">
+
+    </script>
+
+
 </body>
 
 </html>
