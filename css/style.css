@@ -118,6 +118,10 @@ body {
   background-position: top center;
 }
 
+.modal-backdrop.show {
+  opacity: .8;
+}
+
 main {
   overflow-x: hidden;
 }

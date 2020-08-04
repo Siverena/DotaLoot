@@ -94,7 +94,15 @@
 .user__btn--conclusion,
 .user__btn--partner {
   height: 30px;
-  margin: 5px 0;
+}
+
+.user__btn--conclusion {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.user__btn--partner {
+  margin: 0;
 }
 
 
@@ -131,7 +139,7 @@
   justify-content: center;
   width: 32%;
   border-radius: 3px;
-  padding: 43px 10px;
+  padding: 42px 10px;
   background-color: #111013;
   color: #ffffff;
   font-size: 16px;
@@ -400,11 +408,12 @@
 .new-sitem {
   width: 100%;
   /* height: 94px; */
-  padding: 12px 0;
+  padding: 10px 0;
   background-color: #3a6a8f;
   border-radius: 5px;
   background-image: url(../img/new-system.png);
-  margin: 10px 0;
+  margin-top: 0px;
+  margin-bottom: 10px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -450,7 +459,7 @@
   background-size: cover;
   background-position: center;
   -webkit-box-sizing: border-box;
-  padding: 4px;
+  padding: 3px 7px;
   border-radius: 5px;
   margin-bottom: 12px;
 }
@@ -905,19 +914,19 @@
 }
 
 .modal-window--1 {
-  background-image: url("../img/w-1-d.png"), linear-gradient(to right, #1b1312, #340d03);
+  background-image: url("../img/w-1-d.png"), linear-gradient(to bottom right, #0a1015, #340d03);
 }
 
 .modal-window--2 {
-  background-image: url("../img/w-2-d.png"), linear-gradient(to right, #1b1312, #340d03);
+  background-image: url("../img/w-2-d.png"), linear-gradient(to bottom right, #0a1015, #340d03);
 }
 
 .modal-window--3 {
-  background-image: url("../img/w-3-d.png"), linear-gradient(to right, #1b1312, #340d03);
+  background-image: url("../img/w-3-d.png"), linear-gradient(to bottom right, #0a1015, #340d03);
 }
 
 .modal-window--4 {
-  background-image: url("../img/w-4-d.png"), linear-gradient(to right, #1b1312, #340d03);
+  background-image: url("../img/w-4-d.png"), linear-gradient(to bottom right, #0a1015, #340d03);
 }
 
 .exchange__buttons {
@@ -1091,16 +1100,16 @@
     margin: 0 auto;
   }
   .modal-window--1 {
-    background-image: url("../img/w-1-m.png"), linear-gradient(to right, #1b1312, #340d03);
+    background-image: url("../img/w-1-m.png"), linear-gradient(to bottom right, #0a1015, #340d03);
   }
   .modal-window--2 {
-    background-image: url("../img/w-2-m.png"), linear-gradient(to right, #1b1312, #340d03);
+    background-image: url("../img/w-2-m.png"), linear-gradient(to bottom right, #0a1015, #340d03);
   }
   .modal-window--3 {
-    background-image: url("../img/w-3-m.png"), linear-gradient(to right, #1b1312, #340d03);
+    background-image: url("../img/w-3-m.png"), linear-gradient(to bottom right, #0a1015, #340d03);
   }
   .modal-window--4 {
-    background-image: url("../img/w-4-m.png"), linear-gradient(to right, #1b1312, #340d03);
+    background-image: url("../img/w-4-m.png"), linear-gradient(to bottom right, #0a1015, #340d03);
   }
   .modal-window {
     padding: 135px 10px 51px;
