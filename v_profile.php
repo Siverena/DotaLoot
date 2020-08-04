@@ -27,34 +27,84 @@ include_once('m/auth.php');
     <main>
         <?php include_once 'live.php';?>
 
-        <section class="l-k clearfix-1">
+        <section class="l-k">
             <div class="container">
                 <div class="page-name">
-                    <div>провиль $name</div>
+                    <div>профиль $name</div>
 
                 </div>
                 <div class="content content-lk">
 
-                    <div class="lk-column-1">
+                <div class="user">
                         <div class="user-avatar">
-                            <img src="img/ava.png" alt="">
+                            <img class="user__image" src="img/ava.png" alt="">
                         </div>
-                        <div class="lk-column-1-div name">
+                        <div class="user__text-block user__text-block--name">
                             <span>Paradox-ART</span>
                         </div>
-
-                        <div class="lk-column-1-div lk-column-1__quantity"> Открыто кейсов: 1200
+                        <div class="user__text-block user__text-block--quantity"> Открыто кейсов: 1200
                         </div>
-
-
                     </div>
-                    <div class="lk-column-2">
 
 
 
-                        <div class="strong-4">
 
-                            <div class="strong-4__item-cont">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="information information--lk">
+                        <div class="board strong-4">
+                            <h3 class="board__header strong-4__header">Ваши предметы</h3>
+                            <div class="board__nav lk-nav">
+                                <div class="lk-nav__page">
+                                    <a href=""><img style="transform: scale(-1, 1) " src="img/double-r.png" alt=""></a><a style="margin-left: 7px;" href=""><img src="img/double-r.png" alt=""></a>
+                                </div>
+                                <div class="lk-nav__activ">
+                                    <a class="lk-nav__activ-link lk-nav__activ-link-orage" href="">Активные</a><a class="lk-nav__activ-link" href="">Не активные</a>
+                                </div>
+
+                            </div>
+                            <div class="items  strong-4__item-cont">
+                                <!--predmet-item start-->
+                                <div class="my-predmet-item lk-item--margin">
+                                    <div class="my-predmet-item__img">
+                                        <img src="img/item2.png" alt="">
+                                    </div>
+                                    <div class="line item-image-r1"></div>
+                                    <div class="my-predmet-item__text">
+                                        Название предмета
+                                    </div>
+                                    <div class="properties">
+                                        <div class="my-predmet-item__price"> 159Р </div>
+
+                                        <div class="status-cont">
+                                            <button class="status-cont__link status-cont--status1"   href="">
+                                                <span>V</span>
+                                                <div class="status-cont__link--hover">Предмет забран</div>
+                                            </button>
+                                            <button class="status-cont__link status-cont--status2" href=""><span>P</span>
+                                                <div style="" class="status-cont__link--hover">
+                                                    <div>Предмет продан</div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--predmet-item end-->
+
                                 <!--predmet-item start-->
                                 <div class="my-predmet-item lk-item--margin">
                                     <div class="my-predmet-item__img">
@@ -67,43 +117,15 @@ include_once('m/auth.php');
                                     <div class="properties">
                                         <div class="my-predmet-item__price"> 159Р </div>
                                         <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
+                                            <button class="status-cont__link status-cont--status1"   href="">
+                                                <span>V</span>
                                                 <div class="status-cont__link--hover">Предмет забран</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
+                                            </button>
+                                            <button class="status-cont__link status-cont--status2" href=""><span>P</span>
                                                 <div style="" class="status-cont__link--hover">
                                                     <div>Предмет продан</div>
                                                 </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r1"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
-                                                <div class="status-cont__link--hover">Предмет забран</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Предмет продан</div>
-                                                </div>
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
 
@@ -122,183 +144,21 @@ include_once('m/auth.php');
                                     <div class="properties">
                                         <div class="my-predmet-item__price"> 159Р </div>
                                         <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
+                                            <button class="status-cont__link status-cont--status1"   href="">
+                                                <span>V</span>
                                                 <div class="status-cont__link--hover">Предмет забран</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
+                                            </button>
+                                            <button class="status-cont__link status-cont--status2" href=""><span>P</span>
                                                 <div style="" class="status-cont__link--hover">
                                                     <div>Предмет продан</div>
                                                 </div>
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
 
                                 </div>
                                 <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r2"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
 
-                                                <div class="status-cont__link--hover">Предмет забран</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Предмет продан</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r4"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
-                                                <div class="status-cont__link--hover">Предмет забран</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Предмет продан</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r3"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
-                                                <div class="status-cont__link--hover">Предмет забран</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Предмет продан</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r5"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
-                                                <div class="status-cont__link--hover">Предмет забран</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Предмет продан</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r1"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
-                                                <div class="status-cont__link--hover">Предмет забран</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Предмет продан</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
-                                <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r1"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
-                                    </div>
-                                    <div class="properties">
-                                        <div class="my-predmet-item__price"> 159Р </div>
-                                        <div class="status-cont">
-                                            <a class="status-cont__link status-cont--status1" href=""><span>V</span>
-
-                                                <div class="status-cont__link--hover">Предмет забран</div>
-
-                                            </a>
-                                            <a class="status-cont__link status-cont--status2" href=""><span>P</span>
-                                                <div style="" class="status-cont__link--hover">
-                                                    <div>Предмет продан</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--predmet-item end-->
                             </div>
                         </div>
                     </div>

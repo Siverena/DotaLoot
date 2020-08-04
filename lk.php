@@ -27,7 +27,7 @@ include_once('m/auth.php');
     <main>
         <?php include_once 'live.php';?>
 
-        <section class="l-k clearfix-1">
+        <section class="l-k">
             <div class="container">
                 <div class="page-name">
                     <div>Мой профиль</div>
@@ -62,7 +62,7 @@ include_once('m/auth.php');
                             <p class="button-t">Партнёрка</p>
                         </a>
                     </div>
-                    <div class="information information--lk lk-column-2 lk--column-2">
+                    <div class="information information--lk">
                         <div class="algorithm">
                             <div class="algorithm__step algorithm__step--link">
                             Введите ссылку на обмен
