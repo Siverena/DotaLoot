@@ -1,4 +1,4 @@
-<header class="sticky-top">
+ <header class="sticky-top">
     <div class="header__content-cont">
         <div class="container flex-box-row">
             <nav class="navbar navbar-expand-lg ">
@@ -15,17 +15,12 @@
                     <!--                   Содержимое меню-->
                     <div class="show-cont">
                         <ul class="nav__menu nav__menu-main">
+                            <li class="nav__item">
+                                <a class="nav__link" href="midas.php"><span>Мидас</span></a>
+                            </li>
                             <li class="nav__item ">
-                                <a class="nav__link" href="index.php"> <span>Главная</span> </a>
+                                <a class="nav__link" href="index.php"> <span>Кейсы</span> </a>
                             </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="top.php"><span>Топ</span> </a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="#"><span>Розыгрыш</span></a>
-                            </li>
-                        </ul>
-                        <ul class="nav__menu nav__menu-dop">
                             <li class="nav__item">
                                 <a class="link-contract nav__link " href="contract.php"><span>Контракты</span><img class="nav_new" src="img/new.png" alt="">
                                 </a>
@@ -34,10 +29,15 @@
                                 <a class="nav__link" href="techis.php"><span>Тeчис</span></a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="midas.php"><span>Мидас</span></a>
+                                <a class="nav__link" href="top.php"><span>Топ</span> </a>
                             </li>
+                        </ul>
+                        <ul class="nav__menu nav__menu-dop">
                             <li class="nav__item">
                                 <a class="nav__link" href="dota.html"><span>18+</span></a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="dota.html"><span>Группа VK</span></a>
                             </li>
                         </ul>
 
@@ -50,16 +50,24 @@
                             <div class="login">
 
                                 <div class="login__text">
-                                    <p id="login__name"><a class="login__link" href="lk.php">Paradox-Art</a></p>
-                                    <button class="login-button login__link--bal" type="button" data-toggle="modal" data-target="#Modal-4"> 10 000 </button>
-
+                                    <div class="login__string-wrap login__string-wrap--first">
+                                        <p id="login__name"><a class="login__link" href="lk.php">Paradox-Art</a></p>
+                                        <a class="login__btn login__btn--exit" href="?logout=1"></a>
+                                    </div>
+                                    <div class="login__string-wrap">
+                                        <button class="login-button login__link--bal" type="button" data-toggle="modal" data-target="#Modal-4"> 10 000 </button>  
+                                        <button class="login__btn login__btn--to-up" type="button" data-toggle="modal" data-target="#Modal-4"> + </button>
+                                    </div>
                                 </div>
                                 <a class="login__ava-link" href="lk.php">
                                     <img class="login__ava-img" src="img/ava.png" alt="">
                                 </a>
-                                <a class="login__exit" href="?logout=1">
-                                </a>
+                                <div class="login__buttons">
+                                    <a href="lk.php" class="site-btn site-btn--orange login__btn--prof"><p class="button-t">Мой профиль</p></a>
 
+
+                                    <button class="site-btn site-btn--green login__btn--to-up-second" type="button" data-toggle="modal" data-target="#Modal-4"><p class="button-t">Пополнить баланс </p> </button>
+                                </div>
                             </div>
 
 
