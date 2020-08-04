@@ -11,7 +11,7 @@
 
 .user {
   width: 159px;
-  margin-right: 19px;
+  margin-right: 20px;
   margin-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,7 +237,7 @@
   height: 90px;
   background-color: #15181b;
   border-radius: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .exchange-link__form {
@@ -315,7 +315,7 @@
   height: 90px;
   background-color: #15181b;
   border-radius: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .stim-name__form {
@@ -415,7 +415,7 @@
   height: 30px;
   margin: 12px auto 0;
   background-color: #01baf0;
-  box-shadow: 0px 0px 2px 1px rgb(5 5 5 / 0.4);
+  box-shadow: 0px 0px 10px 1px rgb(5 5 5 / 0.4);
 }
 
 .new-sitem--look:hover {
@@ -842,6 +842,45 @@
   display: none;
 }
 
+.modal-window__list {
+  font-size: 18px;
+  font-family: Plumb-L;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  /* list-style: none; */
+  margin-bottom: 30px;
+}
+
+.list-second {
+  margin: 0;
+  padding: 5px;
+}
+
+.list-second,
+.modal-window__list {
+  list-style: none;
+  counter-reset: li;
+}
+
+.list-second__item,
+.modal-window__item {
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+
+.list-second__item::before,
+.modal-window__item::before {
+  counter-increment: li;
+  content: counters(li, ".") ". ";
+}
+
+.modal-window__item.beforenone::before {
+  counter-increment: li;
+  content: counters(li, ".") ". ";
+  /* display: none; */
+}
+
 .modal-window.active {
   display: block;
 }
@@ -853,9 +892,10 @@
 }
 
 .window__text {
-  font-size: 20px;
+  font-size: 18px;
   font-family: Plumb-L;
   /* padding: 0 24px; */
+  margin-bottom: 8px;
 }
 
 .window__link {

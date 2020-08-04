@@ -52,8 +52,9 @@ header a {
 
 .nav__item {
   list-style: none;
-  margin: 0 6px;
+  margin: 0 20px;
   white-space: nowrap;
+  line-height: 18px;
 }
 
 .nav__item:hover .nav__link {
@@ -341,7 +342,7 @@ login__balance:hover {
 
 .login__btn--prof {
   font-family: Plumb-L!important;
-  font-size: 14px!important;
+  font-size: 12px!important;
   color: #ffffff;
   text-transform: uppercase;
   white-space: nowrap;
@@ -353,7 +354,7 @@ login__balance:hover {
 .login__btn--to-up-second {
   font-family: Plumb-L!important;
   white-space: nowrap;
-  font-size: 14px!important;
+  font-size: 12px!important;
   color: #ffffff;
   text-transform: uppercase!important;
   width: 111px;
