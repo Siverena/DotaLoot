@@ -244,7 +244,7 @@ include_once('m/auth.php');
                 </div>
                 <div class="modal-window modal-window--2 ">
                     <h2 class="window__header">Как вам будет удобно</h2>
-                        <p class="window__text">Вы можете выбрать, как именно получить предмет</p>
+                    <p class="window__text">Вы можете выбрать, как именно получить предмет</p>
 
                     <ol class="modal-window__list">
                     <li class="modal-window__item">Вывести ваш предмет обычным трейдом, или заменить его
@@ -257,26 +257,22 @@ include_once('m/auth.php');
 
                 </div>
                 <div class="modal-window modal-window--3">
-                    <h2 class="window__header">Логин STEAM</h2>
-                    <ol class="modal-window__list">
-                        <li class="modal-window__item">Только логин Steam</li>
-                        <li class="modal-window__item">Что бы получить стоимпость предмета на баланс Steam, вам нужно указать в профиле нашего сайта свой логин Steam.</li>
-                    </ol>
+                    <h2 class="window__header">«Только логин Steam</h2>
+
+                    <p class="window__text" >Что бы получить стоимпость предмета на баланс Steam, вам нужно указать в профиле нашего сайта свой логин Steam. </p>    
                     <p class="window__text" style="color:#f74f22;">Ваш логин - это не ваш никнейм!</p>    
 
-                    <p class="window__text">  Логин — это то, что вы вводите при входе в аккаунт. Узнать его можно здесь, в правом верхнем углу - <a  class="window__link" href="">Узнать</a>.</p>   
-
+                    <p class="window__text">  Логин — это то, что вы вводите при входе в аккаунт. Узнать его можно здесь, в правом верхнем углу - <a  class="window__link" href="https://steamcommunity.com/ ">Узнать</a>.</p>
+    
                 </div>
                 <div class="modal-window modal-window--4">
-                    <h2 class="window__header">Вывод баланса на STEAM</h2>
-                    <ol class="modal-window__list">
-                        <li class="modal-window__item">Пополнение баланса на Steam.</li>
-                        <li class="modal-window__item">Через пару секунд после нажатия «Пополнить» вы получите баланс на свой Steam аккаунт и сможете купить выигранный вами предмет на Торговой площадке, или потратить баланс на покупку другого  понравившегося вам предмета, Battle Pass и даже Dota+.</li>
-                        <li class="modal-window__item">Каждые 24 часа мы обновляем цены всех предметов на сайте,
-                    что бы выведенный вами предмет всегда можно было купить
-                    по его актуальной цене.</li>
-                    </ol>
+                    <h2 class="window__header">Пополнение баланса на Steam</h2>
 
+                    <p class="window__text" >Через пару секунд после нажатия «Пополнить» вы получите баланс на свой Steam
+аккаунт и сможете купить выигранный вами предмет на Торговой площадке, или потратить
+баланс на покупку другого понравившегося вам предмета, Battle Pass и даже Dota+ </p>   
+<p class="window__text" >Каждые 24 часа мы обновляем цены всех предметов на сайте, что бы выведенный
+вами предмет всегда можно было купить по его актуальной цене </p>   
 
                 </div>
             <div class="exchange__buttons">

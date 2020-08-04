@@ -137,21 +137,22 @@
   font-size: 16px;
   text-transform: uppercase;
   font-family: Plumb-B;
-  background-size: cover;
+  background-size: 10px 42px, auto, cover, cover;
   background-repeat: no-repeat;
   text-align: center;
+  background-position: left center, left center, center, center;
 }
 
 .algorithm__step--link {
-  background-image: linear-gradient(rgb(2 2 2 / 0.31), rgb(2 2 2 / 0.31)), url("../img/link_to_change.png");
+  background-image: url("../img/treugolnik_zh.svg"), url(../img/step-shadow.png), linear-gradient(rgb(2 2 2 / 0.31), rgb(2 2 2 / 0.31)), url("../img/link_to_change.png");
 }
 
 .algorithm__step--balance {
-  background-image: linear-gradient(rgb(2 2 2 / 0.31), rgb(2 2 2 / 0.31)), url("../img/cash.png");
+  background-image: url("../img/treugolnik_z.svg"), url(../img/step-shadow.png), linear-gradient(rgb(2 2 2 / 0.31), rgb(2 2 2 / 0.31)), url("../img/cash.png");
 }
 
 .algorithm__step--skin {
-  background-image: linear-gradient(rgb(2 2 2 / 0.31), rgb(2 2 2 / 0.31)), url("../img/get_skins.png");
+  background-image: url("../img/treugolnik_g.svg"), url(../img/step-shadow.png), linear-gradient(rgb(2 2 2 / 0.31), rgb(2 2 2 / 0.31)), url("../img/get_skins.png");
 }
 
 
@@ -235,6 +236,10 @@
 .exchange-link {
   width: 60%;
   height: 90px;
+  background-image: url(../img/treugolnik_zh.svg), url(../img/step-shadow.png);
+  background-size: 10px 42px, auto;
+  background-position: left center, left center;
+  background-repeat: no-repeat;
   background-color: #15181b;
   border-radius: 3px;
   margin-bottom: 10px;
@@ -313,6 +318,10 @@
 .stim-name {
   width: 38%;
   height: 90px;
+  background-image: url(../img/treugolnik_zh.svg), url(../img/step-shadow.png);
+  background-size: 10px 42px, auto;
+  background-position: left center, left center;
+  background-repeat: no-repeat;
   background-color: #15181b;
   border-radius: 3px;
   margin-bottom: 10px;
@@ -826,14 +835,14 @@
   background-clip: padding-box;
   outline: 0;
   width: 576px;
-  height: 651px;
+  height: 614px;
   pointer-events: auto;
 }
 
 .modal-window {
   width: 100%;
   height: 100%;
-  background-size: auto, 517px 467px;
+  background-size: auto, 517px 430px;
   background-position: center top, center bottom;
   background-repeat: no-repeat;
   padding: 273px 51px 86px;
@@ -863,22 +872,14 @@
   counter-reset: li;
 }
 
-.list-second__item,
 .modal-window__item {
   line-height: 19px;
   margin-bottom: 8px;
 }
 
-.list-second__item::before,
 .modal-window__item::before {
   counter-increment: li;
   content: counters(li, ".") ". ";
-}
-
-.modal-window__item.beforenone::before {
-  counter-increment: li;
-  content: counters(li, ".") ". ";
-  /* display: none; */
 }
 
 .modal-window.active {
@@ -1019,7 +1020,8 @@
   width: 18px;
   height: 18px;
   top: 30px;
-  background-image: url(../img/sale-arrow-down.png);
+  background-image: url(../img/sale-arrow-down.svg);
+  background-size: 18px 18px;
   background-repeat: no-repeat;
 }
 
@@ -1064,11 +1066,11 @@
 @media (min-width: 576px) {
   #exchange .modal-dialog {
     max-width: 576px;
-    margin: 1.75rem auto;
+    margin: 3.75rem auto;
   }
   #sale .modal-dialog {
     max-width: 614px;
-    margin: 1.75rem auto;
+    margin: 6.75rem auto;
   }
 }
 
@@ -1084,8 +1086,8 @@
   }
   /* modal-exchange */
   .modal-exchange {
-    width: 285px;
-    height: 429px;
+    width: 300px;
+    height: 470px;
     margin: 0 auto;
   }
   .modal-window--1 {
@@ -1101,14 +1103,20 @@
     background-image: url("../img/w-4-m.png"), linear-gradient(to right, #1b1312, #340d03);
   }
   .modal-window {
-    padding: 135px 30px 51px;
-    background-size: auto, 243px 342px;
+    padding: 135px 10px 51px;
+    background-size: auto, 300px 342px;
   }
   .window__header {
     font-size: 18px;
   }
   .window__text {
     font-size: 14x;
+  }
+  .modal-window__list {
+    font-size: 14x;
+  }
+  .modal-window__item {
+    line-height: 16px;
   }
   .exchange__buttons {
     width: 180px;
