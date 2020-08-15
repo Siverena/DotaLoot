@@ -614,12 +614,17 @@ login__balance:hover {
   z-index: 10;
 }
 
+.header__content-cont .container.flex-box-row {
+  height: 100%;
+}
+
 .header__content-cont {
   min-height: 80px;
   background-color: rgba(29, 25, 30, 0.50);
   /*    z-index: 100;*/
   position: relative;
   padding: 0 10px;
+  height: 80px;
 }
 
 .shrink {
@@ -726,6 +731,15 @@ login__balance:hover {
   }
   .bonus-pay {
     margin-top: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__content-cont .container.flex-box-row {
+    height: auto;
+  }
+  .header__content-cont {
+    height: auto;
   }
 }
 
