@@ -188,13 +188,6 @@ header a {
   margin-left: auto;
 }
 
-.nav__menu--auth {
-  /*
-	margin-left: auto;
-	margin-right: 25px;
-*/
-}
-
 .nav__item--auth {
   padding: 0 12px;
 }
@@ -695,9 +688,6 @@ login__balance:hover {
   }
   .nav_new {
     display: none;
-  }
-  .autorization {
-    /* width: 133px; */
   }
 }
 
