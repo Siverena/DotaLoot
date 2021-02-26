@@ -29,7 +29,7 @@
                         <a class="nav__link" href="midas.php"><span>Мидас</span></a>
                     </li>
                     <li class="nav__item-f">
-                        <a class="nav__link" href="dota.html"><span>18+</span></a>
+                        <a class="nav__link" href="modals.php"><span>Модалки</span></a>
                     </li>
                 </ul>
 

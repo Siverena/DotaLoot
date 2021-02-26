@@ -1,0 +1,110 @@
+.modal__free-item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-clip: padding-box;
+    outline: 0;
+    width: 800px;
+    height: 833px;
+    pointer-events: auto;
+}
+
+.modal__free-item .modal-window {
+    background-image: url(../img/free-item-d.png), linear-gradient(to bottom right, #0a1015, #340d03);
+    display: block;
+    background-size: auto, 370px 471px;
+    padding: 52% 0 8px;
+}
+
+.modal__free-item .window__header {
+    font-size: 18px;
+    font-family: Plumb-B;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+
+.modal__free-item .window__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 19px;
+}
+
+.window__button-take,
+.window__button-close {
+    width: 114px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid #e65601!important;
+}
+
+.window__button-take .button-t,
+.window__button-close .button-t {
+    background-color: transparent;
+    white-space: nowrap;
+}
+
+.window__button-take:hover,
+.window__button-close:hover {
+    background-image: linear-gradient(to right, #ec6502, #d22300);
+    border: none!important;
+}
+
+.modal__free-item .window__text {
+    font-size: 16px;
+    font-family: Plumb-L;
+    opacity: 0.1;
+}
+
+.free-item__content {
+    width: 300px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    #free-item .modal-dialog {
+        max-width: 800;
+        margin: 1.75rem auto;
+    }
+}
+
+@media (max-width: 800px) {
+    #free-item .modal-dialog {
+        max-width: 576px;
+        margin: 1.75rem auto;
+    }
+    .modal__free-item .modal-window {
+        background-size: 90%, 370px 471px;
+        padding: 52% 0 12px;
+        width: 100%;
+        height: 100%;
+    }
+    .modal__free-item {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 576px) {
+    #free-item .modal-dialog {
+        max-width: 576px;
+        margin: 1.75rem auto;
+    }
+    .modal__free-item .modal-window {
+        background-size: 90%, 290px 68%;
+        padding: 47% 0 12px;
+    }
+    #free-item .modal-window img {
+        width: 100%;
+    }
+    .free-item__content {
+        width: 270px;
+        margin: 0 auto;
+    }
+}

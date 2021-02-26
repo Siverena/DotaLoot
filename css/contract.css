@@ -1,5 +1,4 @@
 .my-items__add {
-
     display: none;
     width: 127px;
     height: 28px;
@@ -22,7 +21,6 @@
     display: -ms-flexbox;
     display: flex;
     color: #f74f22;
-
 }
 
 .my-items__header,
@@ -62,8 +60,6 @@
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 45px;
-
-
 }
 
 .start {
@@ -90,8 +86,6 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
-
 }
 
 .start__stat-cont {
@@ -124,7 +118,6 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-
 }
 
 .start__stat-quant {
@@ -136,10 +129,14 @@
 }
 
 .start__stat-many {
-    width: 241px;
+    width: 116px;
     margin-top: 10px;
+}
 
-
+.start__stat-LB {
+    width: 116px;
+    margin-top: 10px;
+    background-image: linear-gradient(61deg, #ec6502, #d22300);
 }
 
 .start__stat-text--white {
@@ -166,21 +163,14 @@
     -ms-flex-align: center;
     align-items: center;
     border-radius: 5px;
-
-
-
     width: 100%;
     text-align: center;
-
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#ec5b02));
     background-image: linear-gradient(to bottom, #ff0000, #ec5b02);
-
     margin-bottom: 10px;
     box-sizing: border-box;
-
-
 }
 
 .start__button-text {
@@ -205,18 +195,18 @@
 .start__button:hover .start__button-text {
     background-color: transparent;
     color: #fff;
-
-
 }
 
 .button-clear {
-
     margin-bottom: 10px;
 }
+
 
 /*
 .button-start {}
 */
+
+
 /*
 
 .button-start:hover {
@@ -225,15 +215,10 @@
 }
 */
 
-
-
 .contract-item {
-
     width: 144px;
     height: 135px;
     margin: 6px;
-
-
 }
 
 .none__nomber {
@@ -277,7 +262,6 @@
     display: flex;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), to(#000));
     background-image: linear-gradient(to right, transparent 50%, #000);
-
 }
 
 .my-predmet-item__price--contr {
@@ -286,7 +270,6 @@
     font-family: Plumb-L;
     font-size: 19px;
     color: #fff;
-
 }
 
 @media (max-width: 1025px) {
@@ -294,27 +277,21 @@
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
-
     .start {
         margin: 0 auto;
         width: 100%;
         height: auto;
-
     }
-
     .start__stat-quant,
     .start__stat-summ {
         width: 48%;
     }
-
     .start__stat-many {
         width: 100%;
     }
-
     .start__button {
         width: 48%;
     }
-
     .contract-button-cont {
         width: 100%;
         display: -webkit-box;
@@ -324,20 +301,15 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
-
     .contract-items {
         min-height: 312px;
         height: auto;
         width: 100%;
         -webkit-box-pack: space-evenly;
-
         -ms-flex-pack: space-evenly;
-
         justify-content: space-evenly;
         margin-top: 20px;
-
     }
-
     .my-items__cont {
         -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -345,37 +317,28 @@
     }
 }
 
-
 @media (max-width: 769px) {
     .start-contract-container {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
-
     .start,
     .start__stat-many {
         width: 100%;
         /*        min-width: 276px;*/
-
     }
-
     .start__stat-quant,
     .start__stat-summ {
         width: 48%;
     }
-
     .contract-items {
         min-height: 312px;
         height: auto;
-
         -webkit-box-pack: space-evenly;
-
         -ms-flex-pack: space-evenly;
-
         justify-content: space-evenly;
         margin-top: 20px;
     }
-
     .my-items__cont {
         -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;

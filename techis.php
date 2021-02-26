@@ -142,14 +142,21 @@ include_once('m/auth.php');
 
                     <div class="techis__many-cont">
                         <div class="techis__summ gradient">
-                            <p class="techis__summ-text">Введите необходимую сумму для ставки.</p>
-                            <form action="" class="techis__form" method="post">
-                                <input type="text" class="techis__summ-input" value="Введите сумму">
+                            <p class="techis__summ-text">Выберите сумму для ставки.</p>
+                           
+                               <div class="techis__bets">
+                               <div class="techis__bet">10</div>
+                               <div class="techis__bet">25</div>
+                               <div class="techis__bet">50</div>
+                               <div class="techis__bet">100</div>
+                               <div class="techis__bet">250</div>
+                               <div class="techis__bet">500</div>
+                               </div>
                                 <button type="submit" class="techis__summ-button ">
                                     <p class="techis__summ-button-text">Старт</p>
                                 </button>
 
-                            </form>
+                            
                         </div>
                         <div class="techis__live gradient">
                             <p class="techis__live-text"><span class="techis__live-text--orange">Live</span> результаты </p>

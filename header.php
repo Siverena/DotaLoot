@@ -14,7 +14,7 @@
 
                     <!--                   Содержимое меню-->
                     <div class="show-cont">
-                        <ul class="nav__menu nav__menu-main">
+                    <ul class="nav__menu nav__menu-main">
                             <li class="nav__item">
                                 <a class="nav__link" href="midas.php"><span>Мидас</span></a>
                             </li>
@@ -25,22 +25,19 @@
                                 <a class="link-contract nav__link " href="contract.php"><span>Контракты</span><img class="nav_new" src="img/new.png" alt="">
                                 </a>
                             </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="techis.php"><span>Тeчис</span></a>
-                            </li>
-                            <li class="nav__item">
+
+                            <!-- <li class="nav__item">
                                 <a class="nav__link" href="top.php"><span>Топ</span> </a>
-                            </li>
+                            </li> -->
                         </ul>
                         <ul class="nav__menu nav__menu-dop">
-                            <li class="nav__item">
-                                <a class="nav__link" href="dota.html"><span>18+</span></a>
+                        <li class="nav__item">
+                                <a class="nav__link" href="techis.php"><span>TECHIES</span></a>
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link" href="dota.html"><span>Группа VK</span></a>
                             </li>
                         </ul>
-
 
                         <div class="autorization">
 
@@ -55,8 +52,13 @@
                                         <a class="login__btn login__btn--exit" href="?logout=1"></a>
                                     </div>
                                     <div class="login__string-wrap">
-                                        <button class="login-button login__link--bal" type="button" data-toggle="modal" data-target="#Modal-4"> 10 000 </button>  
-                                        <button class="login__btn login__btn--to-up" type="button" data-toggle="modal" data-target="#Modal-4"> + </button>
+                                    <button class="login-button login__link--bal" type="button" data-toggle="modal" data-target="#Modal-4"> 10 000 РУБ</button>  
+                                        <button class="login__btn login__btn--LB" type="button"> LB </button>
+                                        <p class="login__link--bal-lb">8 000</p>
+                                        <button class="login__btn login__btn--question" type="button"> ? 
+
+                                        <p class="login__btn--question__drop-text">При пополнении баланса, продаже предметов и создании контрактов ты получаешь LootBack бонусы! За них можно открывать дополнительные уникальные кейсы с топовыми предметами!</p>
+                                        </button>
                                     </div>
                                 </div>
                                 <a class="login__ava-link" href="lk.php">
@@ -123,11 +125,9 @@
                         <div class="balance__text">Введите необходимую сумму для пополнения счёта</div>
                         <form method="post" action="" class="form form-1 clearfix">
                             <input type="text" class="balance__input">
-                            <button type="submit" class="balance-button flex-box-row">
-                                <p class="button-t button-t-h">Пополнить</p>
-                            </button>
+
                         </form>
-                        <div class="balance__text">У меня есть промокод!</div>
+                        <div class="balance__text">Есть промокод?</div>
                         <form method="post" action="" class="form form-2">
                             <input type="text" class="balance__input balance__input-promocode">
                             <button type="submit" class="balance-button flex-box-row">
@@ -186,6 +186,14 @@
 
                         </div>
                         <!--Вопрос конец-->
+                        <div class="balance__buttons">
+                        <button type="submit" class="balance-button flex-box-row">
+                                <p class="button-t button-t-h">Пополнить</p>
+                            </button>
+                            <button type="submit" class="balance-button flex-box-row">
+                                <p class="button-t button-t-h">Пополнить <br> кредитами</p>
+                            </button>
+                        </div>
 
 
                         <div class="balance__text">Бонусы при пополнении</div>

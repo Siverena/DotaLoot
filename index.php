@@ -47,6 +47,9 @@ include_once('m/auth.php');
 
 				</div>
 			</div>
+			<div class="bunner__gift">
+
+			</div>
 
 			<?php }?>
 			<?php if(isAuth()){?>
@@ -312,10 +315,60 @@ include_once('m/auth.php');
 
 					<?php }?>
 
+					<div class="bunner__gift">
+						<div>Войти через: <a href="" class="bunner__gift-vk" data-toggle="modal" data-target="#free-bonus" >VK</a> <a href="" class="bunner__gift-steam" data-toggle="modal" data-target="#free-bonus">STEAM</a></div>
+					</div>
+
+
+
+
+
+
 
 
 					<section class="cases">
+						<div class="cases__cont cases__role"><div class="razd-name "><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYgAAAAmCAYAAADeIgwMAAAFLUlEQVR4nO2dTZLbNhBGmxQljePUeDfl3CE5Re5/iiySmlUyWaTGlsQsBi19bAIgZSs1UOq9KpZAsNEASLk/4YeebhxHAwCAd+CX7hZernWyOugPVzoGAID34SZqUvEzEw4EAgCgbWrC8K2ikRtFdPEaAgEA0C5RAHKCUMvLCcGYKaN2nZ8jEAAAbVIThzVpPS+tO4xiNxMJBAIAoD2WBCB+xnTOX0kMzKajirMdAgEA0D4lYagJhuICsLSDaXIdgQAAaIva6CEnCLl0ZLRlkZiNMBAIAIA2iYG/Jgo58XBUGNYsWp/tEQgAgPshCkJNPJw4etBDbWYgEAAA7VIThJpQRB+l0UMJppgAAO6QkjD0cl3x0cOp4K8oHAgEAEB75BanS6KwNIrw0UMvaRWL0ktzbHMFAGiI0q4lPV8jFIquOZzEV6xzjOcIBABA+5R2Lak4qEgoKg59+owCkd0C2xsAALRMaXurCkIcQfSFvJjO+T3DCAIAoF2WXoibjiaeHv/Ienl++Rzsx4X0aMYIAgDgnqi9JKe//v9KRyy35r2JM4P9+ukmrc4wm8/6Tttoc43/b6lHF25UXdXulLGPZWJenOuLCt6Z2bFQf5w7tFBG/fU2b4fX6fOQ/ukMUrdf93Lax5PYmuRrPdtkF/dfx3sS2+Vt1z55XboLQ+dSvW29Te9rrMf95p6bljvZdAju5/G74If2Vfupz3mT0huxHTK+3cbb4fV7+Z2ZHYKNp03sh9Qu7aPeoz7Z6DPupEyf/B7NbC/lBrE7iv02+dmm6zvp+wep+yHYD+l8n9KbdFjK8/RG2tSHNu2kP348pPu0T+W97Dbj0++V+/M+uC//ru3F5yjl9uleHO3yfNbNzjw9rjK7mueXn5P/31LOtfGys7RI/V8F2mtfyljyWfrfB7/nb6bG4JDzGwN1LrjEYKCBJQaqpX4cQ5lcm2Ow1vxo6z51tOjt0KCr7dUAebJpn2O7Y2Byu4NN75dej6Lo13QxzfN7M/sq7ddgaWLjYqJipgHX++v/cD3InqTcYNNnpAKo6ZwoeVA9Sp1+7zzQblK9WoeKjd6/r2LvweqY8jsz+2LTOWX3rz8m/L7pcx3E7yGU6ZPfXTo/hHt+tLdgPyY7v49bqeM1nR9SngrOwcz+sUuAd9+PZvZnqjfGJA/+GrS3ZvYS8l18/Bl/SP3/MbXJ+7S1i3i9mtnH1LcvZvYpldmnz4/Sr520fWdTUXa/Lh69+Pwh2TyY2d92ERNLbfQyr3b5bvo98Geq32+v139cKP5sb0bH36QGAHgn5n+TOv7o1B1KeuTznh5/T+V9eultiuj55Se7/AjRo5bHNlcAgDtCR8hjOJS4dhBtx5CfBYEAAGiXKAal9FuQf9utFNcd14hDTJsZAgEA0DolYdANDrqpxMto+jxtFNJ6PZZDIAAA7oAoEpof35COCxs6cjhZfUQxAYEAAGgH3aGY20mpn5pWcagJRO2I9ggEAECD5ITCMucqDH0oF+1Lo4eiUCAQAAD3RWnXUe59JS2zJAgzEAgAgHa55kW1+PKp5scF6VWjCAQCAOB+iGsFXThqU0y8BwEA8D9Bdy45tSmk+F/+xOu1ba3ZHU0IBABAW8QF6tJidbTPjR7UZs3nJI1AAAC0z9JaRG60UfNRE4gzCAQAQHuU3ofIbXnNjTZy/q5Jm7HNFQCgWWLAXzvdZAt2a/JYgwAAaJycSCi1Reklv4vXEAgAgLaJo4LctVvWcwaBAAC4D0piUPsLlNf4mfEvrUgArziD9ogAAAAASUVORK5CYII=" alt=""><p><span class="razd-name-change">Новый год и Diretide</span></p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYgAAAAmCAYAAADeIgwMAAAFc0lEQVR4nO2dzW7jNhSFj+TMFF003QVdtG8w7/8i7RsUKIrsGnQ649ixujAvfHxDUrKRmcjA9wGCaZKXomj5HvNPHqZPuoThotzSdGH+Or+/TTEAALCcu0b8pULQolUOHh8AYOVkgegJw7WiURODoZMGAAArwAUiC0BNEHpxNWc/VWw839CwAwCAdyYEoicOS8L+vuXwJ8uHSAAArJw7zQtAfs3hjDv8mvP3XkUvHwAAvCO1SeqWMPQEwwkBmHP4CAIAwIppzUEMqgtCLZyZNC8StZ4DvQgAgBWR5yAGtYVgaKQ7LgxLJq2X9jYAAOA709oHIb0WhJ54BLn34IfnAQCAlZOHmC49Mr3eQwsEAwBghfR6EFJbGEZLd6L3cGiUhxgAANwItWWuPVGY60VE72G0sItFa9Mc8xAAACvDJ6mvFQrH5xwOVpZSeOq8RygAAFbA3D6Ilji4SDguDmN5zQLByiUAgBtgTO9by1tdEHIPYmzE5XCtXAAAWCm1jXLL9kE83P9dLfHx6ZeUf5oJ05MAAFghuQfh9DbJ+a//f8qR7ZbsmwAAgJUyTJ9eDRGN6ajFjXq4/0uS9Pj0myTp4f7P71z3zF7HHtGzpE05tpJ2JW0o7+/Ka8yR7MsxlbyxTDfsDpJeyjleSvyLTpPwUeZXKyvsnq28rZWVy9xa+KXYb4vtvqRF3b4W+0nSl5I2lHPFNXj+XWmLXUmPtog6baxOg+ULMY82Ophd9Poms9nr/AfHVModLRyfz2BpSnm8dxlzWVHn0fJE+9X23kTeaIMh5fOyo67xvraAImxHtRdguN2hYhftF+kbnT7bjZXry8Rrw7H5OvO1ep54jXP59foPNr92r5es7vHq9cnt6SMCG73+XMJmTLYR7zZ5hCGPOuQ26T2lwT9XLyuff8mIxjWjHtnmrc/zzUZi5vZBXEM4OCe+5OEEpOPNEI4yboyw20v6QSfn+8VstpJ+0tFRStJ/kj7q5OTCJhyd7LzPJc+POjnUUdJnSR+K7Qcde0RR5udSl3DCUe5zif+32Hwp9d7o3InvdO589yn+udQxPuR9ifso6UmnL/XW8t/pJGI7a9+dzm/+OF+0wVDq6aKwt/whrgeLc0cc4hdfuHAaWTxedP75hkOMa76ztBCNO507yajzXidRCEfl4jrq3EF5/cdUpjssFxl3IC5Ift0bO+dg9tnZuAD4/Rf1jnJCuKP9pkr+KDvXP+4JF9BsK72+ZnciYRtHFoHcRvlpCJG/NiqQ2zZs5hyZ31s5bxab/CPF65HDuW1qqyZrdcuCew21ct9ahJbkvUrYQiCy+i6v0MP9H2cpj0+/6nQD+dGLa93ER/hParg9dgvi8w8p5+XKtCXpQd7Q2rOrbX7N+Wvf4VqZHpe/3IdGfCt/La7nMC7ZxLs0rsc1zutbOLyr6tHrQeRunh/Ozw27nL9mCwAAK8UFIotBK3x08sfVSt61qwlDTRz6vQUAAFgFuQfREgafxPLJvbDxcB42ypOaiAMAwA1QG2LKIuHxeYd0nrfwnsNB/R4FAACsGJ+kltrL5Dzs4tATiN6R8+dzAADAOxNLC1vLufKyOF93XVv55CJyqVAAAMCKmNsH0XLceVNMtpkTBAAAWDl5FdNSovfQGmLy8NJeBAAArIi5fRAezs9X6g0xsQ8CAODGyTup3YH3hpCGmfTeslZWNAEA3AC1jXIRruFC0no0R00Qaq+9MAAAvDOtfRA9ar2NXhk9gQAAgJXSWubaegJhfjRujSU9hN5yWgAAWAGtp7kuHW7STL4lcYgDAMAKac1BxHunNyndY+lQFAAArIjaw/qk+vDRWzpzhAEAYOW09kG0HPglfyrUKwcAAFbO/xihfiFazbIGAAAAAElFTkSuQmCC" alt=""></div>
 
+
+						<a href="/case/34" class="case case-LB">
+						<div class="case__cont">
+							<div class="case__img-cont">
+								<img src="https://dotaloot.pro/img/cases/новогодний io_1607779243311.png" class="case__img">
+							</div>
+							<div class="case__text">
+								<div class="case__text-prise">
+									<span class="case__text-new case__text-role">359</span><span class="rotate  case__prise-before">LB</span>
+								</div>
+								<!---->
+								<p class="case__text-name">НОВОГОДНИЙ IO</p>
+							</div>
+							<div class="case__buy">
+								<p class="button-t">Открыть</p>
+							</div>
+						</div>
+						</a>
+						<a href="/case/31" class="case case-LB">
+						<div class="case__cont">
+							<div class="case__img-cont">
+								<img src="https://dotaloot.pro/img/cases/cyberpunk 2077_1605593517154.png" class="case__img">
+							</div>
+							<div class="case__text">
+								<div class="case__text-prise">
+									<p class="case__text-new case__text-role"> <span>3559</span> </p><p class="rotate  case__prise-before"> <span>LB</span> </p></div>
+									<!---->
+									<p class="case__text-name">DIRETIDE</p>
+								</div>
+								<div class="case__buy">
+									<p class="button-t">Открыть</p>
+								</div>
+							</div>
+						</a> 
+						<a href="/case/33" class="case case-LB"><div class="case__cont"><div class="case__img-cont"><img src="https://dotaloot.pro/img/cases/аркана на windranger _1605593459764.png" class="case__img"></div><div class="case__text"><div class="case__text-prise"><span class="case__text-new case__text-role">135555555555599</span><span class="rotate  case__prise-before">LBgghbfghgfhgfhfgh</span></div><!----><p class="case__text-name">Hallowed Chest</p></div><div class="case__buy"><p class="button-t">Открыть</p></div></div>
+						</a>
+							
+
+						</div>
+	
 						<div class="cases__cont  cases__free">
 							<div class="razd-name">
 								<img src="img/left.png" alt="">

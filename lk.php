@@ -132,13 +132,31 @@ include_once('m/auth.php');
                             </div>
                             <div class="items  strong-4__item-cont">
                                 <!--predmet-item start-->
-                                <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r1"></div>
-                                    <div class="my-predmet-item__text">
+                                <div class="my-predmet-item my-predmet-item-lb lk-item--margin">
+                                <div class="my-predmet-item__img" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcU8rA1YXkHfVeHixMfSV1JjIw1SuL6aLwJt3P33dDxW6c74kYLYlK6gYb6HwTsAv8MhjLqRotnzilXk-0dqNmjzdoSQJwBvMlGB_E_-n7kPpm_e3A&quot;) center center no-repeat;"></div>
+
+                                    <div class="my-predmet-item__text" style="border-top: 2px solid rgb(230, 93, 2);">
                                         Название предмета
+                                    </div>
+                                    <div class="properties">
+                                        <div class="my-predmet-item__price"> 159Р </div>
+
+                                        <div class="status-cont">
+                                            <button class="status-cont__link status-cont--status2" data-toggle="modal"  data-target="#sale" href="">
+                                                <span>Забрать</span>
+                                            </button>
+           
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--predmet-item end-->
+                                <!--predmet-item start-->
+                                <div class="my-predmet-item lk-item--margin">
+                                <div class="my-predmet-item__img" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUivB9aSQPZSumixdvSX2J1NwkYv7eoJBV00v_3cC9Poo7izNeJkaHyYuiIwTMI7Jdw2L6Yrduk0Q2wqRU9Zmz1JoLDcFQ_Yg7Oug_pN4EPgYc&quot;) center center no-repeat;"></div>
+                            
+                                    <div class="my-predmet-item__text" style="border-top: 2px solid rgb(75, 105, 255);">
+                                    Shoulders of the Survivor
                                     </div>
                                     <div class="properties">
                                         <div class="my-predmet-item__price"> 159Р </div>
@@ -161,12 +179,10 @@ include_once('m/auth.php');
 
                                 <!--predmet-item start-->
                                 <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r1"></div>
-                                    <div class="my-predmet-item__text">
-                                        Название предмета
+                                <div class="my-predmet-item__img" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUwpg5TWFXvT_Gjw8rBHF98GhBe74WsJgpvwefJfQJV6d2mm47Elf_LJ7KIqWJc5cpjnujNypvwiUS7pV1sNm73ddXBcwE8YljS8gK_kr_nhMO76MybmiZh6SZ37XvcyxG20hoYcKUx0hwV6dJT&quot;) center center no-repeat;"></div>
+                                    
+                                    <div class="my-predmet-item__text" style="border-top: 2px solid rgb(75, 105, 255);">
+                                    Комплект Feast of Abscession
                                     </div>
                                     <div class="properties">
                                         <div class="my-predmet-item__price"> 159Р </div>
@@ -188,11 +204,9 @@ include_once('m/auth.php');
 
                                 <!--predmet-item start-->
                                 <div class="my-predmet-item lk-item--margin">
-                                    <div class="my-predmet-item__img">
-                                        <img src="img/item2.png" alt="">
-                                    </div>
-                                    <div class="line item-image-r1"></div>
-                                    <div class="my-predmet-item__text">
+                                <div class="my-predmet-item__img" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcU4vBxaSV7eRvG5mMvBUlp7KztEobW3L0kygPDJImwR7ovvzdeNwPLyMb2Ew20BsMd0372Y8dj0jVfi80o_MGynOsbLJYGfipiA&quot;) center center no-repeat;"></div>
+                                    
+                                    <div class="my-predmet-item__text" style="border-top: 2px solid rgb(75, 105, 255);">
                                         Название предмета
                                     </div>
                                     <div class="properties">
@@ -232,61 +246,44 @@ include_once('m/auth.php');
         <div class="modal-dialog" role="document">
             <div class="modal-exchange">
                 <!-- <div class="modal-body ">-->
-
                 <div class="modal-window modal-window--1 ">
                     <h2 class="window__header">Новая система вывода предметов</h2>
-                    <p class="window__text">Возможно выбранного предмета сейчас нет в
-                    наличии или он имеет ограничения на обмен.
-                    Не переживайте!)
-                    Мы приготовили для вас новую и
-                    более быструю систему вывода
-                    предметов</p>
+                    <p class="window__text">Возможно выбранного предмета сейчас нет в наличии или он имеет ограничения на обмен.  Не переживайте!)  Мы приготовили для вас новую и более быструю систему вывода предметов</p>
                 </div>
                 <div class="modal-window modal-window--2 ">
                     <h2 class="window__header">Как вам будет удобно</h2>
                     <p class="window__text">Вы можете выбрать, как именно получить предмет</p>
 
                     <ol class="modal-window__list">
-                    <li class="modal-window__item">Вывести ваш предмет обычным трейдом, или заменить его
-                                        на аналогичный по стоимости.</li>
-                    <li class="modal-window__item">Получить стоимость этого предмета на ваш Steam-аккаунт икупить его самостоятельно на официальной торговой площадке Steam или потратить
-                                        его стоимость на что-то более серьезное. <br> На ваш аккаунт придет полная стоимость предмета в течении пары секунд.</li>
-                    <li class="modal-window__item">Продать предмет на нашем сайте с бонусом 15%</li>
-                    <li class="modal-window__item">Использовать его в контрактах для получения более ценного предмета)</li>
+                        <li class="modal-window__item">Вывести ваш предмет обычным трейдом, или заменить его
+                                            на аналогичный по стоимости.</li>
+                        <li class="modal-window__item">Получить стоимость этого предмета на ваш Steam-аккаунт икупить его самостоятельно на официальной торговой площадке Steam или потратить
+                                            его стоимость на что-то более серьезное. <br> На ваш аккаунт придет полная стоимость предмета в течении пары секунд.</li>
+                        <li class="modal-window__item">Продать предмет на нашем сайте с бонусом 15%</li>
+                        <li class="modal-window__item">Использовать его в контрактах для получения более ценного предмета)</li>
                     </ol>
-
                 </div>
                 <div class="modal-window modal-window--3">
                     <h2 class="window__header">«Только логин Steam</h2>
-
                     <p class="window__text" >Что бы получить стоимпость предмета на баланс Steam, вам нужно указать в профиле нашего сайта свой логин Steam. </p>    
                     <p class="window__text" style="color:#f74f22;">Ваш логин - это не ваш никнейм!</p>    
-
                     <p class="window__text">  Логин — это то, что вы вводите при входе в аккаунт. Узнать его можно здесь, в правом верхнем углу - <a  class="window__link" href="https://steamcommunity.com/ ">Узнать</a>.</p>
-    
                 </div>
                 <div class="modal-window modal-window--4">
                     <h2 class="window__header">Пополнение баланса на Steam</h2>
-
-                    <p class="window__text" >Через пару секунд после нажатия «Пополнить» вы получите баланс на свой Steam
-аккаунт и сможете купить выигранный вами предмет на Торговой площадке, или потратить
-баланс на покупку другого понравившегося вам предмета, Battle Pass и даже Dota+ </p>   
-<p class="window__text" >Каждые 24 часа мы обновляем цены всех предметов на сайте, что бы выведенный
-вами предмет всегда можно было купить по его актуальной цене </p>   
-
+                    <p class="window__text" >Через пару секунд после нажатия «Пополнить» вы получите баланс на свой Steam аккаунт и сможете купить выигранный вами предмет на Торговой площадке, или потратить баланс на покупку другого понравившегося вам предмета, Battle Pass и даже Dota+ </p>   
+                    <p class="window__text" >Каждые 24 часа мы обновляем цены всех предметов на сайте, что бы выведенный вами предмет всегда можно было купить по его актуальной цене </p>   
                 </div>
-            <div class="exchange__buttons">
-            <button class="site-btn site-btn--orange exchange--prev">
-                <p class="button-t">Назад</p>
-            </button>
-            <button class="site-btn site-btn--orange exchange--next">
-                <p class="button-t">Далее</p>
-            </button>
-
+                <div class="exchange__buttons">
+                    <button class="site-btn site-btn--orange exchange--prev">
+                        <p class="button-t">Назад</p>
+                    </button>
+                    <button class="site-btn site-btn--orange exchange--next">
+                        <p class="button-t">Далее</p>
+                    </button>
                 </div>
             </div>
         </div>
-
     </div>
     <!--    exchange end-->
 
