@@ -1,0 +1,16 @@
+.page-name-gift {
+    margin: 0 auto;
+    width: fit-content;
+    background-image: url("../img/gift.png")!important;
+    height: 117px!important;
+    width: 286px;
+}
+
+.page-name__header {
+    font-size: 16px;
+}
+
+.page-name__text {
+    color: #84deff;
+    font-size: 12px;
+}

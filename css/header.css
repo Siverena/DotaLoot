@@ -232,7 +232,7 @@ header a {
     cursor: pointer;
     background: none;
     border: none;
-    margin-top: 3px;
+    /* margin-top: 3px; */
     display: block;
     color: #909090;
     font-family: Plumb-L;
@@ -304,6 +304,7 @@ header a {
     font-family: 'Plumb-L';
     padding: 10px;
     border-radius: 5px;
+    z-index: 20;
 }
 
 .login__btn--question__drop-text::after {

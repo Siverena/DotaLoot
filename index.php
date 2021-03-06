@@ -315,8 +315,8 @@ include_once('m/auth.php');
 
 					<?php }?>
 
-					<div class="bunner__gift">
-						<div>Войти через: <a href="" class="bunner__gift-vk" data-toggle="modal" data-target="#free-bonus" >VK</a> <a href="" class="bunner__gift-steam" data-toggle="modal" data-target="#free-bonus">STEAM</a></div>
+					<div class="bunner-gift">
+						<div class="bunner-gift__links">Войти через: <a href="" class="bunner-gift-vk" data-toggle="modal" data-target="#free-bonus" >VK</a> <a href="" class="bunner-gift-steam" data-toggle="modal" data-target="#free-bonus">STEAM</a></div>
 					</div>
 
 

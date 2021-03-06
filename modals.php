@@ -35,6 +35,7 @@ include_once('m/auth.php');
                 <button data-toggle="modal"  data-target="#free-bonus-w3" class="site-btn" style="color: #000000; padding: 11px;">free-bonus w-3</button>
                 <button data-toggle="modal"  data-target="#free-bonus-w4" class="site-btn" style="color: #000000; padding: 11px;">free-bonus w-4</button>
                 <a href="gift.php">gift.php</a>
+                <a href="open-win.php">open-win.php</a>
             </div>
         </div>
         <?php include_once 'stat.php';?>
@@ -143,40 +144,31 @@ include_once('m/auth.php');
     <!-- free-bonus w3 -->
     <div class="modal fade" id="free-bonus-w3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-free-bonus">
-                <!-- <div class="modal-body ">-->
-  
 
-                <div class="free-bonus-window free-bonus-window--3">
-					
-				<div class="free__header">ПОСЛЕДНИЙ ШАГ</div>
-							<div class="free__item">
-								
-								<div class="free__image" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUorA5OA1jVSvSoxNvsW1h4KEtNs6-2FAZy0PLGcHNHtIvhkdXZk_Xwa77SwWoFvsMl3rCRoImi3A3srxU_a2CiddOcJ1I-fxiOrSNeaGjR&quot;) center center no-repeat;"></div>
+            <!-- <div class="modal-body ">-->
+            <div class="free-bonus-window free-bonus-window--3">
+                <div class="free-bonus-window__cintent">
+                    <div class="free__header">ПОСЛЕДНИЙ ШАГ</div>
+                    <div class="free__item">
+                        
+                        <div class="free__image" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUorA5OA1jVSvSoxNvsW1h4KEtNs6-2FAZy0PLGcHNHtIvhkdXZk_Xwa77SwWoFvsMl3rCRoImi3A3srxU_a2CiddOcJ1I-fxiOrSNeaGjR&quot;) center center no-repeat;"></div>
+                        <p class="free__item-name">Tempest Helm of the Thundergod</p>
+                        <p class="free__item-price">50 РУБ</p>
+                    </div>
+                    <div class="free__content ">
+                        <p class="free__content-type-1">Уведомления Dota-Loot </p>
+                        <p class="free__content-type-1">Получать персональные промокоды, акции и системные уведомления?</p>
+                    </div>					
+                    <div class="free__buttons">
+                        <button class="site-btn site-btn--orange free__btn"><span class="button-t ">Да</span></button>
+                        <button class="site-btn site-btn--orange free__btn"><span class="button-t ">Нет</span></button>
+                    </div>
+                    <div class="free__content ">
+                        <p class="free__content-type-3">Ваше решение никак не повлияет на получение бесплатного предмета. </p>
+                    </div>
 
-								<p class="free__item-name">Tempest Helm of the Thundergod</p>
-								<p class="free__item-price">50 РУБ</p>
-							</div>
-
-							<div class="free__content ">
-								<p class="free__content-type-1">Уведомления Dota-Loot </p>
-								<p class="free__content-type-1">Получать персональные промокоды, акции и системные уведомления?</p>
-							</div>
-							
-							
-							<div class="free__buttons">
-								<button class="site-btn site-btn--orange free__btn"><span class="button-t ">Да</span></button>
-								<button class="site-btn site-btn--orange free__btn"><span class="button-t ">Нет</span></button>
-							</div>
-							<div class="free__content ">
-								<p class="free__content-type-3">Ваше решение никак не повлияет на получение бесплатного предмета. </p>
-
-							</div>
-								
-					
                 </div>
-
-             </div>
+            </div>
         </div>
     </div>
     <!--    free-bonus w3 end-->

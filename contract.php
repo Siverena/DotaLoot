@@ -440,39 +440,39 @@ include_once('m/auth.php');
 
 
                 </section>
-				<!-- Modal-open -->
+				<!-- Contract-open -->
 				<div class="modal fade" id="contract" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog" role="document">
-						<div class="modal-content  win__cont">
+						<div class="modal-content  contract__cont">
 							<!--                <div class="modal-body ">-->
 
 							<div class="bonus__header">ВАШ ВЫИГЫШ</div>
-							<div class="win-item-cont win-item__cont">
+							<div class="contract__item-cont contract__item__cont">
 								
-								<div class="win-item win-item-img" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUorA5OA1jVSvSoxNvsW1h4KEtNs6-2FAZy0PLGcHNHtIvhkdXZk_Xwa77SwWoFvsMl3rCRoImi3A3srxU_a2CiddOcJ1I-fxiOrSNeaGjR&quot;) center center no-repeat;"></div>
+								<div class="contract__item contract__item-img" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUorA5OA1jVSvSoxNvsW1h4KEtNs6-2FAZy0PLGcHNHtIvhkdXZk_Xwa77SwWoFvsMl3rCRoImi3A3srxU_a2CiddOcJ1I-fxiOrSNeaGjR&quot;) center center no-repeat;"></div>
 									<!-- <img class="" src="img/item2.png" alt="" class="win-item"> -->
 									<p>Tempest Helm of the Thundergod</p>
 								
 
 							</div>
-							<div class="win-item-price">
-								<p class="win-item-price__header">Цена LB</p>
-								<div class="win-item-price__platform"> <span>DotaLoot</span><span>Steam</span>	</div>
-								<div class="win-item-price__value"> <span style="color:#e85b01;" >1800 руб</span><span>1500 руб</span>	</div>
+							<div class="contract__item-price">
+								<p class="contract__item-price__header">Цена LB</p>
+								<div class="contract__item-price__platform"> <span>DotaLoot</span><span>Steam</span>	</div>
+								<div class="contract__item-price__value"> <span style="color:#e85b01;" >1800 руб</span><span>1500 руб</span>	</div>
 							</div>
-							<div class="win-battons-modal">
+							<div class="contract__battons-modal">
 								
-							<button class="win-batton-modal win-battons_sell-modal"><span class="button-t">Продать за 118 руб + 354 LB</span></button>
-								<button class="win-batton win-battons_more-modal"><span class="button-t">Забрать</span></button>
-								<button class="win-batton win-battons_take-modal"><span class="button-t">Еще Контракт </span></button>
+							<button class="contract__batton-modal contract__battons_sell-modal"><span class="button-t">Продать за 118 руб + 354 LB</span></button>
+								<button class="contract__batton contract__battons_more-modal"><span class="button-t">Забрать</span></button>
+								<button class="contract__batton contract__battons_take-modal"><span class="button-t">Еще Контракт </span></button>
 
 							</div>
-							<p class="win-text">Ваше решение никак не повлияет на <br>	получение бесплатного предмета. </p>
+							<p class="contract__text">Ваше решение никак не повлияет на <br>	получение бесплатного предмета. </p>
 						</div>
 					</div>
 
 				</div>
-				<!--    Modal-open end-->
+				<!--    contract-open end-->
             </div>
         </div>
         <?php include_once 'stat.php';?>

@@ -27,8 +27,9 @@ include_once('m/auth.php');
 		<div class="section-2 clearfix-1">
 			<div class="container">
 
-				<div class="page-name">
-					<div>Страница открытия кейса</div>
+				<div class="page-name page-name-gift">
+				<div class="page-name__header">Твой бесплатный предмет</div>
+				<div class="page-name__text">Просто открой кейс</div>
 				</div>
 
 

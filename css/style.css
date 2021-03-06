@@ -26,9 +26,7 @@ Frontend Анна http://web-bik.ru/
 @import 'contract.css';
 @import 'open_new.css';
 @import 'gift.css';
-
-/* @import 'open.css'; */
-
+@import 'open-win.css';
 @import 'techis.css';
 @import 'agree.css';
 @import 'profile.css';

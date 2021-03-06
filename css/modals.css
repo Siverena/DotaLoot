@@ -1,3 +1,7 @@
+.modal-dialog {
+    pointer-events: inherit!important;
+}
+
 .modal__free-item {
     position: relative;
     display: -webkit-box;
@@ -108,3 +112,353 @@
         margin: 0 auto;
     }
 }
+
+
+/* 4 модалки старт */
+
+#free-bonus .modal-dialog {
+    pointer-events: inherit;
+}
+
+.free__header {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Plumb-B;
+    padding: 18px;
+}
+
+.free__item {
+    background-image: url(../img/bonus-bg.png);
+    background-size: 154%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    font-family: Plumb-B;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 0 13px 0px;
+}
+
+.free__image {
+    width: 164px;
+    height: 109px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.free-bonus-window--1 .free__image::before {
+    content: '';
+    display: block;
+    background: url(../img/double-r.png);
+    width: 17px;
+    height: 15px;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -32px;
+    top: 47px;
+}
+
+.free-bonus-window--1 .free__image::after {
+    content: '';
+    display: block;
+    background: url(../img/double-l.png);
+    width: 17px;
+    height: 15px;
+    margin-left: 16px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -32px;
+    top: 47px;
+}
+
+.free__content {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Plumb-B;
+    text-align: center;
+    padding: 17px 0 0 0;
+    text-align: center;
+}
+
+.free__item-name {
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+.free__item-price {
+    z-index: 2;
+}
+
+.free__content-type-1 {
+    margin-bottom: 15px;
+}
+
+.free__content-type-2 {
+    opacity: 0.1;
+}
+
+.free__btn {
+    white-space: nowrap;
+    margin: 20px auto 20px;
+    height: 35px;
+    width: 114px;
+}
+
+.free-bonus-window {
+    background-image: linear-gradient(to left, #350d02, #151415);
+    border: 1px solid #f4441a;
+    border-radius: 4px;
+}
+
+.free-bonus-window--1 {
+    width: 370px;
+    margin: 0 auto;
+    /* display: none; */
+}
+
+.free-bonus-window--2 {
+    width: 532px;
+    /* display: none; */
+}
+
+.free-bonus-window--2 .free__item {
+    position: relative;
+}
+
+.free-bonus-window--2 .free__item::before {
+    display: block;
+    position: absolute;
+    top: -42;
+    z-index: 0;
+    width: 747px;
+    height: 239px;
+    background-image: url('../img/free-item-2.png');
+    content: "";
+}
+
+.free__content-type-3 {
+    font-family: Plumb-L;
+    font-size: 16px;
+}
+
+.free__content-type-4 {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.free__link {
+    text-decoration: underline;
+    color: #e85c02;
+}
+
+.free__link-change {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 14px;
+    margin-top: 14px;
+}
+
+.free__link-change-btn {
+    width: 91px;
+    height: 26px;
+}
+
+.free__input {
+    width: 100%;
+    font-size: 16px;
+    font-family: Plumb-L;
+    line-height: 26px;
+    height: 26px;
+    border-radius: 3px;
+    color: #adadad;
+    border: none;
+    background-color: #0e1012;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.free-bonus-window--3 {
+    /* display: none; */
+    width: 485px;
+    margin: 0 auto;
+    padding: 187px 0 31px 0;
+    position: relative;
+    background-image: url(../img/free-3-b.png), linear-gradient(to left, #350d02, #151415);
+    background-size: auto, 295px 439px;
+    background-repeat: no-repeat;
+    background-position: center top, center bottom;
+    border: none;
+}
+
+.free-bonus-window__cintent {
+    width: 295px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+/* .free-bonus-window--3::before {
+    content: '';
+    display: block;
+    background: ;
+    width: 483px;
+    height: 500px;
+    background-repeat: no-repeat;
+    position: absolute;
+} */
+
+.free-bonus-window--3::after {
+    content: '';
+    display: block;
+}
+
+.free-bonus-window--3 .free__image::before {
+    content: '';
+    display: block;
+    background: url(../img/double-r.png);
+    width: 17px;
+    height: 15px;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -32px;
+    top: 47px;
+}
+
+.free-bonus-window--3 .free__content {
+    font-size: 16px;
+}
+
+.free-bonus-window--3 .free__image::after {
+    content: '';
+    display: block;
+    background: url(../img/double-l.png);
+    width: 17px;
+    height: 15px;
+    margin-left: 16px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -32px;
+    top: 47px;
+}
+
+.free__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 37px;
+    margin-bottom: 4px;
+}
+
+.free__buttons .free__btn {
+    margin: 0;
+}
+
+.free-bonus-window--4 {
+    /* display: none; */
+    width: 888px;
+    margin: 0 auto;
+    padding: 0 0 20px 0px;
+}
+
+.free-bonus-window--4 .free__item {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.free-bonus-window--4 .free__image {
+    width: 137px;
+    height: 92px;
+}
+
+.free-bonus-window--4 .free__image-last {
+    background-size: contain!important;
+    transform: scale(1.5);
+}
+
+.free-bonus-window--4 .free__header {
+    width: 100%;
+}
+
+.free-bonus-window--4 .free__btn {
+    margin: 0;
+    margin-top: 42px;
+    height: 62px;
+}
+
+.free-bonus-window--4 .free__content {
+    padding: 14px 202px 0;
+}
+
+.free__item-cont {
+    text-align: center;
+    width: 137px;
+    margin: 20px 5px;
+}
+
+.free__plus {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: Plumb-B;
+    margin-top: 54px;
+}
+
+.free-bonus-window--4 .free__item {
+    background-size: 100% 100%;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    #free-bonus .modal-dialog {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .free-bonus-window--1 {
+        width: 100%;
+    }
+    .free-bonus-window--2 {
+        width: 100%;
+    }
+    .free-bonus-window--2 .free__item::before {
+        width: 100%;
+        background-position: center -7px;
+    }
+    .free-bonus-window--4 .free__content {
+        padding: 14px 10px 0;
+    }
+    .free-bonus-window--4 .free__btn {
+        width: 90%;
+    }
+    .free__item-cont {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .free-bonus-window--4 {
+        width: 100%;
+    }
+    .free-bonus-window--4 .free__content {
+        padding: 14px 20px 0;
+    }
+}
+
+
+/* 4 модалки конец */
