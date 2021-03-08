@@ -410,17 +410,15 @@ include_once('m/auth.php');
 						<div class="modal-content  win__cont">
 							<!--                <div class="modal-body ">-->
 
-							<div class="bonus__header">ВАШ ВЫИГЫШ</div>
 							<div class="win-item-cont win-item__cont">
 								
 								<div class="win-item win-item-img" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUorA5OA1jVSvSoxNvsW1h4KEtNs6-2FAZy0PLGcHNHtIvhkdXZk_Xwa77SwWoFvsMl3rCRoImi3A3srxU_a2CiddOcJ1I-fxiOrSNeaGjR&quot;) center center no-repeat;"></div>
-									<!-- <img class="" src="img/item2.png" alt="" class="win-item"> -->
-									<p>Tempest Helm of the Thundergod</p>
+
 								
 
 							</div>
 							<div class="win-item-price">
-								<p class="win-item-price__header">Цена LB</p>
+								<!-- <p class="win-item-price__header">Цена LB</p> -->
 								<div class="win-item-price__platform"> <span>DotaLoot</span><span>Steam</span>	</div>
 								<div class="win-item-price__value"> <span style="color:#e85b01;" >1800 руб</span><span>1500 руб</span>	</div>
 							</div>

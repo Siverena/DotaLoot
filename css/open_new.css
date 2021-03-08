@@ -781,6 +781,10 @@
     padding: 10px 39px;
 }
 
+.win-text span {
+    color: #f74f22;
+}
+
 .layout-case__case-actions {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -1103,7 +1107,7 @@
 
 .win-item-price {
     text-align: center;
-    padding: 19px 20px 0;
+    padding: 0px 20px 0
 }
 
 .win-item-price__header {
@@ -1190,4 +1194,114 @@
 
 /* new */
 
-.win-box_content {}
+
+/* Modal-open*/
+
+.win-item-cont {
+    width: 100%;
+    height: 189px;
+    background-image: url(../img/win-bg-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.win__cont {
+    max-width: 297px;
+    min-height: 357px;
+    position: relative;
+    margin: 10% auto;
+    border-radius: 5px;
+    background-color: #121517;
+    /*    padding-bottom: 26px;*/
+    /* padding-top: 31px; */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    border-top: 1px solid #ff0000;
+    border-bottom: 1px solid #ec5b02;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    background-size: 1px 100%;
+    position: relative;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ec5b02), to(#ff0000)), -webkit-gradient(linear, left bottom, left top, from(#ec5b02), to(#ff0000));
+    background-image: linear-gradient(to top, #ec5b02 0%, #ff0000 100%), linear-gradient(to top, #ec5b02 0%, #ff0000 100%);
+}
+
+.win-item-img {
+    width: 157px;
+    height: 107px;
+}
+
+.win-battons-modal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 17px 21px 21px;
+}
+
+.win-batton-modal {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-family: Plumb-B;
+    height: 35px;
+    border-radius: 5px;
+    line-height: 35px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: block;
+}
+
+.button-t {
+    margin: 0 auto;
+}
+
+.win-battons_more-modal {
+    background-color: #ffffff;
+    width: 57px;
+    margin-right: auto;
+}
+
+.button-t--mod:hover {
+    background: #15181b !important;
+}
+
+.win-battons_take-modal {
+    background-image: -webkit-gradient(linear, right top, left top, from(#d22300), to(#ec6502));
+    background-image: linear-gradient(to left, #d22300, #ec6502);
+    width: 114px;
+    margin-left: auto;
+}
+
+.win-battons_more-modal {
+    background-image: -webkit-gradient(linear, right top, left top, from(#d22300), to(#ec6502));
+    background-image: linear-gradient(to left, #d22300, #ec6502);
+    width: 114px;
+}
+
+.win-battons_sell-modal {
+    background-image: -webkit-gradient(linear, left top, right top, from(#6df68d), to(#097f30));
+    background-image: linear-gradient(to right, #7bec02, #175e0d);
+    width: 100%;
+    flex-grow: 1;
+    margin: 10px auto 10px;
+}
+
+.win-battons_new-modal {
+    width: 100%;
+    background-image: -webkit-gradient(linear, right top, left top, from(#d22300), to(#ec6502));
+    background-image: linear-gradient(to left, #d22300, #ec6502);
+}
+
+
+/* Modal-open end*/
