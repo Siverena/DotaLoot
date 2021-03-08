@@ -396,7 +396,7 @@ include_once('m/auth.php');
 								<!---->
 							</div>
 
-				<button class="button-open flex-box-row midas-button" type="button" data-toggle="modal" data-target="#Modal-open">
+				<button class="button-open flex-box-row midas-button" type="button">
 					<p class="button-open__text">Старт</p>
 				</button>
 
@@ -405,10 +405,10 @@ include_once('m/auth.php');
 
 
 				<!-- Modal-open -->
-				<div class="modal fade" id="Modal-open" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<!-- <div class="modal fade" id="Modal-open" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content  win__cont">
-							<!--                <div class="modal-body ">-->
+				
 
 							<div class="win-item-cont win-item__cont">
 								
@@ -418,7 +418,7 @@ include_once('m/auth.php');
 
 							</div>
 							<div class="win-item-price">
-								<!-- <p class="win-item-price__header">Цена LB</p> -->
+								
 								<div class="win-item-price__platform"> <span>DotaLoot</span><span>Steam</span>	</div>
 								<div class="win-item-price__value"> <span style="color:#e85b01;" >1800 руб</span><span>1500 руб</span>	</div>
 							</div>
@@ -436,7 +436,7 @@ include_once('m/auth.php');
 						</div>
 					</div>
 
-				</div>
+				</div> -->
 				<!--    Modal-open end-->
 
 

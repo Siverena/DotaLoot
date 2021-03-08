@@ -527,6 +527,7 @@
     font-family: Plumb-L;
     color: #ffffff;
     margin-left: 20px;
+    position: relative;
 }
 
 .lk-nav__activ-link-orage {
