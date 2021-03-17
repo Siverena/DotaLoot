@@ -124,7 +124,7 @@
                         <div class="balance__header">пополнение баланса</div>
                         <div class="balance__text">Введите необходимую сумму для пополнения счёта</div>
                         <form method="post" action="" class="form form-1 clearfix">
-                            <input type="text" class="balance__input">
+                            <input type="text" class="balance__input" placeholder="Поле ввода суммы">
 
                         </form>
                         <div class="balance__text">Есть промокод?</div>
@@ -168,10 +168,10 @@
                             </div>
                             <div class="balance__payment-system-item">
                                 <input value="mts" name="pay" class="balance__payment-input" type="radio" id="mts" class="hide" />
-                                <label class="balance__payment-system" for="mts"><img src="img/mts.png" alt=""></label>
+                                <label class="balance__payment-system" for="mts">Другие</label>
 
                             </div>
-                            <div class="balance__payment-system-item">
+                            <!-- <div class="balance__payment-system-item">
                                 <input value="mega" name="pay" class="balance__payment-input" type="radio" id="mega" class="hide" />
                                 <label class="balance__payment-system" for="mega"><img src="img/mega.png" alt=""></label>
 
@@ -180,7 +180,7 @@
                                 <input value="beeline" name="pay" class="balance__payment-input" type="radio" id="beeline" class="hide" />
                                 <label class="balance__payment-system" for="beeline"><img src="img/beeline.png" alt=""></label>
 
-                            </div>
+                            </div> -->
 
 
 

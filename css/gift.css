@@ -7,10 +7,12 @@
 }
 
 .page-name__header {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .page-name__text {
     color: #84deff;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 20px;
 }
