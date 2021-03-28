@@ -1227,6 +1227,7 @@
 .win-item-img {
     width: 157px;
     height: 107px;
+    background-size: 155px 107px!important;
 }
 
 .win-battons-modal {

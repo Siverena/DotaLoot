@@ -147,7 +147,7 @@ include_once('m/auth.php');
 
             <!-- <div class="modal-body ">-->
             <div class="free-bonus-window free-bonus-window--3">
-                <div class="free-bonus-window__cintent">
+                <div class="free-bonus-window__content">
                     <div class="free__header">ПОСЛЕДНИЙ ШАГ</div>
                     <div class="free__item">
                         

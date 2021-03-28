@@ -191,7 +191,7 @@
                                 <p class="button-t button-t-h">Пополнить</p>
                             </button>
                             <button type="submit" class="balance-button flex-box-row">
-                                <p class="button-t button-t-h">Пополнить <br> кредитами</p>
+                                <p class="button-t button-t-h">Пополнить <br> предметами</p>
                             </button>
                         </div>
 

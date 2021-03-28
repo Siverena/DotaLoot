@@ -582,6 +582,7 @@ login__balance:hover {
     width: 100%;
     margin-top: 19px;
     margin-bottom: 15px;
+    justify-content: center;
 }
 
 .balance__payment-system {

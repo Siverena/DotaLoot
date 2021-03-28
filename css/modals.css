@@ -135,7 +135,7 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     font-family: Plumb-B;
-    font-size: 17px;
+    font-size: 18px;
     text-transform: uppercase;
     color: #fff;
     display: flex;
@@ -181,7 +181,7 @@
 
 .free__content {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     font-family: Plumb-B;
     text-align: center;
     padding: 17px 0 0 0;
@@ -298,10 +298,10 @@
     border: none;
 }
 
-.free-bonus-window__cintent {
+.free-bonus-window__content {
     width: 295px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 0px;
 }
 
 
@@ -335,6 +335,7 @@
 
 .free-bonus-window--3 .free__content {
     font-size: 16px;
+    padding: 17px 5px 0px 5px;
 }
 
 .free-bonus-window--3 .free__image::after {
@@ -380,6 +381,7 @@
 .free-bonus-window--4 .free__image {
     width: 137px;
     height: 92px;
+    background-size: 137px 92px!important;
 }
 
 .free-bonus-window--4 .free__image-last {
