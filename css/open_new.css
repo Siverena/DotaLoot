@@ -1310,3 +1310,97 @@
     margin-top: 60px;
     margin-bottom: 60px;
 }
+
+.win-box__take-all {
+    width: 495px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/take-all.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 0;
+}
+
+.win-box__terms {
+    margin: 0 5px;
+    width: 130px;
+    height: 80px;
+    background-image: linear-gradient(to right, #7bec02, #175e0d);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.win-box__terms-content {
+    background-color: #15181b;
+    border-radius: 3px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.terms__text {
+    color: #64cd05;
+    font-family: Plumb-B;
+    font-size: 16px;
+}
+
+.terms__cost {
+    color: #ffffff;
+    font-family: Plumb-B;
+    font-size: 16px;
+}
+
+.terms__cost-lb {
+    color: #f4441a;
+    font-family: Plumb-B;
+    font-size: 16px;
+    display: flex;
+}
+
+.cost-lb__icon {
+    margin-left: 5px;
+}
+
+.win-box__button {
+    margin: 0 5px;
+}
+
+.win-box__btn {
+    width: 245px;
+    height: 35px;
+    border-radius: 3px;
+    background-color: #1a2c3a;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.win-box__btn:hover {
+    background-color: #00baff;
+    box-shadow: 0px 0 6px 3px rgba(0, 186, 255, 32%);
+}
+
+@media (max-width: 520px) {
+    .win-box__take-all {
+        width: 90%;
+        background-image: none;
+        margin: 0 auto;
+    }
+    .win-box__terms {
+        width: 100%;
+    }
+    .win-box__button {
+        width: 100%;
+    }
+    .win-box__btn {
+        width: 100%;
+    }
+}

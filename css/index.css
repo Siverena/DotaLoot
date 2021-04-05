@@ -164,11 +164,53 @@
     width: 643px;
     height: 292px;
     margin: 0 auto;
-    padding: 193px 114px 83px 282px;
+    padding: 120px 49px 75px 221px;
     font-size: 16px;
     color: #ffffff;
     font-family: Plumb-L;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.bunner-gift--auth {
+    background-image: url(../img/banner-bonus-auth.png);
+}
+
+.bunner-gift__header {
+    color: #3df225;
+    font-family: Plumb-b;
+    font-size: 31px;
+    text-shadow: 0px 0px 15px #3df225;
+    line-height: 1.3;
+    letter-spacing: 1.1px;
+    text-align: center;
+}
+
+.bunner-gift--auth .bunner-gift__header {
+    font-size: 25px;
+}
+
+.bunner-gift__text {
+    color: rgba(255, 255, 255, 0.15);
+    font-family: Plumb-b;
+    font-size: 16px;
+    text-align: center;
+}
+
+.bunner-gift__btn {
+    width: 114px;
+    height: 35px;
+    border-radius: 3px;
+    background-color: #1a2c3a;
+    margin: 0 auto;
+    margin-top: auto;
+    text-transform: uppercase;
+}
+
+.bunner-gift__btn:hover {
+    background-color: #00baff;
+    box-shadow: 0px 0 6px 3px rgba(0, 186, 255, 32%);
 }
 
 @media (max-width: 768px) {
@@ -176,9 +218,18 @@
         background-image: url(../img/banner-bonus-tb.png);
         width: 397px;
         height: 379px;
-        padding: 322px 0px 42px 0;
+        padding: 264px 0px 21px 0;
         justify-content: center;
         display: flex;
+    }
+    .bunner-gift--auth {
+        background-image: url(../img/banner-bonus-auth-tb.png);
+    }
+    .bunner-gift__header {
+        font-size: 27px;
+    }
+    .bunner-gift--auth .bunner-gift__header {
+        font-size: 22px;
     }
 }
 
@@ -187,7 +238,22 @@
         background-image: url(../img/banner-bonus-mb.png);
         width: 291px;
         height: 316px;
-        padding: 236px 0px 0 0;
+        padding: 229px 0px 12px 0;
+    }
+    .bunner-gift--auth {
+        background-image: url(../img/banner-bonus-auth-mb.png);
+    }
+    .bunner-gift__header {
+        font-size: 18px;
+    }
+    .bunner-gift__text {
+        font-size: 13px;
+    }
+    .bunner-gift__links span {
+        display: none;
+    }
+    .bunner-gift--auth .bunner-gift__header {
+        font-size: 15px;
     }
 }
 
@@ -195,6 +261,8 @@
     display: flex;
     white-space: nowrap;
     align-items: center;
+    justify-content: center;
+    margin-top: auto;
 }
 
 .bunner-gift-vk {

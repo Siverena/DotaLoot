@@ -185,7 +185,20 @@ include_once('m/auth.php');
 
 
                     </div>
+					<div class="win-box__take-all">
+						<div class="win-box__terms">
+							<div class="win-box__terms-content">				
+								<p class="terms__text">Продать все за:</p>
+								<p class="terms__cost">1118р</p>
+								<p class="terms__cost-lb">1118 <span class="login__btn login__btn--LB cost-lb__icon"> LB </span></p>
+							</div>
 
+						</div>	
+						<div class="win-box__button">
+							<button class="site-btn win-box__btn">Все в контракт</button>
+							<button class="site-btn win-box__btn">Попробовать заново</button>
+						</div>
+					</div>
                 </section>
 
 

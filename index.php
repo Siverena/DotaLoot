@@ -316,7 +316,14 @@ include_once('m/auth.php');
 					<?php }?>
 
 					<div class="bunner-gift">
-						<div class="bunner-gift__links">Войти через: <a href="" class="bunner-gift-vk" data-toggle="modal" data-target="#free-bonus" >VK</a> <a href="" class="bunner-gift-steam" data-toggle="modal" data-target="#free-bonus">STEAM</a></div>
+					<p class="bunner-gift__header">Получи бесплатный предмет</p>
+					<p class="bunner-gift__text"> И получи 10 руб на открытие первого кейса</p>
+						<div class="bunner-gift__links">Войти <span>через</span>	: <a href="" class="bunner-gift-vk" data-toggle="modal" data-target="#free-bonus" >VK</a> <a href="" class="bunner-gift-steam" data-toggle="modal" data-target="#free-bonus">STEAM</a></div>
+					</div>
+					<div class="bunner-gift bunner-gift--auth">
+					<p class="bunner-gift__header">Забери свой бесплатный предмет</p>
+					<p class="bunner-gift__text"> И получи 10 руб на открытие первого кейса</p>
+						<button class="site-btn bunner-gift__btn">забрать</button>
 					</div>
 
 
