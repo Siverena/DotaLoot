@@ -427,8 +427,13 @@
 
 .free-bonus-window--4 .your__pay,
 .free-bonus-window--4 .our__pay {
-    text-align: center;
     height: 109px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .free-bonus-window--4 .your__old-cost {
@@ -560,6 +565,10 @@
 }
 
 @media (max-width: 768px) {
+    #free-bonus-w4 .modal-dialog {
+        width: 285px;
+        margin: 3.5rem auto;
+    }
     .free-bonus-window--4 {
         width: 285px;
         flex-wrap: wrap;
@@ -576,6 +585,40 @@
     }
     .free-bonus-window--4 .your__free_item {
         order: 2;
+    }
+    .free-bonus-window--4 .your__image,
+    .free-bonus-window--4 .our__image {
+        width: 137px;
+        height: 91px;
+        background-size: 137px 91px!important;
+    }
+    .free-bonus-window--4 .our__old-cost {
+        font-size: 17px;
+    }
+    .free-bonus-window--4 .your__btn,
+    .free-bonus-window--4 .our__btn {
+        width: 95px;
+        height: 29px;
+    }
+    .free-bonus-window--4 .your__item,
+    .free-bonus-window--4 .our__item {
+        height: 133px;
+    }
+    .free-bonus-window--4 .your__now-cost,
+    .free-bonus-window--4 .our__now-cost {
+        font-size: 41px;
+    }
+    .free-bonus-window--4 .your__pay,
+    .free-bonus-window--4 .our__pay {
+        height: 91px;
+    }
+    .free-bonus-window--4 .your__content,
+    .free-bonus-window--4 .our__content {
+        padding: 13px 13px 16px 13px;
+    }
+    .free-bonus-window--4 .your__benefit,
+    .free-bonus-window--4 .our__benefit {
+        padding: 0 46px;
     }
 }
 

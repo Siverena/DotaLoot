@@ -1312,21 +1312,26 @@
 }
 
 .win-box__take-all {
-    width: 495px;
-    margin: 0 auto;
+    width: fit-content;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
-    background-image: url(../img/take-all.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 23px 0;
+    padding: 20px;
+    background-color: #121517;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-top: 1px solid #ff0000;
+    border-bottom: 1px solid #ec5b02;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    background-size: 1px 100%;
+    background-image: linear-gradient(to top, #ec5b02 0%, #ff0000 100%), linear-gradient(to top, #ec5b02 0%, #ff0000 100%);
 }
 
 .win-box__terms {
-    margin: 0 5px;
-    width: 130px;
+    width: 170px;
     height: 80px;
     background-image: linear-gradient(to right, #7bec02, #175e0d);
     border-radius: 3px;
@@ -1370,17 +1375,20 @@
 }
 
 .win-box__button {
-    margin: 0 5px;
+    margin: 0 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
 }
 
 .win-box__btn {
-    width: 245px;
+    width: 170px;
     height: 35px;
     border-radius: 3px;
     background-color: #1a2c3a;
     color: #ffffff;
     text-align: center;
-    margin: 10px 0;
 }
 
 .win-box__btn:hover {
@@ -1390,17 +1398,20 @@
 
 @media (max-width: 520px) {
     .win-box__take-all {
-        width: 90%;
-        background-image: none;
+        width: 285px;
         margin: 0 auto;
+        margin-bottom: 20px;
     }
     .win-box__terms {
         width: 100%;
+        order: 2;
     }
     .win-box__button {
         width: 100%;
+        margin: 0;
     }
     .win-box__btn {
         width: 100%;
+        margin: 0 0 10px 0;
     }
 }

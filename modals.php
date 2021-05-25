@@ -182,71 +182,52 @@ include_once('m/auth.php');
 
 
                 <div class="free-bonus-window free-bonus-window--4">
-				
-						<div class="free__header">Забери свой бесплатный предмет и получи бонусы!</div>
-						
-						<div class="free__item">
-							<div class="free__item-cont">
-								<div class="free__image" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUorA5OA1jVSvSoxNvsW1h4KEtNs6-2FAZy0PLGcHNHtIvhkdXZk_Xwa77SwWoFvsMl3rCRoImi3A3srxU_a2CiddOcJ1I-fxiOrSNeaGjR&quot;) center center no-repeat;"></div>
-
-								<p class="free__item-name">Tempest Helm of the Thundergod</p>
-								<p class="free__item-price">50 РУБ</p>
-							</div>
-							<p class="free__plus">+</p>
-							<div class="free__item-cont">
-								<div class="free__image" style="background: url(&quot;img/500p.png&quot;) center center no-repeat;"></div>
-
-								<p class="free__item-name">на баланс рубли</p>
-	
-							</div>
-							<p class="free__plus">+</p>
-							<div class="free__item-cont">
-								<div class="free__image" style="background: url(&quot;img/500lb.png&quot;) center center no-repeat"></div>
-
-								<p class="free__item-name">на баланс LootBack</p>
-
-							</div>
-							<button class="site-btn site-btn--orange free__btn"><span class="button-t ">Получить <br>за 100 рублей</span></button>
-						</div>
-							
-						
-						
-						<div class="free__item">
-						<div class="free__header">ИЛИ</div>
-							<div class="free__item-cont">
-								<div class="free__image" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUorA5OA1jVSvSoxNvsW1h4KEtNs6-2FAZy0PLGcHNHtIvhkdXZk_Xwa77SwWoFvsMl3rCRoImi3A3srxU_a2CiddOcJ1I-fxiOrSNeaGjR&quot;) center center no-repeat;"></div>
-
-								<p class="free__item-name">Tempest Helm of the Thundergod</p>
-								<p class="free__item-price">50 РУБ</p>
-							</div>
-							<p class="free__plus">+</p>
-							<div class="free__item-cont">
-							<div class="free__image" style="background: url(&quot;img/500p.png&quot;) center center no-repeat;"></div>
-
-							<p class="free__item-name">на баланс рубли</p>
-							</div>
-							<p class="free__plus">+</p>
-							<div class="free__item-cont">
-							<div class="free__image" style="background: url(&quot;img/500lb.png&quot;) center center no-repeat"></div>
-
-								<p class="free__item-name">на баланс LootBack</p>
-							</div>
-							<p class="free__plus">+</p>
-							<div class="free__item-cont">
-								<div class="free__image free__image-last" style="background: url(&quot;img/Windranger.png&quot;) center center no-repeat;"></div>
-
-							</div>
-							<button class="site-btn site-btn--orange free__btn"><span class="button-t ">Получить <br> за 100 рублей</span></button>
-						</div>
-						<div class="free__content ">
-						<p class="free__content-type-1">ВАША ВЫГОДА СОСТОВЛЯЕТ БОЛЕЕ 200%</p>
-							<p class="free__content-type-3">Отлично, ты получил свой бесплатный предмет! Его стоимость и другие бонусы будут <br> зачислены на баланс, а вещь станет доступной для вывода в Steam сразу после пополнения. </p>
-							<p class="free__content-type-4"> А еще мы немного увеличим твои шансы получить аркану и другие дорогие предметы!)  </p>
-						</div>
+    <div class="your__free_item">
+<div class="your__header">Твой бесплатный предмет</div>
+<div class="your__item">
+    <div class="your__image" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUorA5OA1jVSvSoxNvsW1h4KEtNs6-2FAZy0PLGcHNHtIvhkdXZk_Xwa77SwWoFvsMl3rCRoImi3A3srxU_a2CiddOcJ1I-fxiOrSNeaGjR&quot;) center center no-repeat;"></div>
+    <div class="your__pay">
+        <P class="your__old-cost">1200</P>
+        <P class="your__now-cost">500</P>
+        <button class="site-btn site-btn--orange your__btn"><p class="button-t">Пополнить</p></button>
+    </div>
+</div>
+<div class="your__content">
+    <p class="your__benefit">Выгоднее чем при покупке по отдельности на <span style="color:#e55301;padding: 0px 2px;">700</span>  </p>
+    <ul class="your__list">
+        <li  class="your__point">На баланс 500</li>
+        <li class="your__point">Бесплатное открытие   <span style="color:#e55301;padding: 0px 2px;">   кейс 1</span> (150)</li>
+        <li class="your__point">Бесплатное открытие   <span style="color:#e55301;padding: 0px 2px;">   кейс 2</span> (200)</li>
+        <li class="your__point">Повышенный шанс получить Аркану</li>
+    </ul>
+</div>
+    </div>
+    <div class="our__offer">
+        <div class="our__header">Наше предложение</div>
+        <div class="our__item">
+            <div class="our__image" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUorA5OA1jVSvSoxNvsW1h4KEtNs6-2FAZy0PLGcHNHtIvhkdXZk_Xwa77SwWoFvsMl3rCRoImi3A3srxU_a2CiddOcJ1I-fxiOrSNeaGjR&quot;) center center no-repeat;"></div>
+            <div class="our__pay">
+                <P class="our__old-cost">1200</P>
+                <P class="our__now-cost">500</P>
+                <button class="site-btn  our__btn"><p class="button-t">Пополнить</p></button>
+            </div>
+        </div>
+        <div class="our__content">
+            <p class="our__benefit">Выгоднее чем при покупке по отдельности на <span style="color:#7bec02;padding: 0px 2px;">700</span>  </p>
+            <ul class="our__list">
+                <li  class="our__point">На баланс 500</li>
+                <li class="our__point">Бесплатное открытие    <span style="color:#7bec02;padding: 0px 2px;">   кейс 1</span> (150)</li>
+                <li class="our__point">Бесплатное открытие    <span style="color:#7bec02;padding: 0px 2px;">   кейс 2</span> (200)</li>
+                <li class="our__point">Повышенный шанс получить Аркану</li>
+            </ul>
+        </div>
+    </div>
+					
+					
 
 						
                 </div>
-             </div>
+            </div>
         </div>
     </div>
     <!--    free-bonus w4 end-->
