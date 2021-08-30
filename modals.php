@@ -34,6 +34,7 @@ include_once('m/auth.php');
                 <button data-toggle="modal"  data-target="#free-bonus-w2" class="site-btn" style="color: #000000; padding: 11px;">free-bonus w-2</button>
                 <button data-toggle="modal"  data-target="#free-bonus-w3" class="site-btn" style="color: #000000; padding: 11px;">free-bonus w-3</button>
                 <button data-toggle="modal"  data-target="#free-bonus-w4" class="site-btn" style="color: #000000; padding: 11px;">free-bonus w-4</button>
+                <button data-toggle="modal"  data-target="#another-thing" class="site-btn" style="color: #000000; padding: 11px;">Выбрать другую вещь</button>
                 <a href="gift.php">gift.php</a>
                 <a href="open-win.php">open-win.php</a>
             </div>
@@ -233,7 +234,96 @@ include_once('m/auth.php');
     <!--    free-bonus w4 end-->
 
 
+    <!-- another-thing-->
+    <div class="modal fade" id="another-thing" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-another-thing">
+                <div class="modal-body ">
 
+                    <p class="another-thing__header">ВЫБРАТЬ ДРУГУЮ ВЕЩЬ</p>
+                    <div class="another-thing__description">
+                        <p>Вещь которую вы хотите вывести в данный момент не продается на сторонних площадках.  Мы уже давно не храним свои вещи в инвентарях ботов, т.к. Steam часто банит их, поэтому можем предложить вам несколько вариантов</p>
+                    </div>
+                    <div class="another-thing__content ">
+                        <p>Вы можете получить предложение обмена в Steam и бот передаст скин напрямую в ваш инвентарь Steam. Для этого на вашем аккаунте должна быть возможность совершать обмены, а также вы должны открыть свой инвентарь в настройках приватности Steam.</p>
+                        <div class="another-thing__item-cont ">
+                           
+
+
+                            <!--predmet-item start-->
+                            <div class="my-predmet-item ">
+                                <div class="my-predmet-item__img" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcU8rA1YXkHfVeHixMfSV1JjIw1SuL6aLwJt3P33dDxW6c74kYLYlK6gYb6HwTsAv8MhjLqRotnzilXk-0dqNmjzdoSQJwBvMlGB_E_-n7kPpm_e3A&quot;) center center no-repeat;"></div>
+
+                                    <div class="my-predmet-item__text" style="border-top: 2px solid rgb(230, 93, 2);">
+                                        Название предмета
+                                    </div>
+                                    <div class="properties">
+                                        <div class="my-predmet-item__price"> 159Р </div>
+
+                           
+                                    </div>
+
+                                </div>
+                                <!--predmet-item end-->
+                                <!--predmet-item start-->
+                                <div class="my-predmet-item ">
+                                <div class="my-predmet-item__img" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUivB9aSQPZSumixdvSX2J1NwkYv7eoJBV00v_3cC9Poo7izNeJkaHyYuiIwTMI7Jdw2L6Yrduk0Q2wqRU9Zmz1JoLDcFQ_Yg7Oug_pN4EPgYc&quot;) center center no-repeat;"></div>
+                            
+                                    <div class="my-predmet-item__text" style="border-top: 2px solid rgb(75, 105, 255);">
+                                    Shoulders of the Survivor
+                                    </div>
+                                    <div class="properties">
+                                        <div class="my-predmet-item__price"> 159Р </div>
+
+                 
+                                    </div>
+
+                                </div>
+                                <!--predmet-item end-->
+
+                                <!--predmet-item start-->
+                                <div class="my-predmet-item ">
+                                <div class="my-predmet-item__img" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUwpg5TWFXvT_Gjw8rBHF98GhBe74WsJgpvwefJfQJV6d2mm47Elf_LJ7KIqWJc5cpjnujNypvwiUS7pV1sNm73ddXBcwE8YljS8gK_kr_nhMO76MybmiZh6SZ37XvcyxG20hoYcKUx0hwV6dJT&quot;) center center no-repeat;"></div>
+                                    
+                                    <div class="my-predmet-item__text" style="border-top: 2px solid rgb(75, 105, 255);">
+                                    Комплект Feast of Abscession
+                                    </div>
+                                    <div class="properties">
+                                        <div class="my-predmet-item__price"> 159Р </div>
+      
+                                    </div>
+
+                                </div>
+                                <!--predmet-item end-->
+
+                                <!--predmet-item start-->
+                                <div class="my-predmet-item ">
+                                <div class="my-predmet-item__img" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcU4vBxaSV7eRvG5mMvBUlp7KztEobW3L0kygPDJImwR7ovvzdeNwPLyMb2Ew20BsMd0372Y8dj0jVfi80o_MGynOsbLJYGfipiA&quot;) center center no-repeat;"></div>
+                                    
+                                    <div class="my-predmet-item__text" style="border-top: 2px solid rgb(75, 105, 255);">
+                                        Название предмета
+                                    </div>
+                                    <div class="properties">
+                                        <div class="my-predmet-item__price"> 159Р </div>
+           
+                                    </div>
+
+                                </div>
+                                <!--predmet-item end-->
+
+
+
+
+
+                        </div>
+                    </div>
+                    <button class="site-btn site-btn--green another-thing__btn"><span class="button-t ">Заменить</span></button>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <!--    another-thing end-->
 
 
 

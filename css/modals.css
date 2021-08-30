@@ -624,3 +624,125 @@
 
 
 /* 4 модалки конец */
+
+
+/* another-thing start */
+
+#another-thing .modal-dialog {
+    pointer-events: inherit;
+    width: 715px;
+    /* height: 515px; */
+    max-width: 715px;
+}
+
+#another-thing .modal-body {
+    background-image: linear-gradient(to right, #ff0000 0%, #7bec02 100%), linear-gradient(to right, #ff0000 0%, #7bec02 100%);
+    border: none;
+    border-left: 1px solid #ff0000;
+    border-right: 1px solid #7bec02;
+    background-position: 100% 100%, 0% 0%;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.modal-another-thing {
+    background-color: #101214;
+    color: #ffffff;
+    font-family: Plumb-l;
+}
+
+.another-thing__header {
+    padding-top: 21px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: Plumb-B;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.another-thing__header::before {
+    content: '';
+    display: block;
+    background: url(../img/double-r.png);
+    width: 17px;
+    height: 15px;
+    margin-right: 21px;
+    background-repeat: no-repeat;
+}
+
+.another-thing__header::after {
+    content: '';
+    display: block;
+    background: url(../img/double-l.png);
+    width: 17px;
+    height: 15px;
+    margin-left: 21px;
+    background-repeat: no-repeat;
+}
+
+.another-thing__description {
+    background-image: url(../img/another-thing-bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    font-size: 24px;
+    font-family: Plumb-l;
+    text-align: center;
+    padding: 27px 50px;
+    line-height: 28px;
+}
+
+.another-thing__content {
+    font-size: 18px;
+    color: #a5a5a5;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+.another-thing__item-cont {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 21px;
+}
+
+.another-thing__btn {
+    width: 238px;
+    height: 38px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-bottom: 20px
+}
+
+@media (max-width: 720px) {
+    #another-thing .modal-dialog {
+        width: 290px;
+        max-width: 290px;
+    }
+    .another-thing__description {
+        font-size: 19px;
+        padding: 23px 6px 11px;
+        line-height: 23px;
+    }
+    .another-thing__content {
+        font-size: 14px;
+        padding: 15px 8px;
+    }
+    .another-thing__item-cont {
+        justify-content: space-between;
+        margin-top: 36px;
+    }
+    .another-thing__item-cont .my-predmet-item {
+        width: 125px;
+        height: 129px;
+    }
+    .another-thing__item-cont .my-predmet-item__img {
+        width: 123px;
+        height: 83px;
+    }
+}
+
+
+/* another-thing end */
