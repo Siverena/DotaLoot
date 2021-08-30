@@ -742,6 +742,15 @@
         width: 123px;
         height: 83px;
     }
+    #another-thing .modal-body {
+        background-image: linear-gradient(to top, #ff0000 0%, #7bec02 100%), linear-gradient(to top, #ff0000 0%, #7bec02 100%);
+        border: none;
+        border-bottom: 1px solid #ff0000;
+        border-top: 1px solid #7bec02;
+        background-position: 0% 0%, 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 1px 100%;
+    }
 }
 
 
