@@ -700,17 +700,24 @@
 
 .status-cont__link--hover {
     width: 108px;
-    height: 21px;
+    height: 35px;
     background-color: rgba(0, 0, 0, 0.52);
     border-radius: 3px;
     font-family: Plumb-L;
     font-size: 14px;
     position: absolute;
-    top: -31px;
+    top: -45px;
     font-size: 14px;
     color: #fff;
-    line-height: 21px;
+    line-height: 16px;
     text-align: center;
+}
+
+.status-cont__link--hover div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
 }
 
 .status-cont__link--hover:after {
