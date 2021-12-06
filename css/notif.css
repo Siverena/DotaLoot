@@ -1,0 +1,157 @@
+main {
+    position: relative;
+}
+
+.notif {
+    position: absolute;
+    top: 210px;
+    right: 40px;
+    /* z-index: 111111111111111; */
+    z-index: 21474836;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.notif__item {
+    display: flex;
+    background-color: #15181b;
+    border-radius: 5px;
+    width: 402px;
+    color: #ffffff;
+    font-family: Plumb-L;
+    font-size: 19px;
+    margin-bottom: 20px;
+    min-height: 130px;
+    position: relative;
+}
+
+.notif__content {
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 278px;
+    margin-left: auto;
+}
+
+.notif__text {
+    margin-bottom: 13px;
+    line-height: 23px;
+}
+
+.notif__text--like {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.notif__button-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.notif__button {
+    color: #a5a5a5;
+    border-radius: 3px;
+    border: 1px solid #303336;
+    width: 115px;
+    height: 33px;
+    background-color: #191d20;
+    font-size: 16px;
+    font-family: Plumb-B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.notif__button:hover {
+    color: #ffffff;
+}
+
+.notif__image {
+    width: 124px;
+    border-radius: 5px 0 0 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+    background-color: #e24e03;
+}
+
+.notif__image--orange {
+    background-image: url(../notif/voucher__orange.svg);
+    background-size: 158px;
+}
+
+.notif__image--like {
+    background-image: url(../notif/like.svg);
+    background-size: 122px;
+}
+
+.notif__button--orange {
+    background-image: linear-gradient(to right, #ec6502, #d22300);
+    color: #ffffff;
+    border: none;
+}
+
+.notif__button--orange:hover {
+    background-image: linear-gradient(to left, #ec6502, #d22300);
+}
+
+.notif__close {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 11px;
+    right: 9px;
+    opacity: 0.6;
+}
+
+.notif__close:hover {
+    opacity: 1;
+}
+
+.notif__close img {
+    width: 100%;
+}
+
+@media (max-width: 426px) {
+    .notif {
+        position: absolute;
+        top: 210px;
+        right: 0px;
+        left: 0;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .notif__item {
+        width: 290px;
+        min-height: 94px;
+        font-size: 15px;
+    }
+    .notif__image {
+        width: 71;
+    }
+    .notif__image--orange {
+        background-size: 97px;
+    }
+    .notif__image--like {
+        background-size: 94px;
+    }
+    .notif__content {
+        width: 100%;
+        padding: 10px;
+    }
+    .notif__button {
+        width: 92px;
+        height: 28px;
+    }
+}

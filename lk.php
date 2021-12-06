@@ -164,11 +164,12 @@ include_once('m/auth.php');
                                         <div class="status-cont">
                                             <button class="status-cont__link status-cont--status1" data-toggle="modal"  data-target="#sale" href="">
                                                 <span>V</span>
-                                                <div class="status-cont__link--hover">Забрать предмет</div>
+                                                <div class="status-cont__link--hover">
+                                                    <div>Забрать предмет</div> </div>
                                             </button>
                                             <button class="status-cont__link status-cont--status2" href=""><span>P</span>
                                                 <div style="" class="status-cont__link--hover">
-                                                    <div>Продать предмет</div>
+                                                    <div>Продать предмет за 2РУБ и 7LB</div> 
                                                 </div>
                                             </button>
                                         </div>
@@ -189,11 +190,12 @@ include_once('m/auth.php');
                                         <div class="status-cont">
                                             <button class="status-cont__link status-cont--status1" data-toggle="modal"  data-target="#sale" href="">
                                                 <span>V</span>
-                                                <div class="status-cont__link--hover">Забрать предмет</div>
+                                                <div class="status-cont__link--hover">
+                                                    <div>Забрать предмет</div> </div>
                                             </button>
                                             <button class="status-cont__link status-cont--status2" href=""><span>P</span>
                                                 <div style="" class="status-cont__link--hover">
-                                                    <div>Продать предмет</div>
+                                                    <div>Продать предмет за 2РУБ и 7LB</div> 
                                                 </div>
                                             </button>
                                         </div>
@@ -214,11 +216,12 @@ include_once('m/auth.php');
                                         <div class="status-cont">
                                             <button class="status-cont__link status-cont--status1" data-toggle="modal"  data-target="#sale" href="">
                                                 <span>V</span>
-                                                <div class="status-cont__link--hover">Забрать предмет</div>
+                                                <div class="status-cont__link--hover">
+                                                    <div>Забрать предмет</div> </div>
                                             </button>
                                             <button class="status-cont__link status-cont--status2" href=""><span>P</span>
                                                 <div style="" class="status-cont__link--hover">
-                                                    <div>Продать предмет</div>
+                                                    <div>Продать предмет </div> 
                                                 </div>
                                             </button>
                                         </div>

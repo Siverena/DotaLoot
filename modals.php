@@ -40,6 +40,13 @@ include_once('m/auth.php');
             </div>
         </div>
         <?php include_once 'stat.php';?>
+
+
+
+
+
+
+<!-- notif end -->
     </main>
     <?php include_once 'footer.php';?>
 
@@ -182,28 +189,28 @@ include_once('m/auth.php');
                 <!-- <div class="modal-body ">-->
 
 
-                <div class="free-bonus-window free-bonus-window--4">
-    <div class="your__free_item">
-<div class="your__header">Твой бесплатный предмет</div>
-<div class="your__item">
-    <div class="your__image" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUorA5OA1jVSvSoxNvsW1h4KEtNs6-2FAZy0PLGcHNHtIvhkdXZk_Xwa77SwWoFvsMl3rCRoImi3A3srxU_a2CiddOcJ1I-fxiOrSNeaGjR&quot;) center center no-repeat;"></div>
-    <div class="your__pay">
-        <P class="your__old-cost">1200</P>
-        <P class="your__now-cost">500</P>
-        <button class="site-btn site-btn--orange your__btn"><p class="button-t">Пополнить</p></button>
-    </div>
-</div>
-<div class="your__content">
-    <p class="your__benefit">Выгоднее чем при покупке по отдельности на <span style="color:#e55301;padding: 0px 2px;">700</span>  </p>
-    <ul class="your__list">
-        <li  class="your__point">На баланс 500</li>
-        <li class="your__point">Бесплатное открытие   <span style="color:#e55301;padding: 0px 2px;">   кейс 1</span> (150)</li>
-        <li class="your__point">Бесплатное открытие   <span style="color:#e55301;padding: 0px 2px;">   кейс 2</span> (200)</li>
-        <li class="your__point">Повышенный шанс получить Аркану</li>
-    </ul>
-</div>
-    </div>
-    <div class="our__offer">
+            <div class="free-bonus-window free-bonus-window--4">
+            <div class="your__free_item">
+                <div class="your__header">Твой бесплатный предмет</div>
+                <div class="your__item">
+            <div class="your__image" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUorA5OA1jVSvSoxNvsW1h4KEtNs6-2FAZy0PLGcHNHtIvhkdXZk_Xwa77SwWoFvsMl3rCRoImi3A3srxU_a2CiddOcJ1I-fxiOrSNeaGjR&quot;) center center no-repeat;"></div>
+            <div class="your__pay">
+                <P class="your__old-cost">1200</P>
+                <P class="your__now-cost">500</P>
+                <button class="site-btn site-btn--orange your__btn"><p class="button-t">Пополнить</p></button>
+            </div>
+        </div>
+        <div class="your__content">
+            <p class="your__benefit">Выгоднее чем при покупке по отдельности на <span style="color:#e55301;padding: 0px 2px;">700</span>  </p>
+            <ul class="your__list">
+                <li  class="your__point">На баланс 500</li>
+                <li class="your__point">Бесплатное открытие   <span style="color:#e55301;padding: 0px 2px;">   кейс 1</span> (150)</li>
+                <li class="your__point">Бесплатное открытие   <span style="color:#e55301;padding: 0px 2px;">   кейс 2</span> (200)</li>
+                <li class="your__point">Повышенный шанс получить Аркану</li>
+            </ul>
+        </div>
+        </div>
+        <div class="our__offer">
         <div class="our__header">Наше предложение</div>
         <div class="our__item">
             <div class="our__image" style="background: url(&quot;https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUorA5OA1jVSvSoxNvsW1h4KEtNs6-2FAZy0PLGcHNHtIvhkdXZk_Xwa77SwWoFvsMl3rCRoImi3A3srxU_a2CiddOcJ1I-fxiOrSNeaGjR&quot;) center center no-repeat;"></div>
@@ -222,7 +229,7 @@ include_once('m/auth.php');
                 <li class="our__point">Повышенный шанс получить Аркану</li>
             </ul>
         </div>
-    </div>
+        </div>
 					
 					
 
@@ -318,14 +325,36 @@ include_once('m/auth.php');
                         </div>
                     </div>
                     <button class="site-btn site-btn--green another-thing__btn"><span class="button-t ">Заменить</span></button>
-</div>
+        </div>
 
             </div>
         </div>
     </div>
     <!--    another-thing end-->
 
+        <!-- notif start -->
+        <div class="notif">
 
+            <div class="notif__item ">
+                <div class="notif__image notif__image--orange">            </div>
+                <div class="notif__content">
+                    <p class="notif__text">Получать персональные промокоды, акции и системные уведомления?</p>
+                    <div class="notif__button-wrap">
+                        <button class=" notif__button ">Отмена </button>
+                        <button class=" notif__button notif__button--orange">Получать </button>
+                    </div>
+                </div>
+            </div>
+            <div class="notif__item notif__item--like">
+                <div class="notif__image notif__image--like">            </div>
+                <div class="notif__content">
+                    <p class="notif__text notif__text--like">Нажмите разрешить <br> в верхнем левом углу экрана!</p>
+                    <div class="notif__button-wrap">
+                        <a href="javascript:" class="notif__close"><img src="	https://dotaloot.pro/img/close.5a251131.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
