@@ -52,8 +52,8 @@
                                         <a class="login__btn login__btn--exit" href="?logout=1"></a>
                                     </div>
                                     <div class="login__string-wrap">
-                                    <button class="login-button login__link--bal" type="button" data-toggle="modal" data-target="#Modal-4"> 10 000 РУБ</button>  
-                                    <button type="button" class="login__btn login__btn--to-up" data-toggle="modal" data-target="#Modal-4">+</button>
+                                    <button class="login-button login__link--bal" type="button" data-toggle="modal" data-target="#balance"> 10 000 РУБ</button>  
+                                    <button type="button" class="login__btn login__btn--to-up" data-toggle="modal" data-target="#balance">+</button>
                                         <!-- <button class="login__btn login__btn--LB" type="button"> LB </button> -->
                                         <p class="login__link--bal-lb">8 000 LB</p>
                                         <button class="login__btn login__btn--question" type="button"> ? 
@@ -69,7 +69,7 @@
                                     <a href="lk.php" class="site-btn site-btn--orange login__btn--prof"><p class="button-t">Мой профиль</p></a>
 
 
-                                    <button class="site-btn site-btn--green login__btn--to-up-second" type="button" data-toggle="modal" data-target="#Modal-4"><p class="button-t">Пополнить баланс </p> </button>
+                                    <button class="site-btn site-btn--green login__btn--to-up-second" type="button" data-toggle="modal" data-target="#balance"><p class="button-t">Пополнить баланс </p> </button>
                                 </div>
                             </div>
 

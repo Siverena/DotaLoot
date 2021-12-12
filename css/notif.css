@@ -3,6 +3,7 @@ main {
 }
 
 .notif {
+    /* display: none; */
     position: absolute;
     top: 210px;
     right: 40px;
@@ -26,6 +27,10 @@ main {
     position: relative;
 }
 
+.notif__item--gal {
+    min-height: 90px;
+}
+
 .notif__content {
     padding-top: 18px;
     padding-left: 20px;
@@ -37,12 +42,26 @@ main {
     margin-left: auto;
 }
 
+.notif__content--gal {
+    padding-top: 18px;
+    padding-bottom: 20px;
+}
+
 .notif__text {
     margin-bottom: 13px;
     line-height: 23px;
 }
 
 .notif__text--like {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.notif__text--gal {
     height: 100%;
     text-align: center;
     display: flex;
@@ -94,6 +113,12 @@ main {
 .notif__image--like {
     background-image: url(../notif/like.svg);
     background-size: 122px;
+}
+
+.notif__image--gal {
+    background-image: url(../notif/gal.svg);
+    background-size: 44px;
+    background-color: #175e0d;
 }
 
 .notif__button--orange {

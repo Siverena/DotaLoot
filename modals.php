@@ -354,6 +354,17 @@ include_once('m/auth.php');
                     </div>
                 </div>
             </div>
+            <div class="notif__item notif__item--gal">
+                <div class="notif__image notif__image--gal">            </div>
+                <div class="notif__content notif__content--gal">
+                    <p class="notif__text notif__text--gal">Успех! <br>
+                Активирован промокод: 777 (15%)
+                </p>
+                    <div class="notif__button-wrap">
+                        <a href="javascript:" class="notif__close"><img src="	https://dotaloot.pro/img/close.5a251131.png"></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
 

@@ -6,11 +6,6 @@
     height: 30px;
 }
 
-header {
-    /* Не нашла зачем это свойство */
-    /* overflow: hidden; */
-}
-
 header>.container {
     height: 100%;
 }
@@ -459,229 +454,568 @@ login__balance:hover {
 
 /*.balance start*/
 
+.balance__content {
+    background-color: transparent;
+}
 
-/*
-.balance {
-    position: fixed;
-    font-family: Plumb-L;
-    font-size: 19px;
-    color: #a5a5a5;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(21, 24, 27, 0.57);
-    z-index: 99999;
-    -webkit-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    display: none;
-    pointer-events: none;
+.balance .modal-dialog {
+    max-width: 680px;
+    margin-top: 9rem;
+}
 
+.popup-recharge_box {
+    visibility: hidden;
+    backface-visibility: hidden;
+    transition: opacity .2s;
+    opacity: 0
+}
 
-}*/
+.popup-recharge_box .md-effect {
+    transition-timing-function: ease-in-out;
+    position: relative;
+    padding: 33px 29px 29px;
+    background-color: #15181b
+}
 
+.popup-recharge_box.md-show {
+    opacity: 1;
+    visibility: visible;
+    transition-timing-function: ease-in-out
+}
 
-/*
-.balance:target {
+.popup-recharge_box .md-effect:before {
     display: block;
-    pointer-events: auto;
-}
-*/
-
-.balance__cont {
-    max-width: 460px;
-    min-height: 613px;
-    position: relative;
-    margin: 10% auto;
-    text-align: center;
-    border-radius: 5px;
-    background-color: #15181b;
-    padding: 19px 9px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.button-bot {
-    background: url(../img/button2.png);
-    width: 179px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 15px;
-    text-transform: uppercase;
-    margin: 0 auto;
-    position: relative;
-    top: 74px;
-}
-
-.button-bot:hover {
-    background: url(../img/button2r.png);
-}
-
-.balance__header {
-    font-family: Plumb-B;
-    font-size: 19px;
-    text-transform: uppercase;
-    color: #fff;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-.balance-button {
-    width: 114px;
-    height: 37px;
-    margin-left: 10px;
-    background: none;
-    border: none;
-    border-radius: 5px;
-    font-family: Plumb-B;
-    font-size: 16px;
-    color: #f74f22;
-    cursor: pointer;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#ec6502), to(#d22300));
-    background-image: linear-gradient(to top, #ec6502, #d22300);
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.balance__buttons .balance-button {
-    border: none;
-    background-image: linear-gradient(to top, #7bec02, #175e0d);
+    content: "";
+    width: 566px;
+    height: 326px;
+    position: absolute;
+    top: -63px;
+    left: 167px;
+    background-image: url(../img/balance__women.png);
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 62px;
+    z-index: 0;
+}
+
+.popup-recharge_box .md-effect:after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(../img/balance__coin.png);
+    background-position: center;
+    background-size: 458px 143px;
+    background-repeat: no-repeat;
+    width: 518px;
+    height: 357px;
+    top: -136px;
+    right: -79px;
+    z-index: 0;
+}
+
+.popup-recharge {
+    left: 50%;
+    top: 50%;
+    width: 680px;
+    min-height: 296px;
+    z-index: 99999999;
+    border-radius: 3px;
+}
+
+.popup-recharge .popup-recharge_warning {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 680px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: Plumb-B;
+    font-weight: 400;
+    background: #4f3173;
+    border-radius: 3px;
+    padding: 12px;
+    text-align: center;
+}
+
+.popup-recharge .popup-recharge_title {
+    color: #e85b01;
+    font-weight: 500;
+    font-size: 26px;
+    text-shadow: 0 0 20px #e85b01;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+    font-family: Plumb-B;
+}
+
+.popup-recharge .popup-recharge_sale {
+    font-family: Plumb-L;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff
+}
+
+.popup-recharge .popup-recharge_sale span {
     color: #64cd05;
-    margin: 0 10px;
-}
-
-.button-t-h {
-    height: calc(100%-2px);
-}
-
-.balance-button:hover {
-    color: #ffffff;
-    border: none;
-}
-
-.balance__input {
-    width: 160px;
-    height: 37px;
-    background: #111416;
-    border-radius: 5px;
-    font-size: 19px;
-    font-family: Plumb-l;
-    border: 1px solid #2d2d2d;
-    text-align: center;
-    /* margin-right: 11px; */
-    /* margin-left: 5px; */
-    color: #ff5b00;
-    flex-grow: 1;
-}
-
-.balance__input::placeholder {
-    color: #ffffff;
+    font-size: 18px;
     text-transform: uppercase;
-    font-family: 'Plumb-B';
+    margin-bottom: 5px;
+    font-family: Plumb-B;
+    font-weight: 500;
+    display: inline-block
 }
 
-.balance__input:focus {
-    outline: none;
-}
-
-.balance__input-promocode {
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.balance__text {
-    text-align: center;
-    /* padding-left: 5px; */
-    font-size: 19px;
-    font-family: Plumb-l;
-    color: #a5a5a5;
-}
-
-.balance__payment-systems {
-    display: -webkit-box;
+.popup-recharge form {
+    margin-top: 25px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 100%;
-    margin-top: 19px;
-    margin-bottom: 15px;
-    justify-content: center;
+    position: relative;
+    z-index: 999;
+    -ms-flex-pack: justify;
+    justify-content: space-between
 }
 
-.balance__payment-system {
-    width: 100px !important;
-    height: 71px !important;
-    border: 1px solid rgba(255, 255, 255, 0.68);
+.popup-recharge form.disable .form-group {
+    display: none
+}
+
+.popup-recharge form.disable .form-group-btn {
+    width: 100%
+}
+
+.popup-recharge form .form-group {
+    position: relative;
+    width: 302px;
+    -ms-align-self: flex-end;
+    align-self: flex-end
+}
+
+.popup-recharge form .form-group label {
+    font-size: 18px;
+    font-family: Plumb-B;
+    color: #a5a5a5;
+    text-transform: none;
+    margin-bottom: 7px;
+    font-weight: 400;
+    display: inline-block
+}
+
+.popup-recharge form .form-recharge_methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 112px);
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.popup-recharge form .form-recharge_methods .form-recharge_method {
+    width: 112px;
+    height: 80px;
+    background-color: #15181b;
+    position: relative;
     border-radius: 3px;
-    margin: 5px;
-    cursor: pointer;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    background-color: #15181b !important;
-    color: #ffffff;
-    font-size: 19px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: background .25s;
+    border: 1px solid #2d2d2d;
+}
+
+.popup-recharge form .form-recharge_methods .form-recharge_method.active {
+    background-color: #111416;
+}
+
+.popup-recharge form .form-recharge_methods .form-recharge_method.active:hover {
+    background-color: #111416;
+}
+
+.popup-recharge form .form-recharge_methods .form-recharge_method .form-recharge_method__info {
+    font-size: 16px;
+    color: #e85b01;
+    font-family: Plumb-L;
+    font-weight: 700;
+    position: absolute;
+    text-transform: lowercase;
+    bottom: 4px;
+    right: 6px;
+    background: #111416;
+    border-radius: 3px;
+    padding: 1px 6px;
+    border: 1px solid #2d2d2d;
+}
+
+.popup-recharge form .form-recharge_methods .form-recharge_method.form-recharge_method--disabled input {
+    cursor: not-allowed
+}
+
+.popup-recharge form .form-recharge_methods .form-recharge_method.form-recharge_method--disabled .payment_method__name {
+    color: rgba(255, 255, 255, .25)
+}
+
+.popup-recharge form .form-recharge_methods .form-recharge_method:not(.form-recharge_method--disabled):hover {
+    background-color: #111416;
+}
+
+.popup-recharge .form-recharge_methods .form-recharge_method img {
+    max-width: 100%;
+    height: auto;
+}
+
+.popup-recharge form .form-recharge_methods .form-recharge_method .payment_method__name {
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: .5px;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
     font-family: Plumb-B;
 }
 
-.balance__payment-system:hover {
-    border: 1px solid #ff5b00;
-    border-radius: 5px;
+.popup-recharge form .form-recharge_methods .form-recharge_method .icon-epic:before {
+    font-size: 30px;
+    text-align: center
 }
 
-.form-1,
-.form-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.popup-recharge form .form-recharge_methods .form-recharge_method.form-recharge_method--disabled .icon-epic:before,
+.popup-recharge form .form-recharge_methods .form-recharge_method.form-recharge_method--disabled .icon-epicyandex span:before {
+    color: rgba(255, 255, 255, .25)
+}
+
+.popup-recharge form .form-recharge_methods .form-recharge_method .icon-epicyandex span:before {
+    font-size: 35px
+}
+
+.popup-recharge form .form-recharge_methods .form-recharge_method .icon-epicvisa:before {
+    color: #faa61a;
+    font-size: 26px
+}
+
+.popup-recharge form .form-recharge_methods .form-recharge_method .icon-epicwebmoney:before {
+    color: #00a3ff
+}
+
+.popup-recharge form .form-group .add-count {
+    position: absolute;
+    right: 20px;
+    top: 55%;
+    color: #f74f22;
+    font-size: 18px;
+    font-family: Plumb-B;
+    font-weight: 400
+}
+
+.popup-recharge form .form-group-btn {
+    width: 302px;
+    height: 60px;
+    margin-top: auto;
+    background-image: linear-gradient(61deg, #7bec02 0, #175e0d 100%);
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .5);
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: 0;
+    font-size: 16px;
+    position: relative;
+    font-family: Plumb-B;
+    border: none;
+}
+
+.popup-recharge form .form-group-btn:hover {
+    background-image: linear-gradient(241deg, #7bec02 0, #175e0d 100%);
+}
+
+.popup-recharge form .phone-enable .form-group-btn {
+    width: 136px
+}
+
+.popup-recharge form .form-group-btn span {
+    z-index: 2;
+    position: relative
+}
+
+.popup-recharge form .phone-enable .form-group-btn .text {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 103px;
+    margin: 0 auto;
+    display: block
+}
+
+
+/* .popup-recharge form .form-group-btn::after,
+.popup-recharge form .form-group-btn::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #1cad56 0, #1ddd6a 100%);
+    right: 0;
+    opacity: 0;
+    transition: opacity .3s;
+    z-index: 1
+} */
+
+.form-recharge_inputs {
     display: flex;
-    margin-top: 21px;
-    margin-bottom: 17px;
-    padding: 0 5px;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 24px;
 }
 
-.balance__buttons {
+.form-recharge_inputs.phone-enable .form-group_discount {
+    width: 272px
+}
+
+.popup-recharge form .form-group-btn::after {
+    background: linear-gradient(180deg, #106a34 0, #1b964c 100%)
+}
+
+.popup-recharge form .form-group-btn:active::after {
+    opacity: 1
+}
+
+.popup-recharge form .form-group-btn .form-group-btn--text.pending {
+    display: none
+}
+
+.popup-recharge form .form-group-btn .load {
+    display: none;
+    margin-right: 5px;
+    vertical-align: middle
+}
+
+.popup-recharge form .form-group-btn.form-group-btn--pending [type=submit] {
+    width: 100%;
+    background-color: #21272f;
+    border: 1px solid #333b47;
+    color: #b3b9cb;
+    outline: 0;
+    font-family: Geometria;
+    font-weight: 500;
+    font-size: 20px;
+    height: 56px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .2s
+}
+
+.popup-recharge form .form-group-btn.form-group-btn--pending {
     display: flex;
     justify-content: center;
-    margin-bottom: 18px;
+    align-items: center
 }
 
-
-/*
-.balance input {
-	outline: none;
-}
-*/
-
-
-/*
-.balance input:first-child {
-	color: #ffffff;
+.popup-recharge form .form-group-btn.form-group-btn--pending .form-group-btn--text {
+    display: none
 }
 
-.balance input:last-child {
-	color: #deff00;
+.popup-recharge form .form-group-btn.form-group-btn--pending .form-group-btn--text.pending,
+.popup-recharge form .form-group-btn.form-group-btn--pending .load {
+    display: inline-block
 }
-*/
+
+.popup-recharge form .form-group-btn.form-group-btn--pending .load img {
+    vertical-align: bottom
+}
+
+.popup-recharge form .form-group-btn button:hover {
+    background-color: #2f353f;
+    border: 1px solid #2f353f
+}
+
+.popup-recharge form .form-group-btn:hover::before {
+    opacity: 1
+}
+
+.popup-recharge form input {
+    width: 100%;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: Plumb-B;
+    height: 60px;
+    outline: 0;
+    border: 1px solid #2d2d2d;
+    text-indent: 20px;
+    border-radius: 3px;
+    background-color: #111416;
+    padding: 0 0;
+}
+
+.popup-recharge form input[name="amount_recharge"]::-webkit-outer-spin-button,
+.popup-recharge form input[name="amount_recharge"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.popup-recharge form .form-group.form-group_discount {
+    /* margin-top: 40px */
+    margin-bottom: 0;
+}
+
+.popup-recharge form .phone-enable .form-group.form-group_discount {
+    width: 216px
+}
+
+.popup-recharge form input[name=discount] {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    text-indent: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+
+.popup-recharge form input[name=discount]::placeholder {
+    color: #1e2327;
+}
+
+.popup-recharge .btn-discount {
+    background-color: #21272f;
+    color: #b3b9cb;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    font-family: Roboto;
+    margin-top: 15px;
+    height: 48px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background .3s
+}
+
+.popup-recharge .btn-discount:hover {
+    background: #2f353f
+}
+
+.popup-recharge_box.offer .form-group_discount,
+.popup-recharge_box.offer .form-recharge_amount,
+.popup-recharge_box.offer .form-recharge_feedback {
+    display: none
+}
+
+.popup-recharge_box.offer .form-group-btn {
+    width: 100%;
+    margin-top: 46px!important
+}
+
+.popup-recharge_box.offer form .phone-enable .form-group-btn {
+    width: 60%
+}
+
+.popup-recharge_box.offer .popup-recharge_sale {
+    visibility: hidden
+}
+
+.popup-recharge__close {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-recharge__close img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 769px) {
+    .balance .modal-dialog {
+        margin-top: 0;
+    }
+    .form-recharge_inputs {
+        flex-wrap: wrap;
+        margin-top: 10px
+    }
+    .popup-recharge form .form-group.form-group_phone,
+    .popup-recharge form .phone-enable .form-group-btn,
+    .popup-recharge form .phone-enable .form-group.form-group_discount {
+        width: 100%;
+        margin: 5px auto
+    }
+    .popup-recharge_box .md-effect:before {
+        display: none;
+    }
+    .popup-recharge {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%)
+    }
+    .popup-recharge .img-decoration {
+        display: none
+    }
+    .popup-recharge .close {
+        top: 15px
+    }
+    .popup-recharge form .form-group,
+    .popup-recharge form input,
+    .popup-recharge form input[name=discount] {
+        width: 100%
+    }
+    .popup-recharge form .form-group-btn {
+        margin-top: 16px;
+        width: 100%
+    }
+    .popup-recharge_box .md-effect {
+        padding-bottom: 60px
+    }
+    .popup-recharge .popup-recharge_warning {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 100%;
+        font-size: 14px;
+        text-align: center;
+        position: relative;
+        margin-top: 25px;
+    }
+    .popup-recharge form .form-recharge_feedback.form-group label {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        font-size: 14px
+    }
+    .popup-recharge .btn-discount {
+        display: block
+    }
+    .popup-recharge form .form-recharge_methods .form-recharge_method.checked:before {
+        width: 96px
+    }
+    .popup-recharge form input {
+        font-size: 14px
+    }
+    .popup-recharge form .form-recharge_feedback.form-group input {
+        padding-bottom: 0
+    }
+    .popup-recharge form .form-recharge_methods {
+        margin-top: 20px
+    }
+    .popup-recharge form .form-group label {
+        display: block
+    }
+}
 
 
 /*.balance end*/
