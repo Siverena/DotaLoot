@@ -504,12 +504,12 @@ login__balance:hover {
     content: "";
     background-image: url(../img/balance__coin.png);
     background-position: center;
-    background-size: 458px 143px;
+    background-size: 346px 143px;
     background-repeat: no-repeat;
-    width: 518px;
-    height: 357px;
-    top: -136px;
-    right: -79px;
+    width: 346px;
+    height: 143px;
+    top: -29px;
+    right: -48px;
     z-index: 0;
 }
 
@@ -725,7 +725,7 @@ login__balance:hover {
     cursor: pointer;
     text-transform: uppercase;
     outline: 0;
-    font-size: 16px;
+    font-size: 18px;
     position: relative;
     font-family: Plumb-B;
     border: none;
@@ -929,8 +929,8 @@ login__balance:hover {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    top: 10px;
-    right: 10px;
+    top: 14px;
+    right: 18px;
     cursor: pointer;
     z-index: 100;
 }
@@ -942,7 +942,8 @@ login__balance:hover {
 
 @media (max-width: 769px) {
     .balance .modal-dialog {
-        margin-top: 0;
+        margin: 0;
+        max-width: 100%;
     }
     .form-recharge_inputs {
         flex-wrap: wrap;
@@ -986,6 +987,7 @@ login__balance:hover {
         left: 50%;
         transform: translateX(-50%);
         max-width: 100%;
+        width: 100%;
         font-size: 14px;
         text-align: center;
         position: relative;
