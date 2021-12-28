@@ -1,4 +1,5 @@
 /*top*/
+
 .top-avatars {
     max-width: 560px;
     /* height: 230px; */
@@ -34,10 +35,8 @@
 .top-avatar__img {
     /*	width: 100%;*/
     height: 100%;
-
     max-width: 142px;
     max-height: 142px;
-
 }
 
 .top-avatar-fon::before {
@@ -55,7 +54,6 @@
     margin-left: 125px;
     top: 0;
     left: 0;
-
 }
 
 .top-avatar-fon--orange::before {
@@ -87,9 +85,6 @@
 }
 
 
-
-
-
 /*
 
 .top-avatar {
@@ -97,6 +92,7 @@
 	height: 141px;
 }
 */
+
 .top-avatar-text {
     height: 60px;
     text-align: center;
@@ -113,7 +109,6 @@
     width: 142px;
     display: block;
     overflow: hidden;
-
 }
 
 .top-avatar-text-2 {
@@ -124,7 +119,6 @@
 
 .top-avatar-text-3 {
     font-family: Plumb-B;
-
 }
 
 .top-table {
@@ -154,7 +148,6 @@
     border-radius: 5px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
 }
 
 .top-table__place {
@@ -165,8 +158,6 @@
     text-align: left;
     margin-left: 47px;
     vertical-align: middle;
-
-
 }
 
 .top-table__cases {
@@ -203,31 +194,27 @@
     white-space: nowrap;
 }
 
+
 /*top end*/
+
 @media(max-width: 426px) {
     .top-table__cases {
         display: none;
     }
-
     .top-table__earned,
     td:first-child {
         vertical-align: middle;
     }
-
     .top-table__user {
         padding-left: 5px;
     }
-
     .top-table__earned {
-
         width: 90px;
     }
-
-    .top-table__user > span {
+    .top-table__user>span {
         max-width: 68px;
         text-overflow: ellipsis;
         overflow: hidden;
-
     }
 }
 
@@ -235,6 +222,4 @@
     .top-table__user-cont {
         max-width: 170px;
     }
-
-
 }

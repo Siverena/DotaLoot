@@ -508,8 +508,8 @@
     width: 2px;
     height: 2px;
     border: 2px solid #f4441a;
-    -webkit-box-shadow: 0px 0px 18px 6px rgb(255, 48, 0, 32%);
-    box-shadow: 0px 0px 18px 6px rgb(255, 48, 0, 32%);
+    -webkit-box-shadow: 0px 0px 18px 6px rgba(255, 48, 0, 32%);
+    box-shadow: 0px 0px 18px 6px rgba(255, 48, 0, 32%);
     margin: 6px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -522,7 +522,7 @@
     width: 2px;
     height: 2px;
     border: 2px solid #7bec02;
-    box-shadow: 0px 0px 18px 6px rgb(123 236 2 / 32%);
+    box-shadow: 0px 0px 18px 6px rgba(123, 236, 2, 32%);
     margin: 6px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;

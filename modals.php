@@ -12,8 +12,9 @@ include_once('m/auth.php');
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.css.map">
 
 </head>
 
@@ -22,7 +23,7 @@ include_once('m/auth.php');
     $_SESSION['redirecturl'] = "midas.php";
     ?>
 
-    <main>
+    <main class="notif-main">
         <?php include_once 'live.php';?>
         <div class="container">
 
@@ -35,6 +36,7 @@ include_once('m/auth.php');
                 <button data-toggle="modal"  data-target="#free-bonus-w3" class="site-btn" style="color: #000000; padding: 11px;">free-bonus w-3</button>
                 <button data-toggle="modal"  data-target="#free-bonus-w4" class="site-btn" style="color: #000000; padding: 11px;">free-bonus w-4</button>
                 <button data-toggle="modal"  data-target="#another-thing" class="site-btn" style="color: #000000; padding: 11px;">Выбрать другую вещь</button>
+                <button data-toggle="modal"  data-target="#lootback" class="site-btn" style="color: #000000; padding: 11px;">lootback</button>
                 <a href="gift.php">gift.php</a>
                 <a href="open-win.php">open-win.php</a>
             </div>
@@ -332,43 +334,100 @@ include_once('m/auth.php');
     </div>
     <!--    another-thing end-->
 
-        <!-- notif start -->
-        <div class="notif">
-
-            <div class="notif__item ">
-                <div class="notif__image notif__image--orange">            </div>
-                <div class="notif__content">
-                    <p class="notif__text">Получать персональные промокоды, акции и системные уведомления?</p>
-                    <div class="notif__button-wrap">
-                        <button class=" notif__button ">Отмена </button>
-                        <button class=" notif__button notif__button--orange">Получать </button>
-                    </div>
-                </div>
-            </div>
-            <div class="notif__item notif__item--like">
-                <div class="notif__image notif__image--like">            </div>
-                <div class="notif__content">
-                    <p class="notif__text notif__text--like">Нажмите разрешить <br> в верхнем левом углу экрана!</p>
-                    <div class="notif__button-wrap">
-                        <a href="javascript:" class="notif__close"><img src="	https://dotaloot.pro/img/close.5a251131.png"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="notif__item notif__item--gal">
-                <div class="notif__image notif__image--gal">            </div>
-                <div class="notif__content notif__content--gal">
-                    <p class="notif__text notif__text--gal">Успех! <br>
-                Активирован промокод: 777 (15%)
-                </p>
-                    <div class="notif__button-wrap">
-                        <a href="javascript:" class="notif__close"><img src="	https://dotaloot.pro/img/close.5a251131.png"></a>
-                    </div>
+    <!-- notif start -->
+    <!-- <div class="notif">
+        <div class="notif__item ">
+            <div class="notif__image notif__image--orange">            </div>
+            <div class="notif__content">
+                <p class="notif__text">Получать персональные промокоды, акции и системные уведомления?</p>
+                <div class="notif__button-wrap">
+                    <button class=" notif__button ">Отмена </button>
+                    <button class=" notif__button notif__button--orange">Получать </button>
                 </div>
             </div>
         </div>
+        <div class="notif__item notif__item--like">
+            <div class="notif__image notif__image--like">            </div>
+            <div class="notif__content">
+                <p class="notif__text notif__text--like">Нажмите разрешить <br> в верхнем левом углу экрана!</p>
+                <div class="notif__button-wrap">
+                    <a href="javascript:" class="notif__close"><img src="	https://dotaloot.pro/img/close.5a251131.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="notif__item notif__item--gal">
+            <div class="notif__image notif__image--gal">            </div>
+            <div class="notif__content notif__content--gal">
+                <p class="notif__text notif__text--gal">Успех! <br>
+            Активирован промокод: 777 (15%)
+            </p>
+                <div class="notif__button-wrap">
+                    <a href="javascript:" class="notif__close"><img src="	https://dotaloot.pro/img/close.5a251131.png"></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- notif end -->
 
 
+    <!-- lootback-->
+    <div class="modal fade" id="lootback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content lootback">
+                <div class="lootback__top">    
+                    <header class="lootback__head">
+                        <p class="lootback__header">Что еще за LOOT BACK?</p>
+                        <p class="lootback__description"><span>LOOt BACK</span>  - это дополнительные бонусы которые<br>
+                            вы получаете за определенные  <br>
+                            действияна сайте, их можно потратить на <br> 
+                            особую серию кейсов! </p>
+                    </header>
+                </div>
+                <div class="lootback__bottom">
+                    <div class="lootback__section">
+                        <p class="lootback__question">Как получить?</p>
+                        <div class="lootback__item-wrap">
+                            <div class="lootback__item">
+                                <div class="lootback__item-head lootback__item--contract">
+                                    Создавайте контракты и  получайте LOOT BACK
+                                </div>
+                            <div class="lootback__button">Создавать контракт</div>
+                            </div>
+                            <div class="lootback__item">
+                                <div class="lootback__item-head lootback__item--inventory">
+                                    Продавайте предметы из своего инвентаря
+                                </div>
+                            <div class="lootback__button lootback__button--green">Инвентарь</div>
+                            </div>
+                            <div class="lootback__item">
+                                <div class="lootback__item-head  lootback__item--promotion">
+                                    Покупайте наборы в разделе Акций
+                                </div>
+                            <div class="lootback__button">Акции</div>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="lootback__section">
+                        <p class="lootback__question">Как потратить?</p>
+                        <div class="lootback__item-wrap">
+                            <div class="lootback__item lootback__item--spend lootback__item--wide">
 
+                            </div>
+                        <div class="lootback__item lootback__item--spend">
+                            <div class="lootback__item-head">
+                                Открывайте кейсы за&nbsp;LOOT&nbsp;BACK
+                            </div>
+                            <div class="lootback__button lootback__button--green">Кейсы</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:" class="lootback__close"><img src="https://dotaloot.pro/img/close.5a251131.png"></a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!--    lootback end-->
 
 
 </body>

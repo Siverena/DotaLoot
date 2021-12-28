@@ -152,15 +152,15 @@
 }
 
 .algorithm__step--link {
-    background-image: url("../img/treugolnik_zh.svg"), url(../img/step-shadow.png), linear-gradient(rgb(2 2 2 / 0.31), rgb(2 2 2 / 0.31)), url("../img/link_to_change.png");
+    background-image: url("../img/treugolnik_zh.svg"), url(../img/step-shadow.png), linear-gradient(rgba(2, 2, 2, 0.31), rgba(2, 2, 2, 0.31)), url("../img/link_to_change.png");
 }
 
 .algorithm__step--balance {
-    background-image: url("../img/treugolnik_z.svg"), url(../img/step-shadow.png), linear-gradient(rgb(2 2 2 / 0.31), rgb(2 2 2 / 0.31)), url("../img/cash.png");
+    background-image: url("../img/treugolnik_z.svg"), url(../img/step-shadow.png), linear-gradient(rgba(2, 2, 2, 0.31), rgba(2, 2, 2, 0.31)), url("../img/cash.png");
 }
 
 .algorithm__step--skin {
-    background-image: url("../img/treugolnik_g.svg"), url(../img/step-shadow.png), linear-gradient(rgb(2 2 2 / 0.31), rgb(2 2 2 / 0.31)), url("../img/get_skins.png");
+    background-image: url("../img/treugolnik_g.svg"), url(../img/step-shadow.png), linear-gradient(rgba(2, 2, 2, 0.31), rgba(2, 2, 2, 0.31)), url("../img/get_skins.png");
 }
 
 
@@ -425,7 +425,7 @@
     font-size: 29px;
     margin-bottom: 12px;
     color: #FFFFFF;
-    text-shadow: -0 -1px 4px rgba( 1, 184, 240, 0.4), 0 -1px 4px rgba( 1, 184, 240, 0.4), -0 1px 4px rgba( 1, 184, 240, 0.4), 0 1px 4px rgba( 1, 184, 240, 0.4), -1px -0 4px rgba( 1, 184, 240, 0.4), 1px -0 4px rgba( 1, 184, 240, 0.4), -1px 0 4px rgba( 1, 184, 240, 0.4), 1px 0 4px rgba( 1, 184, 240, 0.4), -1px -1px 4px rgba( 1, 184, 240, 0.4), 1px -1px 4px rgba( 1, 184, 240, 0.4), -1px 1px 4px rgba( 1, 184, 240, 0.4), 1px 1px 4px rgba( 1, 184, 240, 0.4), -1px -1px 4px rgba( 1, 184, 240, 0.4), 1px -1px 4px rgba( 1, 184, 240, 0.4), -1px 1px 4px rgba( 1, 184, 240, 0.4), 1px 1px 4px rgba( 1, 184, 240, 0.4), 0px 4px 3px rgb(5 5 5 / 0.4);
+    text-shadow: -0 -1px 4px rgba( 1, 184, 240, 0.4), 0 -1px 4px rgba( 1, 184, 240, 0.4), -0 1px 4px rgba( 1, 184, 240, 0.4), 0 1px 4px rgba( 1, 184, 240, 0.4), -1px -0 4px rgba( 1, 184, 240, 0.4), 1px -0 4px rgba( 1, 184, 240, 0.4), -1px 0 4px rgba( 1, 184, 240, 0.4), 1px 0 4px rgba( 1, 184, 240, 0.4), -1px -1px 4px rgba( 1, 184, 240, 0.4), 1px -1px 4px rgba( 1, 184, 240, 0.4), -1px 1px 4px rgba( 1, 184, 240, 0.4), 1px 1px 4px rgba( 1, 184, 240, 0.4), -1px -1px 4px rgba( 1, 184, 240, 0.4), 1px -1px 4px rgba( 1, 184, 240, 0.4), -1px 1px 4px rgba( 1, 184, 240, 0.4), 1px 1px 4px rgba( 1, 184, 240, 0.4), 0px 4px 3px rgba(5, 5, 5, 0.4);
 }
 
 .new-sitem--look {
@@ -433,7 +433,7 @@
     height: 30px;
     margin: 12px auto 0;
     background-color: #01baf0;
-    box-shadow: 0px 0px 10px 1px rgb(5 5 5 / 0.4);
+    box-shadow: 0px 0px 10px 1px rgba(5, 5, 5, 0.4);
 }
 
 .new-sitem--look:hover {
