@@ -1,0 +1,289 @@
+.manna {
+    background-color: #15181b;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    &__top {
+        background-color: #111416;
+        border-radius: 3px;
+        padding: 36px 0 0 30px;
+        position: relative;
+        box-sizing: border-box;
+        margin-bottom: -87px;
+        min-height: 212px;
+        &::before {
+            display: block;
+            content: "";
+            width: 591px;
+            height: 242px;
+            position: absolute;
+            right: -26px;
+            bottom: 1;
+            background-image: url(../img/manna/manna-bg.png);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
+    }
+    &__head {
+        max-width: 320px;
+        width: 100%;
+    }
+    &__header {
+        @include font-geometria(22px, 700, #3ea3e8, uppercase);
+        text-shadow: 0 0 20px #59b6f5;
+        margin-bottom: 14px;
+    }
+    &__description {
+        @include font-geometria(13px);
+        line-height: 18px;
+        span {
+            text-transform: uppercase;
+            color: #3ea3e8;
+        }
+    }
+    &__bottom {
+        padding: 0px 29px 30px 30px;
+        width: 100%;
+        z-index: 1;
+    }
+    &__section {
+        width: 100%;
+        // margin-top: 34px;
+        padding-top: 36px;
+    }
+    &__question {
+        @include font-geometria(13px, 700, #a5a5a5, uppercase);
+        margin-bottom: 8px;
+    }
+    &__item {
+        width: 200px;
+        // margin-left: 10px;
+        &--contract {
+            background-image: url("../img/manna/inventory.png");
+        }
+        &--inventory {
+            background-image: url("../img/manna/shopping-cart.png");
+        }
+        &--promotion {
+            background-image: url("../img/manna/sets.png");
+        }
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        &-head {
+            @include font-geometria(13px);
+            line-height: 18px;
+            background-color: #111416;
+            border: 1px solid #2d2d2d;
+            border-radius: 3px;
+            padding: 86px 16px 0;
+            text-align: center;
+            margin-bottom: 10px;
+            min-height: 130px;
+            background-position: center top 6px;
+            background-repeat: no-repeat;
+            & span {
+                color: #3ea3e8;
+            }
+        }
+        &--wide {
+            flex-grow: 1;
+            border: 1px solid #2d2d2d;
+            border-radius: 3px;
+            margin-right: 10px;
+            background-color: #111416;
+            background-image: url(../img/manna/manna-spend-bg.jpg);
+            background-position: center;
+            background-size: cover;
+            background-origin: border-box;
+            padding: 5px 14px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 130px;
+        }
+        &--spend {
+            min-height: 130px;
+            display: flex;
+            flex-direction: column;
+            .manna__item-head {
+                flex-grow: 1;
+                background-color: transparent;
+                border: none;
+                min-height: 80px;
+                @include font-geometria(14px);
+                padding-top: 21px;
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+            }
+        }
+    }
+    &__button {
+        @include font-geometria(14px,
+        $transform: uppercase);
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 3px;
+        background-image: linear-gradient(to left, #24475e, #3279ab);
+        padding: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover {
+            background-image: linear-gradient(to right, #24475e, #3279ab);
+        }
+        &--orange {
+            background-image: linear-gradient(61deg, #ec6502, #d22300);
+            &:hover {
+                background-image: linear-gradient(241deg, #ec6502, #d22300);
+            }
+        }
+    }
+    &__hero {
+        display: block;
+        height: fit-content;
+        &-icon {
+            width: 66px;
+            height: 66px;
+            margin-bottom: 11px;
+        }
+        &-name {
+            @include font-geometria(11px,
+            $transform: capitalize);
+            text-align: center;
+        }
+    }
+    &__close {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+        top: 13px;
+        right: 18px;
+        cursor: pointer;
+        z-index: 100;
+        & img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 680px;
+        margin: 10% auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .modal-dialog {
+        max-width: 285px;
+        margin: 10% auto;
+    }
+    .manna {
+        &__top {
+            padding: 37px 19px 16px;
+            min-height: 143px;
+            background-color: transparent;
+            margin-bottom: 0;
+            background-image: url(../img/manna/manna-bg-mob.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
+        }
+        &__header {
+            text-align: center;
+            font-size: 17px;
+            text-shadow: 0 0 13px #4ba6df;
+            margin-bottom: 13px;
+        }
+        &__description {
+            font-size: 10px;
+            line-height: 14px;
+            text-transform: uppercase;
+        }
+        &__bottom {
+            padding: 11px 20px 8px;
+            z-index: 0;
+        }
+        &__section {
+            padding-top: 9px;
+        }
+        &__question {
+            font-size: 10px;
+            margin-bottom: 9px;
+        }
+        &__item {
+            width: 118px;
+            margin-bottom: 11px;
+            &-head {
+                min-height: 77px;
+                font-size: 8px;
+                line-height: 11px;
+                padding: 46px 7px 5px;
+                margin-bottom: 6px;
+                background-position: center top 2px;
+                background-size: 41px auto;
+                &--wide {
+                    display: none;
+                }
+            }
+            &--wide {
+                padding: 18px 8px 19px 7px;
+                min-height: 78px;
+                flex-wrap: wrap;
+                margin: 0;
+                margin-top: -1px;
+            }
+            &--spend {
+                width: 100%;
+                min-height: 108px;
+                & .manna__item-head {
+                    padding: 17px 18px 1px 16px;
+                    min-height: 63px;
+                    line-height: 18px;
+                }
+                & .manna__button--orange {
+                    height: 40px;
+                    font-size: 14px;
+                }
+            }
+        }
+        &__button {
+            height: 23px;
+            font-size: 8px;
+        }
+        &__hero {
+            &-icon {
+                width: 39px;
+                height: 39px;
+                margin-bottom: 0px;
+            }
+            &-name {
+                display: none;
+            }
+        }
+        &__close {
+            top: 8px;
+            right: 8px;
+        }
+        // &__item {
+        //     margin: 10px auto;
+        // }
+    }
+}

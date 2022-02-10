@@ -31,6 +31,9 @@
                     <li class="nav__item-f">
                         <a class="nav__link" href="modals.php"><span>Модалки</span></a>
                     </li>
+                    <li class="nav__item-f">
+                        <a class="nav__link" href="free-item.html"><span>Заглушка</span></a>
+                    </li>
                 </ul>
 
             </div>

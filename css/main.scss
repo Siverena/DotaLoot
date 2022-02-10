@@ -130,6 +130,65 @@ main {
     /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+    font-family: 'geometria';
+    src: url('../font/geometria-bold.eot');
+    src: url('../font/geometria-bold.eot?#iefix') format('embedded-opentype'), url('../font/geometria-bold.woff2') format('woff2'), url('../font/geometria-bold.woff') format('woff'), url('../font/geometria-bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geometria';
+    src: url('../font/geometria-bolditalic.eot');
+    src: url('../font/geometria-bolditalic.eot?#iefix') format('embedded-opentype'), url('../font/geometria-bolditalic.woff2') format('woff2'), url('../font/geometria-bolditalic.woff') format('woff'), url('../font/geometria-bolditalic.ttf') format('ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'geometria';
+    src: url('../font/geometria-extrabold.eot');
+    src: url('../font/geometria-extrabold.eot?#iefix') format('embedded-opentype'), url('../font/geometria-extrabold.woff2') format('woff2'), url('../font/geometria-extrabold.woff') format('woff'), url('../font/geometria-extrabold.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geometria';
+    src: url('../font/geometria-light.eot');
+    src: url('../font/geometria-light.eot?#iefix') format('embedded-opentype'), url('../font/geometria-light.woff2') format('woff2'), url('../font/geometria-light.woff') format('woff'), url('../font/geometria-light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geometria';
+    src: url('../font/geometria-lightitalic.eot');
+    src: url('../font/geometria-lightitalic.eot?#iefix') format('embedded-opentype'), url('../font/geometria-lightitalic.woff2') format('woff2'), url('../font/geometria-lightitalic.woff') format('woff'), url('../font/geometria-lightitalic.ttf') format('ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'geometria';
+    src: url('../font/geometria-medium.eot');
+    src: url('../font/geometria-medium.eot?#iefix') format('embedded-opentype'), url('../font/geometria-medium.woff2') format('woff2'), url('../font/geometria-medium.woff') format('woff'), url('../font/geometria-medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geometria';
+    src: url('../font/geometria-mediumitalic.eot');
+    src: url('../font/geometria-mediumitalic.eot?#iefix') format('embedded-opentype'), url('../font/geometria-mediumitalic.woff2') format('woff2'), url('../font/geometria-mediumitalic.woff') format('woff'), url('../font/geometria-mediumitalic.ttf') format('ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+$main-font: 'geometria',
+'Arial',
+'sans-serif';
 .flex-box-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -293,3 +352,6 @@ ul>a>li {
 @import '_notif.scss';
 @import '_notif.scss';
 @import '_lootback.scss';
+@import '_promotion.scss';
+@import '_sunstrike.scss';
+@import '_manna.scss';

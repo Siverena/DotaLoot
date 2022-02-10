@@ -1,0 +1,269 @@
+@mixin font-geometria($size: 13px, $weight: 700, $color: #ffffff, $transform: 0) {
+    font-family: $main-font;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    @if $transform !=0 {
+        text-transform: $transform;
+    }
+}
+
+.sunstrike {
+    background-color: #15181b;
+    border-radius: 3px;
+    width: 500px;
+    box-sizing: border-box;
+    /*************************Верхний блок***********************/
+    &__top {
+        background-color: #111416;
+        border-radius: 3px;
+        padding: 43px 0 0 30px;
+        box-sizing: border-box;
+        min-height: 249px;
+        background-image: url(../img/sunstrike/sunstrike_cloud.png), url(../img/sunstrike/sunstrike_bg.png);
+        background-position: center bottom, center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    &__head {
+        max-width: 245px;
+        width: 100%;
+    }
+    &__header {
+        @include font-geometria(18px);
+        position: relative;
+        margin-bottom: 23px;
+        width: fit-content;
+        &::after {
+            display: block;
+            content: "";
+            width: 19px;
+            height: 19px;
+            border-radius: 3px;
+            position: absolute;
+            background-image: url(../img/sunstrike/sunstrike_fire.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            right: -29px;
+            top: -2;
+        }
+    }
+    &__old-price {
+        @include font-geometria(72px);
+        width: fit-content;
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            bottom: 28px;
+            border: none;
+            background-color: #ff0000;
+            position: absolute;
+        }
+    }
+    /*************************Конец верхнего блока*******************/
+    /*****************************Нижний блок***********************/
+    &__bottom {
+        padding: 29px 30px 22px;
+        width: 100%;
+        min-height: 251px;
+        z-index: 1;
+        position: relative;
+    }
+    &__button {
+        @include font-geometria(14px);
+        text-transform: uppercase;
+        position: absolute;
+        top: -78px;
+        width: 200px;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        background-image: linear-gradient(to left, #24475e, #3279ab);
+        padding: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover {
+            background-image: linear-gradient(to right, #24475e, #3279ab);
+        }
+    }
+    &__profit {
+        @include font-geometria();
+        margin-bottom: 31px;
+    }
+    &__profits-list {
+        list-style-type: none;
+        margin-bottom: 20px;
+    }
+    &__profits-item {
+        @include font-geometria();
+        position: relative;
+        margin-left: 29px;
+        // margin-top: 10px;
+        margin-bottom: 18px;
+        &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            left: -30px;
+            top: 1px;
+            bottom: auto;
+            width: 6px;
+            height: 6px;
+            box-sizing: border-box;
+            border: 2px solid #3ea3e8;
+            box-shadow: 0 0 13px #59b6f5;
+        }
+        &--green {
+            color: #12ff00;
+        }
+        &--blue {
+            color: #3ea3e8;
+        }
+    }
+    &__item-wrap {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 3px;
+        background-color: #111416;
+        margin-right: 10px;
+        @include font-geometria(10px, 300);
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        padding: 1px 4px;
+        background-repeat: no-repeat;
+        background-position: center bottom 7px;
+        &--rub {
+            background-image: url(../img/sunstrike/rub.png);
+        }
+        &--mana {
+            background-image: url(../img/sunstrike/mana.png);
+        }
+        &--ny {
+            background-image: url(../img/sunstrike/new-year.png);
+            background-position-y: 10px;
+        }
+        &:hover {
+            transform: scale(0.1);
+            transition: background-size 1s;
+        }
+    }
+    &__case-link {
+        @include font-geometria();
+        text-decoration: none;
+        text-decoration-line: underline;
+    }
+    /************************* Конец нижнего блока *******************/
+    &__close {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+        top: 19px;
+        right: 18px;
+        cursor: pointer;
+        z-index: 100;
+        & img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+
+/************************* Медиа-запросы ****************************/
+
+@media (min-width: 576px) {
+    #sunstrike .modal-dialog {
+        max-width: 500px;
+        margin: 10% auto;
+    }
+}
+
+@media (max-width: 800px) {
+    #sunstrike .modal-dialog {
+        max-width: 286px;
+        margin: 10% auto;
+    }
+    .sunstrike {
+        &__top {
+            min-height: fit-content;
+            padding: 38px 19px 8px;
+            background-size: 100%, 103%;
+            background-position-x: center, -9px;
+            background-position-y: bottom, -3px;
+        }
+        &__header {
+            @include font-geometria(17px);
+            margin-bottom: 32px;
+            &::after {
+                width: 11px;
+                height: 11px;
+                right: -21px;
+                top: 2px;
+                border-radius: 3px;
+            }
+        }
+        &__old-price {
+            @include font-geometria(49px);
+            &::before {
+                height: 3px;
+                bottom: 20px;
+            }
+        }
+        &__profit {
+            @include font-geometria(10px);
+            line-height: 12px;
+            max-width: 200px;
+            margin-bottom: 17px;
+        }
+        &__item {
+            @include font-geometria(10px);
+            padding: 0px 2px;
+        }
+        &__bottom {
+            padding: 21px 19px;
+        }
+        &__button {
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: 40px;
+            margin-bottom: 17px;
+            border-radius: 5px;
+        }
+        &__profits-list {
+            margin-bottom: 21px;
+            max-width: 200px;
+        }
+        &__profits-item {
+            @include font-geometria(10px);
+            margin-left: 26px;
+            margin-bottom: 9px;
+            &::before {
+                left: -26px;
+                top: 2px;
+            }
+        }
+        &__case-link {
+            @include font-geometria(10px);
+        }
+        &__close {
+            top: 7px;
+            right: 8px;
+        }
+    }
+}

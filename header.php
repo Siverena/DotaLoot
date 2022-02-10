@@ -21,6 +21,9 @@
                             <li class="nav__item ">
                                 <a class="nav__link" href="index.php"> <span>Кейсы</span> </a>
                             </li>
+                            <li class="nav__item ">
+                                <a class="nav__link" href="promotion.php"> <span>Акции</span> </a>
+                            </li>
                             <li class="nav__item">
                                 <a class="link-contract nav__link " href="contract.php"><span>Контракты</span><img class="nav_new" src="img/new.png" alt="">
                                 </a>
@@ -34,9 +37,9 @@
                         <li class="nav__item">
                                 <a class="nav__link" href="techis.php"><span>TECHIES</span></a>
                             </li>
-                            <li class="nav__item">
+                            <!-- <li class="nav__item">
                                 <a class="nav__link" href="dota.html"><span>Группа VK</span></a>
-                            </li>
+                            </li> -->
                         </ul>
 
                         <div class="autorization">

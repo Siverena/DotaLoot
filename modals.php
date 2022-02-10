@@ -37,6 +37,8 @@ include_once('m/auth.php');
                 <button data-toggle="modal"  data-target="#free-bonus-w4" class="site-btn" style="color: #000000; padding: 11px;">free-bonus w-4</button>
                 <button data-toggle="modal"  data-target="#another-thing" class="site-btn" style="color: #000000; padding: 11px;">Выбрать другую вещь</button>
                 <button data-toggle="modal"  data-target="#lootback" class="site-btn" style="color: #000000; padding: 11px;">lootback</button>
+                <button data-toggle="modal"  data-target="#sunstrike" class="site-btn" style="color: #000000; padding: 11px;">sunstrike</button>
+                <button data-toggle="modal"  data-target="#manna" class="site-btn" style="color: #000000; padding: 11px;">manna</button>
                 <a href="gift.php">gift.php</a>
                 <a href="open-win.php">open-win.php</a>
             </div>
@@ -335,7 +337,7 @@ include_once('m/auth.php');
     <!--    another-thing end-->
 
     <!-- notif start -->
-    <!-- <div class="notif">
+    <div class="notif">
         <div class="notif__item ">
             <div class="notif__image notif__image--orange">            </div>
             <div class="notif__content">
@@ -366,7 +368,7 @@ include_once('m/auth.php');
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- notif end -->
 
 
@@ -429,7 +431,114 @@ include_once('m/auth.php');
     </div>
     <!--    lootback end-->
 
+    <!--    sun strike  -->
+    <div class="modal fade" id="sunstrike" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content sunstrike">
+                <div class="sunstrike__top">    
+                    <header class="sunstrike__head">
+                        <h4 class="sunstrike__header">Sun&nbsp;Strike</h4>
+                        <p class="sunstrike__old-price">500</p>
+                    </header>
+                    
+                </div>
+                <div class="sunstrike__bottom">
+                <div class="sunstrike__button">Купить за 300&nbsp;руб.</div>
+                            <p class="sunstrike__profit">Выгоднее чем при покупке<wbr>по&nbsp;отдельности на&nbsp;<span class="sunstrike__profits-item--green">500&nbsp;руб.</span></p>
+                            <ul class="sunstrike__profits-list">
+                                <li class="sunstrike__profits-item"><span class="sunstrike__profits-item--green">500&nbsp;руб.</span> на ваш баланс</li>
+                                <li class="sunstrike__profits-item"><span class="sunstrike__profits-item--blue">500&nbsp;манны</span> на ваш баланс</li>
+                                <li class="sunstrike__profits-item">Бесплатное открытие: <a href="javascript:" class="sunstrike__case-link">Название&nbsp;кейса</a> <span class="sunstrike__profits-item--green">300&nbsp;руб.</span></li>
+                            </ul>
+                        <div class="sunstrike__item-wrap">
+                            <div class="sunstrike__item sunstrike__item--rub">500</div>
+                            <div class="sunstrike__item sunstrike__item--mana">1000</div>
+                            <div class="sunstrike__item sunstrike__item--ny">1</div>
+                    </div>
+                </div>
+                <a href="javascript:" class="sunstrike__close"><img src="https://dotaloot.pro/img/close.5a251131.png"></a>
+            </div>
 
+            </div>
+        </div>
+    </div>
+
+    <!--  end  sun strike  -->
+
+    <!-- manna -->
+    <div class="modal fade" id="manna" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content manna">
+                <div class="manna__top">    
+                    <header class="manna__head">
+                        <p class="manna__header">Что еще за МАННА?</p>
+                        <p class="manna__description"><span>МАННА</span> - это дополнительные бонусы, которые вы получаете за определенные действия на сайте, их можно потратить на особую серию кейсов!</p>
+                    </header>
+                </div>
+                <div class="manna__bottom">
+                    <div class="manna__section">
+                        <p class="manna__question">Как получить?</p>
+                        <div class="manna__item-wrap">
+                            <div class="manna__item">
+                                <div class="manna__item-head manna__item--contract">
+                                    Создавайте контракты и  получайте МАННУ
+                                </div>
+                            <button class="manna__button">Создавать контракт</button>
+                            </div>
+                            <div class="manna__item">
+                                <div class="manna__item-head manna__item--inventory">
+                                    Продавайте предметы из своего инвентаря
+                                </div>
+                            <button class="manna__button manna__button--orange">Инвентарь</button>
+                            </div>
+                            <div class="manna__item">
+                                <div class="manna__item-head  manna__item--promotion">
+                                    Покупайте наборы в разделе Акций
+                                </div>
+                            <button class="manna__button">Акции</button>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="manna__section">
+                        <p class="manna__question">Как потратить?</p>
+                        <div class="manna__item-wrap">
+                            <div class="manna__item manna__item--wide">
+                                <div class="manna__hero">
+                                    <img src="./img/manna/phantom.jpg" alt="phantom" class="manna__hero-icon">
+                                    <div class="manna__hero-name">phantom</div>
+                                </div>
+                                <div class="manna__hero">
+                                    <img src="./img/manna/juggernaut.jpg" alt="juggernaut.jpg" class="manna__hero-icon">
+                                    <div class="manna__hero-name">juggernaut</div>
+                                </div>
+                                <div class="manna__hero">
+                                    <img src="./img/manna/lion.jpg" alt="lion" class="manna__hero-icon">
+                                    <div class="manna__hero-name">lion</div>
+                                </div>
+                                <div class="manna__hero">
+                                    <img src="./img/manna/zeus.jpg" alt="zeus" class="manna__hero-icon">
+                                    <div class="manna__hero-name">zeus</div>
+                                </div>
+                                <div class="manna__hero">
+                                    <img src="./img/manna/enigma.jpg" alt="enigma" class="manna__hero-icon">
+                                    <div class="manna__hero-name">enigma</div>
+                                </div>
+                            </div>
+                        <div class="manna__item manna__item--spend">
+                            <div class="manna__item-head">
+                                Открывайте кейсы за&nbsp;<span>МАННУ</span>
+                            </div>
+                            <button class="manna__button manna__button--orange">Кейсы</button>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:" class="manna__close"><img src="https://dotaloot.pro/img/close.5a251131.png"></a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end manna -->
 </body>
 
 </html>
