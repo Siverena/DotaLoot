@@ -1,16 +1,16 @@
 .manna {
     background-color: #15181b;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
     &__top {
         background-color: #111416;
-        border-radius: 3px;
         padding: 36px 0 0 30px;
         position: relative;
         box-sizing: border-box;
         margin-bottom: -87px;
         min-height: 212px;
+        border-radius: 5px 5px 0 0;
         &::before {
             display: block;
             content: "";
@@ -20,7 +20,7 @@
             right: -26px;
             bottom: 1;
             background-image: url(../img/manna/manna-bg.png);
-            background-position: center;
+            background-position: center, ;
             background-size: 100%;
             background-repeat: no-repeat;
             z-index: 0;
@@ -29,6 +29,7 @@
     &__head {
         max-width: 320px;
         width: 100%;
+        background-color: transparent;
     }
     &__header {
         @include font-geometria(22px, 700, #3ea3e8, uppercase);
@@ -57,6 +58,15 @@
         @include font-geometria(13px, 700, #a5a5a5, uppercase);
         margin-bottom: 8px;
     }
+    &__hero-wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    &__heroes {
+        width: 118px;
+    }
     &__item {
         width: 200px;
         // margin-left: 10px;
@@ -80,7 +90,7 @@
             line-height: 18px;
             background-color: #111416;
             border: 1px solid #2d2d2d;
-            border-radius: 3px;
+            border-radius: 5px;
             padding: 86px 16px 0;
             text-align: center;
             margin-bottom: 10px;
@@ -94,7 +104,7 @@
         &--wide {
             flex-grow: 1;
             border: 1px solid #2d2d2d;
-            border-radius: 3px;
+            border-radius: 5px;
             margin-right: 10px;
             background-color: #111416;
             background-image: url(../img/manna/manna-spend-bg.jpg);
@@ -109,7 +119,7 @@
             min-height: 130px;
         }
         &--spend {
-            min-height: 130px;
+            // min-height: 130px;
             display: flex;
             flex-direction: column;
             .manna__item-head {
@@ -117,7 +127,7 @@
                 background-color: transparent;
                 border: none;
                 min-height: 80px;
-                @include font-geometria(14px);
+                @include font-geometria(13px);
                 padding-top: 21px;
                 // display: flex;
                 // align-items: center;
@@ -126,12 +136,12 @@
         }
     }
     &__button {
-        @include font-geometria(14px,
+        @include font-geometria(13px,
         $transform: uppercase);
         width: 100%;
         height: 40px;
         border: none;
-        border-radius: 3px;
+        border-radius: 5px;
         background-image: linear-gradient(to left, #24475e, #3279ab);
         padding: auto;
         display: flex;
@@ -187,16 +197,16 @@
 
 @media (max-width: 800px) {
     .modal-dialog {
-        max-width: 285px;
+        max-width: 290px;
         margin: 10% auto;
     }
     .manna {
         &__top {
-            padding: 37px 19px 16px;
+            padding: 40px 10px 16px 10px;
             min-height: 143px;
             background-color: transparent;
             margin-bottom: 0;
-            background-image: url(../img/manna/manna-bg-mob.png);
+            background-image: url(../img/manna/bottle.png), url(../img/manna/manna-bg-mob.png);
             background-position: bottom right;
             background-repeat: no-repeat;
             &::before {
@@ -213,12 +223,15 @@
             margin-bottom: 13px;
         }
         &__description {
-            font-size: 10px;
+            font-size: 11px;
             line-height: 14px;
-            text-transform: uppercase;
+            padding: 0 54px 0 0;
+            span {
+                text-transform: uppercase;
+            }
         }
         &__bottom {
-            padding: 11px 20px 8px;
+            padding: 11px 10px 8px;
             z-index: 0;
         }
         &__section {
@@ -228,20 +241,34 @@
             font-size: 10px;
             margin-bottom: 9px;
         }
+        &__item-wrap {
+            &--receive {
+                display: block;
+            }
+        }
         &__item {
             width: 118px;
             margin-bottom: 11px;
             &-head {
-                min-height: 77px;
-                font-size: 8px;
+                min-height: auto;
+                font-size: 11px;
                 line-height: 11px;
-                padding: 46px 7px 5px;
-                margin-bottom: 6px;
-                background-position: center top 2px;
+                padding: 20px 10px 20px 75px;
+                margin-bottom: 11px;
+                background-position: left 8px center;
                 background-size: 41px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 &--wide {
                     display: none;
                 }
+                &--spend {
+                    display: none;
+                }
+            }
+            &--receive {
+                width: 100%;
             }
             &--wide {
                 padding: 18px 8px 19px 7px;
@@ -252,7 +279,7 @@
             }
             &--spend {
                 width: 100%;
-                min-height: 108px;
+                // min-height: 108px;
                 & .manna__item-head {
                     padding: 17px 18px 1px 16px;
                     min-height: 63px;
@@ -265,8 +292,8 @@
             }
         }
         &__button {
-            height: 23px;
-            font-size: 8px;
+            height: 40px;
+            font-size: 11px;
         }
         &__hero {
             &-icon {
@@ -279,8 +306,8 @@
             }
         }
         &__close {
-            top: 8px;
-            right: 8px;
+            top: 10px;
+            right: 10px;
         }
         // &__item {
         //     margin: 10px auto;

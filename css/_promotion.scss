@@ -61,31 +61,6 @@
     }
 }
 
-.promotion-pay {
-    * {
-        font-family: 'geometria', Arial, sans-serif!important;
-    }
-    @include font(#ffffff, 14px, 700, uppercase);
-    .popup-recharge {
-        form {
-            margin-top: 92px;
-            .form-group-btn {
-                width: 100%;
-                border-radius: 5px;
-            }
-        }
-        .popup-recharge_title {
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 25px;
-            letter-spacing: -1px;
-        }
-    }
-    .form-recharge_inputs {
-        padding-top: 20px;
-    }
-}
-
 .hero {
     width: 550px;
     height: 390px;
@@ -189,7 +164,7 @@
         align-items: center;
         justify-content: center;
         border: none;
-        @include font(#ffffff, 14px, 700, uppercase);
+        @include font(#ffffff, 13px, 700, uppercase);
         cursor: pointer;
         padding: 4px 0 0 0;
         &.mana {
@@ -212,7 +187,7 @@
     border-radius: 5px;
     width: 90%;
     @include font(#ffffff, 13px, 700);
-    padding: 10px 18px;
+    padding: 10px 10px;
     &__list {
         display: flex;
         list-style: none;
@@ -381,7 +356,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @include font(#ffffff, 14px, 700, uppercase);
+        @include font(#ffffff, 13px, 700, uppercase);
         border-radius: 5px;
         border: none;
         cursor: pointer;
@@ -475,7 +450,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .container--promo {
         width: 100%;
         margin: 0 auto;

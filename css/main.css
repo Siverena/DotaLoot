@@ -1571,25 +1571,19 @@ login__balance:hover {
   height: 80px;
 }
 
-.shrink {
-  background-color: #1e1a1f;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
 .link-contract {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .balance__payment-input {
@@ -1609,8 +1603,8 @@ login__balance:hover {
   }
   .show-cont {
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .nav__menu-main {
     /* margin-right: 64px; */
@@ -1620,8 +1614,8 @@ login__balance:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: auto;
   }
   .nav__menu-dop {
@@ -1630,8 +1624,8 @@ login__balance:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: auto;
   }
   .nav__item {
@@ -1658,7 +1652,7 @@ login__balance:hover {
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-preferred-size: auto;
-    flex-basis: auto;
+        flex-basis: auto;
   }
 }
 
@@ -10185,37 +10179,6 @@ z-index: 50;
   }
 }
 
-.promotion-pay {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.promotion-pay * {
-  font-family: "geometria", Arial, sans-serif !important;
-}
-
-.promotion-pay .popup-recharge form {
-  margin-top: 92px;
-}
-
-.promotion-pay .popup-recharge form .form-group-btn {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.promotion-pay .popup-recharge .popup-recharge_title {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: -1px;
-}
-
-.promotion-pay .form-recharge_inputs {
-  padding-top: 20px;
-}
-
 .hero {
   width: 550px;
   height: 390px;
@@ -10368,7 +10331,7 @@ z-index: 50;
           justify-content: center;
   border: none;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
@@ -10403,7 +10366,7 @@ z-index: 50;
   font-size: 13px;
   font-weight: 700;
   text-transform: none;
-  padding: 10px 18px;
+  padding: 10px 10px;
 }
 
 .call__list {
@@ -10658,7 +10621,7 @@ z-index: 50;
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
@@ -10772,7 +10735,7 @@ z-index: 50;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container--promo {
     width: 100%;
     margin: 0 auto;
@@ -10915,7 +10878,8 @@ z-index: 50;
 
 .sunstrike {
   background-color: #15181b;
-  border-radius: 3px;
+  border-radius: 5px;
+  border: none;
   width: 500px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10927,13 +10891,13 @@ z-index: 50;
 
 .sunstrike__top {
   background-color: #111416;
-  border-radius: 3px;
-  padding: 43px 0 0 30px;
+  border-radius: 5px;
+  padding: 46px 0 0 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 249px;
-  background-image: url(../img/sunstrike/sunstrike_cloud.png), url(../img/sunstrike/sunstrike_bg.png);
-  background-position: center bottom, center;
+  min-height: 212px;
+  background-image: url(../img/sunstrike/sunstrike_bg.png);
+  background-position: right bottom;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -10949,7 +10913,7 @@ z-index: 50;
   font-weight: 700;
   color: #ffffff;
   position: relative;
-  margin-bottom: 23px;
+  margin-bottom: 56px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -10960,14 +10924,14 @@ z-index: 50;
   content: "";
   width: 19px;
   height: 19px;
-  border-radius: 3px;
+  border-radius: 5px;
   position: absolute;
   background-image: url(../img/sunstrike/sunstrike_fire.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  right: -29px;
-  top: -2;
+  right: -30px;
+  top: -3;
 }
 
 .sunstrike__old-price {
@@ -10993,7 +10957,7 @@ z-index: 50;
 }
 
 .sunstrike__bottom {
-  padding: 29px 30px 22px;
+  padding: 28px 29px 30px;
   width: 100%;
   min-height: 251px;
   z-index: 1;
@@ -11006,12 +10970,10 @@ z-index: 50;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  position: absolute;
-  top: -78px;
-  width: 200px;
-  height: 60px;
+  width: 100%;
+  height: 40px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   background-image: -webkit-gradient(linear, right top, left top, from(#24475e), to(#3279ab));
   background-image: linear-gradient(to left, #24475e, #3279ab);
   padding: auto;
@@ -11052,15 +11014,15 @@ z-index: 50;
   color: #ffffff;
   position: relative;
   margin-left: 29px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .sunstrike__profits-item::before {
   display: block;
   content: "";
   position: absolute;
-  left: -30px;
-  top: 1px;
+  left: -29px;
+  top: 3px;
   bottom: auto;
   width: 6px;
   height: 6px;
@@ -11089,13 +11051,14 @@ z-index: 50;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 22px;
 }
 
 .sunstrike__item {
   width: 60px;
   height: 60px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #111416;
   margin-right: 10px;
   font-family: "geometria", "Arial", "sans-serif";
@@ -11130,10 +11093,8 @@ z-index: 50;
 }
 
 .sunstrike__item:hover {
-  -webkit-transform: scale(0.1);
-          transform: scale(0.1);
-  -webkit-transition: background-size 1s;
-  transition: background-size 1s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .sunstrike__case-link {
@@ -11183,10 +11144,8 @@ z-index: 50;
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
-    padding: 38px 19px 8px;
-    background-size: 100%, 103%;
-    background-position-x: center, -9px;
-    background-position-y: bottom, -3px;
+    padding: 38px 13px 8px;
+    background-size: cover;
   }
   .sunstrike__header {
     font-family: "geometria", "Arial", "sans-serif";
@@ -11200,7 +11159,7 @@ z-index: 50;
     height: 11px;
     right: -21px;
     top: 2px;
-    border-radius: 3px;
+    border-radius: 5px;
   }
   .sunstrike__old-price {
     font-family: "geometria", "Arial", "sans-serif";
@@ -11221,22 +11180,24 @@ z-index: 50;
     max-width: 200px;
     margin-bottom: 17px;
   }
+  .sunstrike__item-wrap {
+    margin-bottom: 10px;
+  }
   .sunstrike__item {
     font-family: "geometria", "Arial", "sans-serif";
     font-size: 10px;
     font-weight: 700;
     color: #ffffff;
-    padding: 0px 2px;
+    padding: 4px 2px;
   }
   .sunstrike__bottom {
-    padding: 21px 19px;
+    padding: 20px 10px 9px;
   }
   .sunstrike__button {
     position: relative;
     top: 0;
     width: 100%;
     height: 40px;
-    margin-bottom: 17px;
     border-radius: 5px;
   }
   .sunstrike__profits-list {
@@ -11248,11 +11209,12 @@ z-index: 50;
     font-size: 10px;
     font-weight: 700;
     color: #ffffff;
-    margin-left: 26px;
-    margin-bottom: 9px;
+    margin-left: 17px;
+    margin-bottom: 14px;
+    line-height: 11px;
   }
   .sunstrike__profits-item::before {
-    left: -26px;
+    left: -18px;
     top: 2px;
   }
   .sunstrike__case-link {
@@ -11269,7 +11231,7 @@ z-index: 50;
 
 .manna {
   background-color: #15181b;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11277,13 +11239,13 @@ z-index: 50;
 
 .manna__top {
   background-color: #111416;
-  border-radius: 3px;
   padding: 36px 0 0 30px;
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: -87px;
   min-height: 212px;
+  border-radius: 5px 5px 0 0;
 }
 
 .manna__top::before {
@@ -11304,6 +11266,7 @@ z-index: 50;
 .manna__head {
   max-width: 320px;
   width: 100%;
+  background-color: transparent;
 }
 
 .manna__header {
@@ -11349,6 +11312,22 @@ z-index: 50;
   margin-bottom: 8px;
 }
 
+.manna__hero-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.manna__heroes {
+  width: 118px;
+}
+
 .manna__item {
   width: 200px;
 }
@@ -11385,7 +11364,7 @@ z-index: 50;
   line-height: 18px;
   background-color: #111416;
   border: 1px solid #2d2d2d;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 86px 16px 0;
   text-align: center;
   margin-bottom: 10px;
@@ -11403,7 +11382,7 @@ z-index: 50;
       -ms-flex-positive: 1;
           flex-grow: 1;
   border: 1px solid #2d2d2d;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-right: 10px;
   background-color: #111416;
   background-image: url(../img/manna/manna-spend-bg.jpg);
@@ -11428,7 +11407,6 @@ z-index: 50;
 }
 
 .manna__item--spend {
-  min-height: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11446,7 +11424,7 @@ z-index: 50;
   border: none;
   min-height: 80px;
   font-family: "geometria", "Arial", "sans-serif";
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   color: #ffffff;
   padding-top: 21px;
@@ -11454,14 +11432,14 @@ z-index: 50;
 
 .manna__button {
   font-family: "geometria", "Arial", "sans-serif";
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   width: 100%;
   height: 40px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   background-image: -webkit-gradient(linear, right top, left top, from(#24475e), to(#3279ab));
   background-image: linear-gradient(to left, #24475e, #3279ab);
   padding: auto;
@@ -11541,15 +11519,15 @@ z-index: 50;
 
 @media (max-width: 800px) {
   .modal-dialog {
-    max-width: 285px;
+    max-width: 290px;
     margin: 10% auto;
   }
   .manna__top {
-    padding: 37px 19px 16px;
+    padding: 40px 10px 16px 10px;
     min-height: 143px;
     background-color: transparent;
     margin-bottom: 0;
-    background-image: url(../img/manna/manna-bg-mob.png);
+    background-image: url(../img/manna/bottle.png), url(../img/manna/manna-bg-mob.png);
     background-position: bottom right;
     background-repeat: no-repeat;
   }
@@ -11566,12 +11544,15 @@ z-index: 50;
     margin-bottom: 13px;
   }
   .manna__description {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 14px;
+    padding: 0 54px 0 0;
+  }
+  .manna__description span {
     text-transform: uppercase;
   }
   .manna__bottom {
-    padding: 11px 20px 8px;
+    padding: 11px 10px 8px;
     z-index: 0;
   }
   .manna__section {
@@ -11581,21 +11562,39 @@ z-index: 50;
     font-size: 10px;
     margin-bottom: 9px;
   }
+  .manna__item-wrap--receive {
+    display: block;
+  }
   .manna__item {
     width: 118px;
     margin-bottom: 11px;
   }
   .manna__item-head {
-    min-height: 77px;
-    font-size: 8px;
+    min-height: auto;
+    font-size: 11px;
     line-height: 11px;
-    padding: 46px 7px 5px;
-    margin-bottom: 6px;
-    background-position: center top 2px;
+    padding: 20px 10px 20px 75px;
+    margin-bottom: 11px;
+    background-position: left 8px center;
     background-size: 41px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .manna__item-head--wide {
     display: none;
+  }
+  .manna__item-head--spend {
+    display: none;
+  }
+  .manna__item--receive {
+    width: 100%;
   }
   .manna__item--wide {
     padding: 18px 8px 19px 7px;
@@ -11607,7 +11606,6 @@ z-index: 50;
   }
   .manna__item--spend {
     width: 100%;
-    min-height: 108px;
   }
   .manna__item--spend .manna__item-head {
     padding: 17px 18px 1px 16px;
@@ -11619,8 +11617,8 @@ z-index: 50;
     font-size: 14px;
   }
   .manna__button {
-    height: 23px;
-    font-size: 8px;
+    height: 40px;
+    font-size: 11px;
   }
   .manna__hero-icon {
     width: 39px;
@@ -11631,8 +11629,274 @@ z-index: 50;
     display: none;
   }
   .manna__close {
-    top: 8px;
-    right: 8px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.promotion-pay {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'geometria', Arial, sans-serif;
+  max-width: 680px;
+  background-color: #15181b;
+  width: 680px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.promotion-pay__top {
+  padding: 33px 29px 0;
+  background-color: #111416;
+  height: 212px;
+  border-radius: 5px 5px 0 0;
+}
+
+.promotion-pay__top::before {
+  display: block;
+  content: "";
+  width: 566px;
+  height: 326px;
+  top: -62px;
+  left: 165px;
+  position: absolute;
+  background-image: url(../img/balance__women.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.promotion-pay__top::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(../img/balance__coin.png);
+  background-position: center;
+  background-size: 346px 143px;
+  background-repeat: no-repeat;
+  width: 346px;
+  height: 143px;
+  top: -29px;
+  right: -48px;
+  z-index: 0;
+}
+
+.promotion-pay__title {
+  color: #e85b01;
+  text-shadow: 0 0 20px #e85b01;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -1px;
+}
+
+.promotion-pay__bottom {
+  margin-top: -30px;
+  padding: 0 30px 29px;
+}
+
+.promotion-pay__form {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 999;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.promotion-pay__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 21px;
+}
+
+.promotion-pay__btn {
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  background-image: linear-gradient(61deg, #7bec02 0, #175e0d 100%);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: 0;
+  font-size: 13px;
+  border: none;
+  line-height: 14px;
+}
+
+.promotion-pay__btn:hover {
+  background-image: linear-gradient(241deg, #7bec02 0, #175e0d 100%);
+}
+
+.promotion-pay__methods {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (112px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 112px);
+  row-gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.promotion-pay__method {
+  border-radius: 5px;
+}
+
+.promotion-pay__method label {
+  width: 112px;
+  height: 80px;
+  background-color: #15181b;
+  position: relative;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+  border: 1px solid #2d2d2d;
+}
+
+.promotion-pay__method label:hover {
+  background-color: #111416;
+}
+
+.promotion-pay__method input {
+  display: none;
+}
+
+.promotion-pay__method input:checked + label {
+  background-color: #111416;
+  border-color: #f4441a;
+}
+
+.promotion-pay__method-info {
+  font-size: 10px;
+  color: #a5a5a5;
+  font-weight: 300;
+  position: absolute;
+  text-transform: lowercase;
+  bottom: 4px;
+  right: 6px;
+  background: #111416;
+  border-radius: 3px;
+  padding: 1px 6px;
+  border: 1px solid #2d2d2d;
+}
+
+.promotion-pay__method-name {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.promotion-pay__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.promotion-pay__name {
+  display: block;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: .5px;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promotion-pay__close {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: auto;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.promotion-pay__close img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 769px) {
+  .promotion-pay__top {
+    padding: 25px 0 0 12px;
+    background-image: url(../img/pay-combo/coins.png), url(../img/pay-combo/smoke.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 128px;
+  }
+  .promotion-pay__top::before {
+    display: none;
+  }
+  .promotion-pay__top::after {
+    display: none;
+  }
+  .promotion-pay__title {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .promotion-pay__bottom {
+    padding: 0 10px 10px;
+    margin-top: 0;
+  }
+  .promotion-pay__methods {
+    row-gap: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .promotion-pay__form {
+    margin-top: 20px;
+  }
+  .promotion-pay__inputs {
+    margin-top: 10px;
+  }
+  .promotion-pay__close {
+    top: 10px;
+    right: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -350,12 +350,26 @@ body {
     }
 }
 
+@keyframes bright {
+    from {
+        filter: brightness(100%);
+    }
+    to {
+        filter: brightness(150%);
+    }
+}
+
 .logo {
     width: 160px;
     height: 96px;
     position: relative;
     margin-top: 8px;
     align-self: center;
+    animation-name: bright;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
     &__img {}
     &__domain {
         width: 52px;

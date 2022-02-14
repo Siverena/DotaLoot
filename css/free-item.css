@@ -424,6 +424,28 @@ body {
           align-items: center;
 }
 
+@-webkit-keyframes bright {
+  from {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+  to {
+    -webkit-filter: brightness(150%);
+            filter: brightness(150%);
+  }
+}
+
+@keyframes bright {
+  from {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+  to {
+    -webkit-filter: brightness(150%);
+            filter: brightness(150%);
+  }
+}
+
 .logo {
   width: 160px;
   height: 96px;
@@ -432,6 +454,16 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-animation-name: bright;
+          animation-name: bright;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .logo__domain {

@@ -109,6 +109,7 @@ include_once('m/auth.php');
 						</article>
 						<article class="combinations__item combo emp" data-toggle="modal"  data-target="#sunstrike">
 							<div class="combo__content emp">
+							<div class="combo__marker">новое</div>
 								<p class="combo__name emp">emp</p>
 								<p class="combo__price">799 руб</p>
 								<div class="combo__profit">Выгода 55 руб</div>
@@ -122,6 +123,7 @@ include_once('m/auth.php');
 						</article>
 						<article class="combinations__item combo tornado" data-toggle="modal"  data-target="#sunstrike">
 							<div class="combo__content tornado">
+							<div class="combo__marker">новое</div>
 								<p class="combo__name tornado">tornado</p>
 								<p class="combo__price">1499 руб</p>
 								<div class="combo__profit">Выгода 55 руб</div>
@@ -136,6 +138,7 @@ include_once('m/auth.php');
 
 						<article class="combinations__item combo chaosmeteor" data-toggle="modal"  data-target="#sunstrike">
 							<div class="combo__content chaosmeteor">
+							<div class="combo__marker">новое</div>
 								<p class="combo__name chaosmeteor">Chaos Meteor</p>
 								<p class="combo__price">2999 руб</p>
 								<div class="combo__profit">Выгода 780 руб</div>
@@ -169,7 +172,7 @@ include_once('m/auth.php');
 					</div>
 				</div>
 				<div class="sunstrike__bottom">
-						<div class="sunstrike__button" data-toggle="modal"  data-target="#promotion-pay">Купить за 300&nbsp;руб.</div>
+					
 						<p class="sunstrike__profit">Выгоднее чем при покупке<wbr>по&nbsp;отдельности на&nbsp;<span class="sunstrike__profits-item--green">500&nbsp;руб.</span></p>
 						<ul class="sunstrike__profits-list">
 							<li class="sunstrike__profits-item"><span class="sunstrike__profits-item--green">500&nbsp;руб.</span> на ваш баланс</li>
@@ -181,6 +184,7 @@ include_once('m/auth.php');
 							<div class="sunstrike__item sunstrike__item--mana">1000</div>
 							<div class="sunstrike__item sunstrike__item--ny">1</div>
 						</div>
+						<div class="sunstrike__button" data-toggle="modal"  data-target="#promotion-pay">Купить за 300&nbsp;руб.</div>
 					</div>
 
 					<a href="javascript:" class="sunstrike__close"><img src="https://dotaloot.pro/img/close.5a251131.png"></a>
@@ -204,31 +208,34 @@ include_once('m/auth.php');
                 <div class="manna__bottom">
                     <div class="manna__section">
                         <p class="manna__question">Как получить?</p>
-                        <div class="manna__item-wrap">
-                            <div class="manna__item">
+                        <div class="manna__item-wrap manna__item-wrap--receive">
+
+                            <div class="manna__item manna__item--receive">
                                 <div class="manna__item-head manna__item--contract">
                                     Создавайте контракты и  получайте МАННУ
                                 </div>
-                            <button class="manna__button">Создавать контракт</button>
+                            	<button class="manna__button">Создавать контракт</button>
                             </div>
-                            <div class="manna__item">
+
+                            <div class="manna__item manna__item--receive">
                                 <div class="manna__item-head manna__item--inventory">
                                     Продавайте предметы из своего инвентаря
                                 </div>
-                            <button class="manna__button manna__button--orange">Инвентарь</button>
+                            	<button class="manna__button manna__button--orange">Инвентарь</button>
                             </div>
-                            <div class="manna__item">
+
+                            <div class="manna__item manna__item--receive">
                                 <div class="manna__item-head  manna__item--promotion">
                                     Покупайте наборы в разделе Акций
                                 </div>
-                            <button class="manna__button">Акции</button>
+                           		<button class="manna__button">Акции</button>
                             </div>
-                            </div>
+						</div>
                     </div>
                     <div class="manna__section">
                         <p class="manna__question">Как потратить?</p>
                         <div class="manna__item-wrap">
-                            <div class="manna__item manna__item--wide">
+                            <div class="manna__heroes manna__item--wide">
                                 <div class="manna__hero">
                                     <img src="./img/manna/phantom.jpg" alt="phantom" class="manna__hero-icon">
                                     <div class="manna__hero-name">phantom</div>
@@ -251,7 +258,7 @@ include_once('m/auth.php');
                                 </div>
                             </div>
                         <div class="manna__item manna__item--spend">
-                            <div class="manna__item-head">
+                            <div class="manna__item-head manna__item-head--spend">
                                 Открывайте кейсы за&nbsp;<span>МАННУ</span>
                             </div>
                             <button class="manna__button manna__button--orange">Кейсы</button>
@@ -274,97 +281,110 @@ include_once('m/auth.php');
 
 
 <!-- promotion-pay -->
-<div class="modal fade balance promotion-pay" id="promotion-pay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade " id="promotion-pay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog" role="document">
       <!-- modal-body -->
-      <div class="popup-recharge_box popup-recharge js-modal-container md-show">
-         <div class="md-effect">
-
-            <div class="popup-recharge_top">
-               <div class="popup-recharge_info">
-                  <div class="popup-recharge_title">Оплата выбранной <br> комбинации</div>
+      <div class=" promotion-pay">
+		    <div class="promotion-pay__top ">
+               <div class="promotion-pay__info ">
+                  <div class="promotion-pay__title  ">Оплата выбранной <br> комбинации</div>
 
                </div>
             </div>
-            <div class="popup-recharge_bottom">
-               <form class="form-recharge">
-                  <div class="form-recharge_methods">
+            <div class="promotion-pay__bottom ">
+               <form class="promotion-pay__form ">
+                  <div class="promotion-pay__methods">
 
-                     <div class="form-recharge_method active">
-                        <img src="img/icons/visa.svg">
-                        <div class="form-recharge_method__info">
-                           1
-                        </div>
+                     <div class="promotion-pay__method active">
+						<input type="radio" name="method" id="visa1" >
+						<label for="visa1">
+							<img class="promotion-pay__img" src="img/icons/visa.svg">
+							<div class="promotion-pay__method-info ">1</div>
+						</label>
                       </div>
 
-                     <div class="form-recharge_method">
-                       
-                        <img src="img/icons/visa.svg">
-                        <div class="form-recharge_method__info">
-                           2
-                        </div>
+                     <div class="promotion-pay__method  ">
+						<input type="radio" name="method" id="visa2" >
+						<label for="visa2">
+							<img class="promotion-pay__img" src="img/icons/visa.svg">
+							<div class="promotion-pay__method-info  ">2</div>
+						</label>
                      </div>
 
-                     <div class="form-recharge_method">
-                      
-                        <img src="img/icons/qiwi.svg">
+                     <div class="promotion-pay__method  ">
+					 	<input type="radio" name="method" id="qiwi" >
+						<label for="qiwi">
+                        	<img class="promotion-pay__img" src="img/icons/qiwi.svg">
+						</label>
                      </div>
 
-                     <div class="form-recharge_method">
-                      
-                        <img src="img/icons/webmoney.svg">
-                        <div class="form-recharge_method__info">
-                           WMZ
-                        </div>
+                     <div class="promotion-pay__method  ">
+					 	<input type="radio" name="method" id="webmoney" >
+						<label for="webmoney">
+							<img class="promotion-pay__img" src="img/icons/webmoney.svg">
+							<div class="promotion-pay__method-info  ">WMZ</div>
+						</label>
                      </div>
 
-                     <div class="form-recharge_method">
-                       
-                        <img src="img/icons/skinsback.svg">
-                        <div class="form-recharge_method__info">
-                           скины
-                        </div>
+                     <div class="promotion-pay__method  ">
+					 <input type="radio" name="method" id="skinsback" >
+						<label for="skinsback">
+							<img class="promotion-pay__img" src="img/icons/skinsback.svg">
+							<div class="promotion-pay__method-info ">скины</div>
+						</label>
                      </div>
 
-                     <div class="form-recharge_method">
-                       
-                       <img src="img/icons/bitcoin.svg">
+                     <div class="promotion-pay__method  ">
+					 	<input type="radio" name="method" id="bitcoin" >
+						<label for="bitcoin">
+                       		<img class="promotion-pay__img" src="img/icons/bitcoin.svg">
+					   </label>
                     </div>
 
                     
-                     <div class="form-recharge_method">
-                       
-                        <img src="img/icons/ethereum.svg">
-                     </div>
-
-                     <div class="form-recharge_method">
-                       
-                       <img src="img/icons/tron.png?v=312">
+                    <div class="promotion-pay__method  ">
+					 	<input type="radio" name="method" id="ethereum" >
+						<label for="ethereum">
+                        	<img class="promotion-pay__img" src="img/icons/ethereum.svg">
+						</label>
                     </div>
 
-                     <div class="form-recharge_method">
-                        
-                        <img src="img/icons/tether.png?v=23">
-                     </div>
+                    <div class="promotion-pay__method  ">
+						<input type="radio" name="method" id="tron" >
+						<label for="tron">
+                        	<img class="promotion-pay__img" src="img/icons/tron.png?v=312">
+						</label>
+                    </div>
 
-                     <div class="form-recharge_method">
-                       
-                        <span class="payment_method__name">Еще</span>
-                     </div>
+                    <div class="promotion-pay__method  ">
+					 	<input type="radio" name="method" id="tether" >
+						<label for="tether">
+                        	<img class="promotion-pay__img" src="img/icons/tether.png?v=23">
+						</label>
+                    </div>
+
+                    <div class="promotion-pay__method  ">
+						<input type="radio" name="method" id="other" >
+						<label for="other">
+                        	<span class="promotion-pay__method-name ">Еще</span>
+						</label>
+                    </div>
                   </div>
-                  <div class="form-recharge_inputs">
-                                 <button class="form-group-btn" type="submit">
-                     <span class="text">ПОПОЛНИТЬ БАЛАНС</span>
+                  <div class="promotion-pay__inputs ">
+                     <button class="promotion-pay__btn " type="submit">
+             
+						 ПОПОЛНИТЬ БАЛАНС
+			
                      </button>
                   </div>
                </form>
             </div>
-            <a href="javascript:" class="popup-recharge__close"><img src="https://dotaloot.pro/img/close.5a251131.png"></a>
+            <a href="javascript:" class="promotion-pay__close "><img src="https://dotaloot.pro/img/close.5a251131.png"></a>
            
          </div>
       </div>
       <!-- modal-body end-->
-   </div>
+  
 </div>
 <!--    promotion-pay end-->
 
