@@ -1,3 +1,10 @@
+@mixin font($color, $size, $weight, $text-transofrm:none) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    text-transform: $text-transofrm;
+}
+
 .promotion-pay {
     @include font(#ffffff, 14px, 700, uppercase);
     font-family: 'geometria', Arial, sans-serif;

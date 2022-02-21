@@ -1,0 +1,266 @@
+.promotion-pay {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'geometria', Arial, sans-serif;
+  max-width: 680px;
+  background-color: #15181b;
+  width: 680px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.promotion-pay__top {
+  padding: 33px 29px 0;
+  background-color: #111416;
+  height: 212px;
+  border-radius: 5px 5px 0 0;
+}
+
+.promotion-pay__top::before {
+  display: block;
+  content: "";
+  width: 566px;
+  height: 326px;
+  top: -62px;
+  left: 165px;
+  position: absolute;
+  background-image: url(../img/balance__women.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.promotion-pay__top::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(../img/balance__coin.png);
+  background-position: center;
+  background-size: 346px 143px;
+  background-repeat: no-repeat;
+  width: 346px;
+  height: 143px;
+  top: -29px;
+  right: -48px;
+  z-index: 0;
+}
+
+.promotion-pay__title {
+  color: #e85b01;
+  text-shadow: 0 0 20px #e85b01;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -1px;
+}
+
+.promotion-pay__bottom {
+  margin-top: -30px;
+  padding: 0 30px 29px;
+}
+
+.promotion-pay__form {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 999;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.promotion-pay__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 21px;
+}
+
+.promotion-pay__btn {
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  background-image: linear-gradient(61deg, #7bec02 0, #175e0d 100%);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: 0;
+  font-size: 13px;
+  border: none;
+  line-height: 14px;
+}
+
+.promotion-pay__btn:hover {
+  background-image: linear-gradient(241deg, #7bec02 0, #175e0d 100%);
+}
+
+.promotion-pay__methods {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (112px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 112px);
+  row-gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.promotion-pay__method {
+  border-radius: 5px;
+}
+
+.promotion-pay__method label {
+  width: 112px;
+  height: 80px;
+  background-color: #15181b;
+  position: relative;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+  border: 1px solid #2d2d2d;
+}
+
+.promotion-pay__method label:hover {
+  background-color: #111416;
+}
+
+.promotion-pay__method input {
+  display: none;
+}
+
+.promotion-pay__method input:checked + label {
+  background-color: #111416;
+  border-color: #f4441a;
+}
+
+.promotion-pay__method-info {
+  font-size: 10px;
+  color: #a5a5a5;
+  font-weight: 300;
+  position: absolute;
+  text-transform: lowercase;
+  bottom: 4px;
+  right: 6px;
+  background: #111416;
+  border-radius: 3px;
+  padding: 1px 6px;
+  border: 1px solid #2d2d2d;
+}
+
+.promotion-pay__method-name {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.promotion-pay__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.promotion-pay__name {
+  display: block;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: .5px;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promotion-pay__close {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: auto;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.promotion-pay__close img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 769px) {
+  .promotion-pay__top {
+    padding: 25px 0 0 12px;
+    background-image: url(../img/pay-combo/coins.png), url(../img/pay-combo/smoke.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 128px;
+  }
+  .promotion-pay__top::before {
+    display: none;
+  }
+  .promotion-pay__top::after {
+    display: none;
+  }
+  .promotion-pay__title {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .promotion-pay__bottom {
+    padding: 0 10px 10px;
+    margin-top: 0;
+  }
+  .promotion-pay__methods {
+    row-gap: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .promotion-pay__form {
+    margin-top: 20px;
+  }
+  .promotion-pay__inputs {
+    margin-top: 10px;
+  }
+  .promotion-pay__close {
+    top: 10px;
+    right: 10px;
+  }
+}
+/*# sourceMappingURL=pay-combo.css.map */

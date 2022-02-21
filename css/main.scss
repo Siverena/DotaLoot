@@ -351,8 +351,12 @@ ul>a>li {
 @import '_conclusion.scss';
 @import '_notif.scss';
 @import '_notif.scss';
-@import '_lootback.scss';
-@import '_promotion.scss';
-@import '_sunstrike.scss';
-@import '_manna.scss';
-@import '_pay-combo.scss';
+// @import '_lootback.scss';
+// @import '_promotion.scss';
+// @import '_sunstrike.scss';
+// @import '_manna.scss';
+// @import '_pay-combo.scss';
+@import 'promotion.scss';
+@import 'sunstrike.scss';
+@import 'manna.scss';
+@import 'pay-combo.scss';

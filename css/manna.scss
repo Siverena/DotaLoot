@@ -1,3 +1,16 @@
+$main-font: 'geometria',
+'Arial',
+'sans-serif';
+@mixin font-geometria($size: 13px, $weight: 700, $color: #ffffff, $transform: 0) {
+    font-family: $main-font;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    @if $transform !=0 {
+        text-transform: $transform;
+    }
+}
+
 .manna {
     background-color: #15181b;
     border-radius: 5px;
